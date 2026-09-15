@@ -1,0 +1,33 @@
+/* Shared callouts used across the deck. */
+
+.takeaway {
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  padding: 0.6rem 1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.warning {
+  border-left: 4px solid #d97706;
+  background: #fffbeb;
+  padding: 0.6rem 1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Placeholder content that must be replaced with real workshop data. */
+.todo {
+  border: 2px dashed #d97706;
+  color: #92400e;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+.slidev-layout table {
+  font-size: 0.85em;
+}
+
+.slidev-layout td,
+.slidev-layout th {
+  padding: 0.3rem 0.6rem;
+}
