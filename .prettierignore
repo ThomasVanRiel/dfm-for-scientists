@@ -1,0 +1,4 @@
+# Slidev slide files: formatters add a blank line after `---`, which breaks per-slide
+# frontmatter, and renumber ordered lists.
+slides.md
+pages/

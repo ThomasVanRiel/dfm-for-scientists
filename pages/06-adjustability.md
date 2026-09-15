@@ -23,7 +23,7 @@ Design for alignment, not for perfection
 
 </div>
 
-<div v-click>
+<div>
 
 ### Design in adjustment
 
@@ -36,7 +36,7 @@ Design for alignment, not for perfection
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 In a test setup you usually align to the physics, not to the drawing. Adjustment gets you there more cheaply.
 </div>
 
@@ -67,17 +67,13 @@ Always include a way to <strong>lock</strong> the adjustment. An adjustment that
 
 A rigid body has **6 degrees of freedom**: 3 translations, 3 rotations.
 
-<v-clicks>
-
 - **Exactly constrained**: each DOF constrained once. Stable, repeatable, no stress
 - **Over-constrained**: constrained more than once. It rocks, jams, or gets stressed and warps
 - **Under-constrained**: it wobbles
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Examples
 
@@ -117,13 +113,9 @@ Three balls on three different features:
 
 3 + 2 + 1 = **6**: exactly constrained
 
-<v-clicks>
-
 - Repeatability of **micrometers** when you remove and replace it
 - Needs **preload**: gravity, springs, or magnets
 - **Maxwell** variant: three V-grooves at 120°
-
-</v-clicks>
 
 </div>
 
@@ -137,19 +129,15 @@ Three balls on three different features:
 
 <div>
 
-<v-clicks>
-
 - Screws **clamp**, dowels **locate**. Clearance holes have play
 - **Press fit** in one part, **slip fit** in the other
 - Use **two** pins, as far apart as possible
 - Make **one hole round** and the **other a slot** (or use a diamond pin), so the pins aren't over-constrained
 - Holes are **reamed** (H7)
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Practical details
 
@@ -177,18 +165,14 @@ Three balls on three different features:
 
 Motion by **bending** material instead of sliding or rolling.
 
-<v-clicks>
-
 - **No friction**, **no backlash**, **no wear**
 - Resolution down to **nanometers**
 - Small range: typically µm to a fraction of a mm
 - Can be made from one piece by milling or wire EDM
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Typical uses
 
@@ -207,8 +191,6 @@ Motion by **bending** material instead of sliding or rolling.
 
 # Section 6: take-aways
 
-<v-clicks>
-
 - **Adjustment** is often cheaper and better than precision
 - Always add a way to **lock** the adjustment
 - Constrain each degree of freedom **exactly once**
@@ -216,4 +198,3 @@ Motion by **bending** material instead of sliding or rolling.
 - **Dowels** locate: one round hole, one slot
 - **Flexures**: fine motion without friction or backlash
 
-</v-clicks>

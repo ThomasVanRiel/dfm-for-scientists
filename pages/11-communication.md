@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 10. Communicating with the workshop
+# 11. Communicating with the workshop
 
 Talk to the machinist before the design is finished
 
@@ -24,8 +24,6 @@ Talk to the machinist before the design is finished
 
 ### A STEP file does not tell the workshop
 
-<v-clicks>
-
 - **Tolerances**: which dimensions matter, and how much
 - **Material**: the exact grade and form
 - **Threads**: often just plain holes in the model
@@ -33,13 +31,11 @@ Talk to the machinist before the design is finished
 - **Quantity**, and whether spares are needed
 - **What the part does**, and what's critical
 
-</v-clicks>
-
 </div>
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specification.
 </div>
 
@@ -105,7 +101,7 @@ Each hole dimensioned from **one datum**.
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 Dimension the way the part <strong>functions</strong>: from the faces and holes it's aligned by.
 </div>
 
@@ -140,17 +136,13 @@ flowchart LR
 
 <div>
 
-<v-clicks>
-
 - Changes on a **sketch** cost minutes
 - Changes in a **finished drawing** cost hours
 - Changes to a **made part** cost the part
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Questions to ask
 
@@ -166,13 +158,10 @@ flowchart LR
 
 ---
 
-# Section 10: take-aways
-
-<v-clicks>
+# Section 11: take-aways
 
 - A STEP file is **geometry**, not a specification
 - A drawing needs **material, tolerances, finish, quantity**, and marked critical features
 - Dimension from **datums**
 - **Talk to the machinist before the design is finished**
 
-</v-clicks>

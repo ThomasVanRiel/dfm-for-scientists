@@ -36,7 +36,7 @@ Tolerance only what matters
 
 </div>
 
-<div class="takeaway mt-10" v-click>
+<div class="takeaway mt-10">
 Specify tight tolerances on <strong>functional</strong> features. Use a general tolerance for everything else.
 </div>
 
@@ -54,13 +54,9 @@ Specify tight tolerances on <strong>functional</strong> features. Use a general 
 
 <div class="col-span-2">
 
-<v-clicks>
-
 - Cost rises **steeply** as tolerances tighten
 - Each step can mean a **different process**: sawing → milling → grinding → lapping
 - Below ≈ ±0.02 mm, **measuring** and **temperature** become the problem
-
-</v-clicks>
 
 </div>
 
@@ -68,6 +64,23 @@ Specify tight tolerances on <strong>functional</strong> features. Use a general 
 
 <!--
 The curve is qualitative. The typical tolerances per process are rough orders of magnitude; ask the machinist what our machines hold comfortably.
+-->
+
+---
+layout: center
+---
+
+<!-- Replace the placeholder with e.g.:
+<video src="/professionals-have-standards.mp4" controls class="h-120 mx-auto" />
+(put the file in public/)
+-->
+
+<div class="todo text-center p-16">
+Video: TF2 "Meet the Sniper", "Professionals have standards"
+</div>
+
+<!--
+Play the clip, then move straight to ISO 2768.
 -->
 
 ---
@@ -119,7 +132,7 @@ For shafts in holes, give a **fit** instead of a ± tolerance.
 
 </div>
 
-<div v-click>
+<div>
 
 ### Example: Ø10 H7/g6
 
@@ -183,7 +196,7 @@ Only specify Ra where it matters: sealing faces, sliding surfaces, optical mount
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 For each tolerance, you should be able to say what goes wrong if it's missed.
 </div>
 
@@ -213,8 +226,6 @@ Four spacers, each **10 ± 0.1 mm**, go into a housing slot of **40.5 ± 0.1 mm*
 
 <div>
 
-<div v-click>
-
 ### Worst case
 
 - Nominal gap: 40.5 − 4 × 10 = **0.5 mm**
@@ -223,9 +234,7 @@ Four spacers, each **10 ± 0.1 mm**, go into a housing slot of **40.5 ± 0.1 mm*
 
 </div>
 
-</div>
-
-<div v-click>
+<div>
 
 ### Statistical (RSS)
 
@@ -259,7 +268,7 @@ Four spacers, each **10 ± 0.1 mm**, go into a housing slot of **40.5 ± 0.1 mm*
 
 </div>
 
-<div v-click>
+<div>
 
 ### GD&T: tolerances on form and position
 
@@ -284,8 +293,6 @@ Keep this light. The goal is not to make them GD&T experts, but to understand th
 
 # Section 5: take-aways
 
-<v-clicks>
-
 - Cost rises **steeply** with tighter tolerances
 - Use **ISO 2768-m** as the default; tighten only **functional** features
 - Use **fits** (H7/g6) for shafts and holes
@@ -293,4 +300,3 @@ Keep this light. The goal is not to make them GD&T experts, but to understand th
 - Tolerances **stack up**; fewer parts in the chain helps
 - Dimension from **datums**
 
-</v-clicks>

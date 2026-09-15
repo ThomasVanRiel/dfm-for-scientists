@@ -25,7 +25,7 @@ The part isn't done when it leaves the mill
 
 </div>
 
-<div v-click>
+<div>
 
 ### What that means
 
@@ -51,18 +51,14 @@ The part isn't done when it leaves the mill
 
 <div>
 
-<v-clicks>
-
 - Every machined edge leaves a **burr**
 - Sharp edges **cut** people, gloves, and cables
 - Burrs **prevent** parts from sitting flat
 - Burrs inside **cross holes** are hard to reach, and can come loose later
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### On the drawing
 
@@ -85,14 +81,10 @@ The part isn't done when it leaves the mill
 
 ### Heat treatment
 
-<v-clicks>
-
 - Hardening **changes dimensions** and can **warp** the part
 - Hardened steel is very hard to machine
 - Order: **rough machine → heat treat → grind or finish**
 - Specify what you need: e.g. **hardness in HRC**
-
-</v-clicks>
 
 </div>
 
@@ -100,20 +92,16 @@ The part isn't done when it leaves the mill
 
 ### Welding
 
-<v-clicks>
-
 - Welds **shrink** as they cool and **pull** the part out of shape
 - A welded frame is never precise as welded
 - Order: **weld → stress relieve → machine** the precise faces
 - Leave **machining allowance** on faces that matter
 
-</v-clicks>
-
 </div>
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 The order of operations is part of the design. Discuss it with the workshop.
 </div>
 
@@ -127,18 +115,14 @@ The order of operations is part of the design. Discuss it with the workshop.
 
 Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 
-<v-clicks>
-
 - **Cutting fluid** and oil residue outgas and contaminate
 - **Blind holes** and threads trap fluid and chips
 - **Silicone** lubricants spread and are hard to remove
 - Fingerprints are contamination too
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### What to do
 
@@ -158,12 +142,9 @@ Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 
 # Section 9: take-aways
 
-<v-clicks>
-
 - Coatings add **thickness**: mask or compensate fits and threads
 - Specify **edge breaks**
 - **Heat treatment** and **welding** distort: finish machining afterward
 - State **cleaning** requirements up front
 - The **order of operations** is part of the design
 
-</v-clicks>

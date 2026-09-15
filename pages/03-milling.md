@@ -22,14 +22,10 @@ The heart of the course
 
 A spinning end mill can't cut a sharp internal corner.
 
-<v-clicks>
-
 - Every internal vertical corner gets **at least the tool radius**
 - Make the radius **slightly larger** than the tool radius, so the tool doesn't wrap around the corner and chatter
 - **Larger radius = larger tool** = stiffer, faster, cheaper
 - If a square part must fit into a pocket: add **dog-bone** relief cuts
-
-</v-clicks>
 
 </div>
 
@@ -53,21 +49,17 @@ Hold up an end mill. Let them feel that it is round.
 
 <div>
 
-<v-clicks>
-
 - Rule of thumb: pocket depth **≤ 3–4 × tool diameter**
 - Longer tools **deflect** (stiffness drops with length³) and **chatter**
 - They need slow feeds and light cuts, so they take a long time
 - A 6 mm slot, 40 mm deep: expensive or impossible
 - Narrow **and** deep is the combination to avoid
 
-</v-clicks>
-
 </div>
 
 </div>
 
-<div class="takeaway mt-6" v-click>
+<div class="takeaway mt-6">
 Make pockets wider or shallower, or open them to one side. Or build the part from plates.
 </div>
 
@@ -79,18 +71,14 @@ Make pockets wider or shallower, or open them to one side. Or build the part fro
 
 <div>
 
-<v-clicks>
-
 - Cutting forces push thin walls away, so they end up **thicker at the top**
 - The wall **rings** like a tuning fork and leaves a poor surface
 - **Clamping** forces bend them. They spring back when released
 - Removing material on one side releases **stress** (section 7)
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Rules of thumb
 
@@ -115,18 +103,14 @@ Make pockets wider or shallower, or open them to one side. Or build the part fro
 
 On a 3-axis mill, the tool only comes **from above**.
 
-<v-clicks>
-
 - Features on 5 faces → at least **5 setups**
 - Every reorientation: re-clamp, re-zero, new alignment error
 - Features on different faces are only as well aligned as the setups
 - Holes at odd angles need special fixtures or a 5-axis machine
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Design for fewer setups
 
@@ -153,18 +137,14 @@ On a 3-axis mill, the tool only comes **from above**.
 
 <div>
 
-<v-clicks>
-
 - A vise needs **two parallel faces** to grip
 - The jaws cover a few mm, and **nothing can be cut there**
 - Clamping force **distorts** thin or delicate parts
 - Round, organic, or fully machined parts have **nothing to grip**
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Help the machinist
 
@@ -177,7 +157,7 @@ On a 3-axis mill, the tool only comes **from above**.
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 If you can't imagine how the part is clamped, the machinist can't either.
 </div>
 
@@ -204,8 +184,6 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 
 # Section 3: take-aways
 
-<v-clicks>
-
 - Tools are **round**: internal corners need radii
 - Tools are **short**: depth ≤ 3–4 × tool diameter
 - Thin walls **vibrate and deflect**
@@ -213,4 +191,3 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 - The part has to be **clamped** somewhere
 - If it looks trivial in CAD, **ask** anyway
 
-</v-clicks>

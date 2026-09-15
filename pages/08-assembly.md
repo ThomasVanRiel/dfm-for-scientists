@@ -33,11 +33,11 @@ Someone has to put it together, and change it next month
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 Combine parts where the function allows it. Split them where machining demands it.
 </div>
 
-<div v-click class="mt-4">
+<div class="mt-4">
 Ask for each part: <em>does this need to be separate?</em> It should move relative to the rest, be a different material, or be replaceable.
 </div>
 
@@ -49,19 +49,15 @@ Ask for each part: <em>does this need to be separate?</em> It should move relati
 
 <div>
 
-<v-clicks>
-
 - Can a **hex key** reach every screw? Straight, or only with a ball end?
 - Can you **see** what you're doing?
 - Is there room for **fingers**, a torque wrench, a pair of tweezers?
 - Does the **assembly order** work? Can the last screw still be reached?
 - Can you **remove one part** without disassembling everything?
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Try it in CAD
 
@@ -83,18 +79,14 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 <div>
 
-<v-clicks>
-
 - **Asymmetric** hole patterns: the part fits one way only
 - **One offset dowel pin** instead of a symmetric pair
 - **Different connectors** for different signals
 - **Shoulders and steps** that prevent upside-down mounting
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Alignment features
 
@@ -116,18 +108,14 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 <div>
 
-<v-clicks>
-
 - Cables are **part of the design**, not an afterthought
 - Plan **routing channels**, clips, and tie-down points
 - Respect the **minimum bend radius**, especially for fibers and coax
 - Add **strain relief** so connectors don't carry the load
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### Also
 
@@ -174,12 +162,9 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 # Section 8: take-aways
 
-<v-clicks>
-
 - Balance **part count** against **part complexity**
 - Check **tool and hand access** and the **assembly order**
 - Make wrong assembly **impossible**
 - Plan **cables** from the start
 - Test setups change: design for **modification**
 
-</v-clicks>

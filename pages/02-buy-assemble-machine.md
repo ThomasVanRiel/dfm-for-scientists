@@ -84,7 +84,7 @@ Material comes in standard sizes. Use them:
 
 </div>
 
-<div v-click>
+<div>
 
 If a part is 20 mm thick, draw it 20 mm, not 18.5 mm:
 
@@ -124,7 +124,7 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 
 </div>
 
-<div v-click>
+<div>
 
 ### What to watch
 
@@ -137,7 +137,7 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 An L-bracket from two plates and four screws is often faster than one milled L, and easier to modify.
 </div>
 
@@ -153,7 +153,7 @@ class: text-sm
 | **CNC turning** | Round parts: shafts, spacers, flanges. Fast and accurate | Anything that isn't rotationally symmetric |
 | **Laser cutting** | Fast 2D profiles in sheet and thin plate | Thick plate, heat-affected edges, no pockets or threads |
 | **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges; lower accuracy |
-| **Sheet metal bending** | Enclosures, brackets, covers. Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
+| **Sheet metal bending** | Enclosures, brackets, covers (section 10). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
 | **Welding** | Large frames, joining thick sections | Distortion; precise faces need machining afterward |
 | **3D printing** | Complex shapes, jigs, quick iterations | Anisotropic strength, creep, accuracy, outgassing |
 
@@ -169,11 +169,8 @@ Don't go deep here. The goal is that they know these processes exist and roughly
 
 # Section 2: take-aways
 
-<v-clicks>
-
 - **Buy** before you design: catalog and configurable parts are fast and cheap
 - Design around **standard stock sizes**
 - Build assemblies from **simple plates** instead of carving one monolith
 - Pick the **process** that suits the shape, not the other way around
 
-</v-clicks>

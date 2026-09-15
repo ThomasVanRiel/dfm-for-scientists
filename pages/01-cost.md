@@ -19,7 +19,7 @@ Material, tools, and time are not free
 | **Inspection** | Measuring what you asked for | Number of tight tolerances |
 | **Finishing** | Deburring, anodizing, coating, cleaning | Surface area, masking, special requirements |
 
-<div class="takeaway mt-6" v-click>
+<div class="takeaway mt-6">
 For one-off lab parts, programming and setup are usually <strong>most</strong> of the cost. The machine hours come second, the material a distant third.
 </div>
 
@@ -44,7 +44,7 @@ Ask the room first: "What do you think is the most expensive part of a machined 
 | Screws and dowels | – | €5 |
 | **Total** | **€665** | **€290** |
 
-<div v-click class="mt-4">
+<div class="mt-4">
 Material is <strong>4 %</strong> of the monolithic part. Time is the other 96 %.
 </div>
 
@@ -68,7 +68,7 @@ A 120 × 80 × 60 mm aluminum block:
 
 </div>
 
-<div v-click>
+<div>
 
 That 90 % costs:
 
@@ -82,7 +82,7 @@ That 90 % costs:
 
 </div>
 
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 Start from the closest standard stock size, not from the bounding box.
 </div>
 
@@ -105,7 +105,7 @@ A part with features on 5 faces needs *at least* 5 setups.
 
 </div>
 
-<div v-click>
+<div>
 
 ### Every tight tolerance means
 
@@ -124,15 +124,11 @@ A part with features on 5 faces needs *at least* 5 setups.
 
 # Section 1: take-aways
 
-<v-clicks>
-
 - A quote is mostly **time**: programming, setups, cutting, measuring
 - **Setups** and **tolerances** often cost more than the material
 - Removing 90 % of a block is slow, expensive, and wasteful
 - Batch size 1 means setup is the whole cost
 
-</v-clicks>
-
-<div class="takeaway mt-8" v-click>
+<div class="takeaway mt-8">
 Every feature costs machine time, tool changes, setups, and someone's attention.
 </div>

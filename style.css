@@ -1,3 +1,21 @@
+/*
+  Typography: Newsreader for titles, IBM Plex Sans for prose (the Slidev default font),
+  IBM Plex Mono for highlights and labels. Fonts are configured in the slides.md headmatter.
+*/
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: 'Newsreader', ui-serif, Georgia, serif;
+  font-weight: 400;
+}
+
+.marker,
+.todo,
+.slidev-layout th {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
 /* Shared callouts used across the deck. */
 
 .takeaway {
@@ -32,11 +50,10 @@
   padding: 0.3rem 0.6rem;
 }
 
-/* Hand-drawn highlighter stroke behind a word, swept in from the left. */
+/* Hand-drawn highlighter stroke behind a word. */
 .marker {
   position: relative;
   z-index: 0;
-  font-weight: 600;
   padding: 0 0.12em;
 }
 
@@ -47,14 +64,4 @@
   inset: 0.02em -0.18em -0.04em -0.22em;
   transform: rotate(-1.8deg) skewX(-6deg);
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23fcd34d' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3Cpath fill='%23f59e0b' fill-opacity='0.22' d='M9,15 C62,11 128,13 193,10 L194,15 C128,17 62,16 9,20 Z M5,37 C70,40 139,36 196,39 L196,43 C139,41 70,44 5,42 Z'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
-  animation: marker-sweep 0.7s cubic-bezier(0.3, 0.7, 0.4, 1) 0.4s both;
-}
-
-@keyframes marker-sweep {
-  from { clip-path: inset(0 100% 0 0); }
-  to { clip-path: inset(0 0 0 0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marker::before { animation: none; }
 }

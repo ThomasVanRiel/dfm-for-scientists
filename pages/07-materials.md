@@ -36,18 +36,14 @@ class: text-sm
 
 <div>
 
-<v-clicks>
-
 - Rolled plate and bar contain **internal stresses** from production
 - Remove lots of material, especially from **one side**, and the part **bows**
 - It can look fine on the machine and warp **after unclamping**
 - Hours or days later it may still move
 
-</v-clicks>
-
 </div>
 
-<div v-click>
+<div>
 
 ### What helps
 
@@ -84,15 +80,11 @@ class: text-sm
 
 <div>
 
-<v-clicks>
-
 - A **200 mm** aluminum plate, **5 K** warmer:<br/>23 × 0.2 × 5 = **23 µm** longer
 - So ±0.01 mm means nothing without a **temperature**
 - **Mixed materials** (aluminum on steel) bend like a bimetal, or bolts slip
 - Plastics move **5–10 ×** more than metals
 - Cryogenic setups: parts **shrink** a lot, and differently
-
-</v-clicks>
 
 </div>
 
@@ -153,12 +145,9 @@ class: text-sm
 
 # Section 7: take-aways
 
-<v-clicks>
-
 - **Aluminum** is the default: cheap and fast to machine
 - **Stainless** and **titanium** cost much more machine time
 - Removing lots of material causes **warping**. Use stress-free plate
 - **Thermal expansion** often beats your tolerance
 - Check **vacuum**, **magnetic**, and **chemical** compatibility early
 
-</v-clicks>

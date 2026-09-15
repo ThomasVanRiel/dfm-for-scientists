@@ -43,6 +43,7 @@ const slots = useSlots()
 }
 
 .sketch-placeholder {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
