@@ -111,6 +111,18 @@ Dimension the way the part <strong>functions</strong>: from the faces and holes 
 
 ---
 
+# Chain vs. baseline
+
+<div class="grid grid-cols-2 gap-10 mt-4">
+
+<Sketch name="chain-dimensioning" class="h-88" hint="A plate with five holes, each dimensioned from the previous hole" />
+
+<Sketch name="baseline-dimensioning" class="h-88" hint="The same plate, every hole dimensioned from datum edges A and B" />
+
+</div>
+
+---
+
 # Talk to the machinist early
 
 <div class="mt-6">

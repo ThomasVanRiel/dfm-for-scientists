@@ -48,7 +48,7 @@ Specify tight tolerances on <strong>functional</strong> features. Use a general 
 
 <div class="col-span-3">
 
-<ToleranceCost />
+<Sketch name="tolerance-cost"><ToleranceCost /></Sketch>
 
 </div>
 
@@ -191,7 +191,7 @@ For each tolerance, you should be able to say what goes wrong if it's missed.
 
 # Exercise: tolerance stack-up
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+<div class="grid grid-cols-2 gap-10 mt-4 items-center">
 
 <div>
 
@@ -199,7 +199,21 @@ Four spacers, each **10 ± 0.1 mm**, go into a housing slot of **40.5 ± 0.1 mm*
 
 **Does it always fit? What is the gap?**
 
-<div v-click class="mt-6">
+</div>
+
+<Sketch name="stack-up" class="h-80" hint="Four 10 mm spacers in a 40.5 mm slot, with the gap at the end" />
+
+</div>
+
+---
+
+# Stack-up: the answer
+
+<div class="grid grid-cols-2 gap-10 mt-4">
+
+<div>
+
+<div v-click>
 
 ### Worst case
 

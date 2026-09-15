@@ -101,7 +101,7 @@ Physicists usually love this. Connect it to degrees of freedom they already know
 
 <div>
 
-<KinematicMount />
+<Sketch name="kinematic-mount"><KinematicMount /></Sketch>
 
 </div>
 
@@ -160,6 +160,12 @@ Three balls on three different features:
 </div>
 
 </div>
+
+---
+
+# One round hole, one slot
+
+<Sketch name="dowel-hole-slot" class="h-96" hint="Two plates located by two dowel pins: a round hole at one pin, a slot pointing at it for the other" />
 
 ---
 

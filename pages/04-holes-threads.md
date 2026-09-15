@@ -45,7 +45,7 @@ Small topic, endless trouble
 
 <div>
 
-<BlindHole />
+<Sketch name="blind-hole"><BlindHole /></Sketch>
 
 </div>
 

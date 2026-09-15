@@ -17,13 +17,17 @@ drawings:
 
 # Design for Manufacturing
 
-## for scientists who build test setups
+<div class="text-5xl mt-4">
+for <span class="marker">Scientists</span>
+</div>
 
-<div class="mt-12 text-xl opacity-80 max-w-160">
-Every feature costs machine time, tool changes, setups, and someone's attention.
+<div class="mt-14 text-xl opacity-80 max-w-160 leading-relaxed">
+You already think in your needs and constraints,<br>
+this seminar adds ours.
 </div>
 
 ---
+
 layout: two-cols
 ---
 
@@ -59,12 +63,14 @@ Most people in the room will recognise themselves in the left column. That's fin
 -->
 
 ---
+
 layout: statement
 ---
 
 # How will this actually be made?
 
 <div class="text-xl opacity-70 mt-6">
+Every feature costs machine time, tool changes, setups, and someone's attention.<br>
 Ask it <strong>before</strong> you draw anything.
 </div>
 
@@ -90,11 +96,11 @@ This is the one sentence they should remember. Come back to it at the end of eve
 
 <div>
 
-6. Adjustability instead of precision
-7. Materials from a manufacturing perspective
-8. Design for assembly and use
-9. Finishing and secondary operations
-10. Communicating with the workshop
+1. Adjustability instead of precision
+2. Materials from a manufacturing perspective
+3. Design for assembly and use
+4. Finishing and secondary operations
+5. Communicating with the workshop
 
 </div>
 
@@ -111,45 +117,56 @@ If possible: co-teach with a machinist, and do a workshop tour after section 3 s
 -->
 
 ---
+
 src: ./pages/01-cost.md
 ---
 
 ---
+
 src: ./pages/02-buy-assemble-machine.md
 ---
 
 ---
+
 src: ./pages/03-milling.md
 ---
 
 ---
+
 src: ./pages/04-holes-threads.md
 ---
 
 ---
+
 src: ./pages/05-tolerances.md
 ---
 
 ---
+
 src: ./pages/06-adjustability.md
 ---
 
 ---
+
 src: ./pages/07-materials.md
 ---
 
 ---
+
 src: ./pages/08-assembly.md
 ---
 
 ---
+
 src: ./pages/09-finishing.md
 ---
 
 ---
+
 src: ./pages/10-communication.md
 ---
 
 ---
+
 src: ./pages/11-closing.md
 ---

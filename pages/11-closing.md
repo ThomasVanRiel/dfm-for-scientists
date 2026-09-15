@@ -26,7 +26,17 @@ layout: section
 
 </div>
 
-<div v-click>
+<Sketch name="scientist-design" class="h-96" hint="The monolithic block: sharp internal corners, the deep 5 mm pocket, features on five faces" />
+
+</div>
+
+---
+
+# The exercise
+
+<div class="grid grid-cols-2 gap-10 mt-4">
+
+<div>
 
 ### In teams (30–45 min)
 

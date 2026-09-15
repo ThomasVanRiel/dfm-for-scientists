@@ -14,7 +14,7 @@ The heart of the course
 
 <div>
 
-<CornerRadius />
+<Sketch name="corner-radius"><CornerRadius /></Sketch>
 
 </div>
 
@@ -47,7 +47,7 @@ Hold up an end mill. Let them feel that it is round.
 
 <div>
 
-<PocketDepth />
+<Sketch name="pocket-depth"><PocketDepth /></Sketch>
 
 </div>
 
@@ -138,6 +138,12 @@ On a 3-axis mill, the tool only comes **from above**.
 </div>
 
 </div>
+
+---
+
+# Holding the part
+
+<Sketch name="vise-clamping" class="h-96" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
 
 ---
 

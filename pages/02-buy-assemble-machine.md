@@ -102,6 +102,12 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 
 ---
 
+# One block or three plates?
+
+<Sketch name="monolith-vs-plates" class="h-96" hint="The same bracket twice: milled from one solid block, and bolted together from three plates" />
+
+---
+
 # Plates instead of a monolithic block
 
 <div class="grid grid-cols-2 gap-10 mt-4">
