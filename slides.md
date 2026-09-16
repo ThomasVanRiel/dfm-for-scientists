@@ -106,31 +106,33 @@ Time on the machine costs far more than the metal you cut away.
 
 <div>
 
-**Takeaway** — the one thing worth keeping from the slide. If you remember nothing else, remember these.
+**Takeaway** – the one thing worth keeping from the slide. If you remember nothing else, remember these.
 
 </div>
 
 <div class="warning">
 
-A sharp internal corner cannot be milled. Every tool is round.
+A sharp internal corner cannot be milled.<br/>
+Every tool is round.
 
 </div>
 
 <div>
 
-**Warning** — a trap that turns up in real drawings, and what it costs you when you walk into it.
+**Warning** – a trap that turns up in real drawings, and what it costs you when you walk into it.
 
 </div>
 
 <div class="tip">
 
-Ask the workshop which drill sizes they stock. It is a two-minute email.
+Ask the workshop which drill sizes they stock.<br/>
+It is a two-minute email.
 
 </div>
 
 <div>
 
-**Tip** — something small and practical you can use on the next part you draw.
+**Tip** – something small and practical you can use on the next part you draw.
 
 </div>
 
