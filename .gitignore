@@ -3,3 +3,8 @@ dist
 .slidev
 *.local
 .DS_Store
+
+# Vendored agent skills and their lockfile, fetched per machine.
+.agents
+.claude
+skills-lock.json
