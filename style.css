@@ -67,3 +67,99 @@
   transform: rotate(-1.8deg) skewX(-6deg);
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23fcd34d' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3Cpath fill='%23f59e0b' fill-opacity='0.22' d='M9,15 C62,11 128,13 193,10 L194,15 C128,17 62,16 9,20 Z M5,37 C70,40 139,36 196,39 L196,43 C139,41 70,44 5,42 Z'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
 }
+
+/*
+  A margin note: the dry aside that goes with a slide, not the point of it.
+  Deliberately quieter than .takeaway so the eye reads the claim first.
+*/
+.aside {
+  font-family: 'Newsreader', ui-serif, Georgia, serif;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #475569;
+  opacity: 0.85;
+  position: relative;
+}
+
+/*
+  Entrance animations. Slidev keeps every slide mounted and toggles `display`,
+  so a plain CSS animation replays each time a slide is shown, with no clicks
+  involved. Everything on a slide arrives together: these are for arrival, not
+  for revealing content point by point.
+*/
+
+@keyframes marker-sweep {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 -2% 0 0);
+  }
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p,
+.slidev-layout ul,
+.slidev-layout ol,
+.slidev-layout table,
+.sketch,
+.sketch-placeholder,
+.takeaway,
+.warning,
+.aside {
+  animation: slide-enter 0.4s ease-out both;
+}
+
+/* The highlighter stroke draws itself on, just after the title has landed. */
+.marker::before {
+  /* An explicit end state: clip-path cannot interpolate to `none`. */
+  clip-path: inset(0 -2% 0 0);
+  animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.3s both;
+}
+
+@media print {
+  .slidev-layout *,
+  .marker::before {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slidev-layout *,
+  .marker::before {
+    animation: none !important;
+  }
+}
+
+/*
+  Click-triggered marker: <span class="marker" v-click>Scientists</span>
+
+  v-click would hide the whole span, word included. Here the word stays put and
+  only the highlighter stroke waits for the click, then sweeps in as usual.
+*/
+.marker.slidev-vclick-target {
+  opacity: 1 !important;
+  transition: none;
+}
+
+.marker.slidev-vclick-target::before {
+  animation: none;
+  clip-path: inset(0 -2% 0 0);
+  transition: clip-path 0.55s cubic-bezier(0.25, 0.6, 0.35, 1);
+}
+
+.marker.slidev-vclick-hidden {
+  opacity: 1 !important;
+}
+
+.marker.slidev-vclick-hidden::before {
+  clip-path: inset(0 100% 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marker.slidev-vclick-target::before {
+    transition: none;
+  }
+}
