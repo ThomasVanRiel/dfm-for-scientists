@@ -1,5 +1,7 @@
 ---
 theme: default
+addons:
+  - fancy-arrow
 title: DfM for Scientists (Work in progress – draft)
 author: Thomas Van Riel
 info: |
@@ -36,17 +38,17 @@ for <span class="marker">Scientists</span>
 
 <div class="mt-14 text-xl opacity-80 max-w-160 leading-relaxed">
 You already think in your needs and constraints,<br>
-this seminar adds ours.
+this seminar adds the workshop's.
 </div>
 
 <div class="absolute bottom-10 left-14 font-mono text-sm opacity-70">
 Thomas Van Riel, KU Leuven
 </div>
 
-<Sketch name="title" class="absolute right-10 bottom-8 w-110" />
+<!-- <Sketch name="title" class="absolute right-10 bottom-8 w-110" /> -->
 
 ---
-layout: two-cols
+layout: two-cols-header
 class: text-left
 ---
 
@@ -55,21 +57,13 @@ class: text-left
 You and the workshop want the same thing: a part that works, soon.
 You just describe it in different languages.
 
-<div class="mt-8">
+::left::
 
 - You think in **function**: stiffness, alignment, vacuum, budget
 - The workshop thinks in **process**: setups, tools, time on the machine
 - The drawing in between is where money and weeks quietly disappear
 
-</div>
-
-<div class="todo mt-8">
-Introduce yourself here: who you are, what you make, how many "simple" parts came back with questions.
-</div>
-
 ::right::
-
-<div class="mt-16 ml-6">
 
 ### What you get out of the next hour
 
@@ -77,9 +71,9 @@ Introduce yourself here: who you are, what you make, how many "simple" parts cam
 - A handful of rules that make parts cheaper without touching the function
 - The vocabulary to have a five-minute conversation with a machinist instead of a five-email thread
 
-</div>
+::bottom::
 
-<div class="takeaway mt-10 ml-6">
+<div class="takeaway">
 Nothing here asks you to compromise your experiment. It asks you to get it built sooner.
 </div>
 
@@ -88,7 +82,62 @@ Set the tone: this is not engineers lecturing scientists. Most bad-to-make parts
 
 Ask for a show of hands: who has waited more than a month for a part? Who has had a part come back with a phone call asking what a dimension meant? That's the whole seminar in two questions.
 
+Introduce yourself here: who you are, what you make, how many "simple" parts came back with questions.
+
 Keep this short, three minutes. The next slide is where they recognise themselves.
+-->
+
+---
+
+# How to read these slides
+
+Three callouts come back throughout the deck. They are also the fastest way to
+skim it afterwards.
+
+<div class="grid grid-cols-2 gap-x-10 gap-y-5 mt-8 items-center">
+
+<div class="takeaway">
+
+Time on the machine costs far more than the metal you cut away.
+
+</div>
+
+<div>
+
+**Takeaway** — the one thing worth keeping from the slide. If you remember nothing else, remember these.
+
+</div>
+
+<div class="warning">
+
+A sharp internal corner cannot be milled. Every tool is round.
+
+</div>
+
+<div>
+
+**Warning** — a trap that turns up in real drawings, and what it costs you when you walk into it.
+
+</div>
+
+<div class="tip">
+
+Ask the workshop which drill sizes they stock. It is a two-minute email.
+
+</div>
+
+<div>
+
+**Tip** — something small and practical you can use on the next part you draw.
+
+</div>
+
+</div>
+
+<!--
+Thirty seconds, no more. The point is that they can skim the PDF afterwards and still get the substance out of it.
+
+The examples are real ones from later in the deck, so this doubles as a trailer.
 -->
 
 ---

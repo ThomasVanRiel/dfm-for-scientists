@@ -27,6 +27,17 @@
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
 }
 
+/*
+  Title + subtitle across the top, two columns, full-width prose at the bottom.
+  Slidev's own `two-cols-header` layout ships without a gap between the columns
+  and puts the bottom row flush against them, so set the spacing once here
+  rather than with margin utilities on every slide that uses it.
+*/
+.slidev-layout.two-cols-header {
+  column-gap: 2.5rem;
+  row-gap: 1.5rem;
+}
+
 /* Shared callouts used across the deck. */
 
 .takeaway {
@@ -39,6 +50,13 @@
 .warning {
   border-left: 4px solid #d97706;
   background: #fffbeb;
+  padding: 0.6rem 1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.tip {
+  border-left: 4px solid #059669;
+  background: #ecfdf5;
   padding: 0.6rem 1rem;
   border-radius: 0 6px 6px 0;
 }
@@ -117,6 +135,7 @@
 .sketch-placeholder,
 .takeaway,
 .warning,
+.tip,
 .aside {
   animation: slide-enter 0.4s ease-out both;
 }

@@ -43,12 +43,20 @@ Adding a section means a new `pages/NN-name.md` starting with a `layout: section
 slide, plus a `src:` block at the bottom of `slides.md`. Slides within a file are
 separated by `---`; a trailing HTML comment on a slide is the speaker note.
 
+### Slide shapes
+
+For the common title / subtitle / two columns / full-width closing line shape,
+use Slidev's `two-cols-header` layout rather than nesting divs: the default slot
+is the full-width header, then `::left::`, `::right::`, and `::bottom::`. The
+column and row gaps are set once in `style.css`.
+
 ### Shared classes
 
 Defined in `style.css`, used across the deck:
 
 - `.takeaway` — blue callout for the one thing to remember from a slide
 - `.warning` — amber callout for a trap
+- `.tip` — green callout for something small and practical to apply
 - `.todo` — dashed placeholder for content that still needs real workshop data
 - `.marker` — hand-drawn highlighter stroke behind a word
 
