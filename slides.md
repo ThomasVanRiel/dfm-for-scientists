@@ -128,7 +128,7 @@ Most people in the room will recognise themselves in the left column. That's fin
 layout: statement
 ---
 
-# How will this actually be made?
+# How will this part be made?
 
 <div class="text-xl opacity-70 mt-6">
 Every feature costs machine time, tool changes, setups, and someone's attention.<br>
@@ -186,41 +186,22 @@ The honest version: your job is to run experiments and pump out a shitload of pa
 
 # Course outline
 
-<div class="grid grid-cols-2 gap-x-12 gap-y-2 mt-8 text-lg">
+<div class="mt-8 text-lg mx-auto" style="max-width: 34rem">
 
-<div>
+- What parts actually cost
+- Buy, assemble, or machine?
+- How a milling machine sees your part
+- Design for assembly and use
+- Communicating with the workshop
 
-1. What parts actually cost
-2. Buy, assemble, or machine?
-3. How a milling machine sees your part
-4. Holes and threads
-5. Tolerances and fits
-6. Adjustability instead of precision
-
-</div>
-
-<div>
-
-<ol start="7">
-  <li>Materials from a manufacturing perspective</li>
-  <li>Design for assembly and use</li>
-  <li>Finishing and secondary operations</li>
-  <li>Sheet metal covers for safety and demos</li>
-  <li>Communicating with the workshop</li>
-</ol>
-
-</div>
-
-</div>
-
-<div class="takeaway mt-10">
-Closing exercise: redesign a typical "scientist design" and compare the machinist's time estimates.
 </div>
 
 <!--
-Topics 1–3 change how people think. Topics 4–10 are the practical toolbox. Topic 11 is what actually changes behaviour: talking to the workshop early.
+The first three change how people think. Assembly is the practical toolbox. The last one is what actually changes behaviour: talking to the workshop early.
 
-If possible: co-teach with a machinist, and do a workshop tour after section 3 so they see clamping and tool changes in person.
+The rest of the toolbox — holes and threads, tolerances, adjustability, materials, finishing, sheet metal — is backup after the closing slide, if the questions go there.
+
+If possible: co-teach with a machinist, and do a workshop tour after the milling section so they see clamping and tool changes in person.
 -->
 
 ---
@@ -241,6 +222,7 @@ src: ./pages/01-cost-milling.md
 src: ./pages/01-cost-drivers.md
 ---
 
+
 ---
 src: ./pages/02-buy-assemble-machine.md
 ---
@@ -250,31 +232,7 @@ src: ./pages/03-milling.md
 ---
 
 ---
-src: ./pages/04-holes-threads.md
----
-
----
-src: ./pages/05-tolerances.md
----
-
----
-src: ./pages/06-adjustability.md
----
-
----
-src: ./pages/07-materials.md
----
-
----
 src: ./pages/08-assembly.md
----
-
----
-src: ./pages/09-finishing.md
----
-
----
-src: ./pages/10-sheet-metal.md
 ---
 
 ---
@@ -283,4 +241,78 @@ src: ./pages/11-communication.md
 
 ---
 src: ./pages/12-closing.md
+---
+
+<!--
+  ─────────────────────────────────────────────────────────────────────────
+  BACKUP SECTIONS
+  Everything below sits after the closing slide, so a normal run of the deck
+  never reaches it. Each one keeps a routeAlias, so it can be jumped to from
+  the index slide below, from the overview (press `o`), or by typing the URL
+  directly (e.g. /tolerances).
+
+  To put a section back in the main flow, move its `src:` block above the
+  closing slide. Nothing else needs to change.
+  ─────────────────────────────────────────────────────────────────────────
+-->
+
+---
+layout: statement
+routeAlias: backup
+---
+
+# Backup material
+
+<div class="text-left text-lg mt-10 mx-auto" style="max-width: 32rem">
+
+- <Link to="holes-threads">Holes and threads</Link>
+- <Link to="tolerances">Tolerances and fits</Link>
+- <Link to="adjustability">Adjustability instead of precision</Link>
+- <Link to="materials">Materials from a manufacturing perspective</Link>
+- <Link to="finishing">Finishing and secondary operations</Link>
+- <Link to="sheet-metal">Sheet metal covers</Link>
+- <Link to="exercise">Closing exercise: redesign a scientist design</Link>
+
+</div>
+
+<!--
+Only shown if there is time left, or if a question walks straight into one of
+these. Click a line to jump; `Link` navigates by route alias.
+
+Getting back: browser back, or press `o` and click the closing slide.
+-->
+
+---
+src: ./pages/04-holes-threads.md
+routeAlias: holes-threads
+---
+
+---
+src: ./pages/05-tolerances.md
+routeAlias: tolerances
+---
+
+---
+src: ./pages/06-adjustability.md
+routeAlias: adjustability
+---
+
+---
+src: ./pages/07-materials.md
+routeAlias: materials
+---
+
+---
+src: ./pages/09-finishing.md
+routeAlias: finishing
+---
+
+---
+src: ./pages/10-sheet-metal.md
+routeAlias: sheet-metal
+---
+
+---
+src: ./pages/12-exercise.md
+routeAlias: exercise
 ---
