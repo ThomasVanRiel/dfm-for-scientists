@@ -12,6 +12,15 @@
   font-weight: 400;
 }
 
+/*
+  The default theme sets `font-700` on statement headings, which is far too
+  heavy for Newsreader at text-6xl. Its rule is nested inside
+  `.slidev-layout.statement`, so it outranks the rule above; match specificity.
+*/
+.slidev-layout.statement h1 {
+  font-weight: 400;
+}
+
 .marker,
 .todo,
 .slidev-layout th {
