@@ -37,6 +37,42 @@ Hold up an end mill. Let them feel that it is round.
 
 ---
 
+# Tools come in sizes
+
+<div class="grid grid-cols-2 gap-10 mt-4">
+
+<div>
+
+### What the workshop has
+
+- Common diameters: **3, 4, 5, 6, 8, 10, 12, 16, 20 mm**
+- **2 mm is the smallest we use reliably**
+- Below 2 mm: tools snap, often inside your part. Recovering from that costs a setup, sometimes the part
+- Odd sizes exist, but may have to be ordered
+
+</div>
+
+<div>
+
+### What that means for your corners
+
+- Internal radius = **tool radius**, plus a little
+- **R1 is the floor**, and only where the function needs it
+- **R3 or more** lets a 6 mm tool in: stiffer, faster, cheaper
+- A radius below R1 is not "slightly tighter". It is a different class of tooling
+
+</div>
+
+</div>
+
+<div class="takeaway mt-6">
+Rounding up every internal corner you don't actually need is the cheapest change you can make to a drawing.
+</div>
+
+<div class="todo mt-4">Confirm the stocked diameters and the 2 mm floor with our machinist.</div>
+
+---
+
 # Tools are short
 
 <div class="grid grid-cols-2 gap-10 mt-4 items-center">
@@ -49,7 +85,7 @@ Hold up an end mill. Let them feel that it is round.
 
 <div>
 
-- Rule of thumb: pocket depth **≤ 3–4 × tool diameter**
+- A standard end mill only has flutes over about **2–3 × its diameter**. Deeper than that is a *different tool*, not a deeper cut
 - Longer tools **deflect** (stiffness drops with length³) and **chatter**
 - They need slow feeds and light cuts, so they take a long time
 - A 6 mm slot, 40 mm deep: expensive or impossible
@@ -62,6 +98,45 @@ Hold up an end mill. Let them feel that it is round.
 <div class="takeaway mt-6">
 Make pockets wider or shallower, or open them to one side. Or build the part from plates.
 </div>
+
+---
+
+# How deep, for a given diameter
+
+Cutting depth divided by tool diameter, **L/D**, decides which tool comes out of the drawer.
+
+| L/D | Tool needed | What it costs you |
+|---|---|---|
+| **≤ 3 × D** | Standard end mill | Normal feeds. No problem |
+| **3–5 × D** | Long series | Reduced feeds, noticeably slower |
+| **5–8 × D** | Extra-long or necked | Light passes only, much slower, chatter marks |
+| **> 8 × D** | Special tooling | Consider wire EDM, or redesign the part |
+
+<div class="grid grid-cols-2 gap-10 mt-6">
+
+<div>
+
+### Work it out before you draw
+
+A **2 mm** corner radius means a 2 mm tool, which means roughly **6 mm** of depth before it gets slow.
+
+</div>
+
+<div>
+
+<div class="warning">
+The exercise part's groove is <strong>5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
+</div>
+
+</div>
+
+</div>
+
+<div class="todo mt-4">Confirm these L/D bands with our machinist.</div>
+
+<!--
+This is the slide that pays for the whole section. Two numbers off a drawing, divided, and you know whether the workshop will sigh.
+-->
 
 ---
 
@@ -184,8 +259,8 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 
 # Section 3: take-aways
 
-- Tools are **round**: internal corners need radii
-- Tools are **short**: depth ≤ 3–4 × tool diameter
+- Tools are **round**: internal corners need radii, and **2 mm** is the smallest tool
+- Tools are **short**: flutes run about 2–3 × D, and depth over **3 × D** starts costing money
 - Thin walls **vibrate and deflect**
 - Every face with features is **another setup**
 - The part has to be **clamped** somewhere
