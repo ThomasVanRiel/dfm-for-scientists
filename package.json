@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-addon-fancy-arrow": "^0.20.1"
   }
 }
