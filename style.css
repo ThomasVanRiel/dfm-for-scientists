@@ -1,3 +1,5 @@
+@import './fonts/fonts.css';
+
 /*
   Typography: Newsreader for titles, IBM Plex Sans for prose (the Slidev default font),
   IBM Plex Mono for highlights and labels. Fonts are configured in the slides.md headmatter.

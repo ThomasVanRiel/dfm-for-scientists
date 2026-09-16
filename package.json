@@ -7,7 +7,8 @@
     "dev": "slidev --open",
     "dev:lan": "slidev --remote",
     "dev:tunnel": "slidev --remote --tunnel",
-    "export": "slidev export"
+    "export": "slidev export",
+    "fonts": "node scripts/fetch-fonts.mjs"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
