@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 3. How a milling machine sees your part
+# How a milling machine sees your part
 
 The heart of the course
 
@@ -149,7 +149,7 @@ This is the slide that pays for the whole section. Two numbers off a drawing, di
 - Cutting forces push thin walls away, so they end up **thicker at the top**
 - The wall **rings** like a tuning fork and leaves a poor surface
 - **Clamping** forces bend them. They spring back when released
-- Removing material on one side releases **stress** (section 7)
+- Removing material on one side releases **stress** (see *Materials*)
 
 </div>
 
@@ -257,7 +257,7 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 
 ---
 
-# Section 3: take-aways
+# Take-aways
 
 - Tools are **round**: internal corners need radii, and **2 mm** is the smallest tool
 - Tools are **short**: flutes run about 2–3 × D, and depth over **3 × D** starts costing money
@@ -265,4 +265,3 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 - Every face with features is **another setup**
 - The part has to be **clamped** somewhere
 - If it looks trivial in CAD, **ask** anyway
-

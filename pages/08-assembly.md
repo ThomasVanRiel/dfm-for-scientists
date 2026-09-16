@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 8. Design for assembly and use
+# Design for assembly and use
 
 Someone has to put it together, and change it next month
 
@@ -90,7 +90,7 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 ### Alignment features
 
-- **Dowel pins** for position (section 6)
+- **Dowel pins** for position (see *Adjustability*)
 - **Spigots and recesses** for centering round parts
 - **Shoulders** to push a part against
 - **Chamfers** as a lead-in for pins and shafts
@@ -160,7 +160,7 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 ---
 
-# Section 8: take-aways
+# Take-aways
 
 - Balance **part count** against **part complexity**
 - Check **tool and hand access** and the **assembly order**

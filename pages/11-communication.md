@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 11. Communicating with the workshop
+# Communicating with the workshop
 
 Talk to the machinist before the design is finished
 
@@ -166,7 +166,7 @@ flowchart LR
 
 ---
 
-# Section 11: take-aways
+# Take-aways
 
 - A STEP file is **geometry**, not a specification
 - A drawing needs **material, tolerances, finish, quantity**, and marked critical features

@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 6. Adjustability instead of precision
+# Adjustability instead of precision
 
 Design for alignment, not for perfection
 
@@ -50,7 +50,7 @@ In a test setup you usually align to the physics, not to the drawing. Adjustment
 | **Shims** | 0.01–1 mm steps | Cheap, stable, repeatable. Standard shim stock |
 | **Set screws / push-pull screws** | 0.1–1 mm | Fine adjustment, lock with a counter screw |
 | **Eccentric pins or bushings** | < 1 mm | Compact, rotational adjustment |
-| **Fine-pitch adjusters, micrometers** | µm–mm | Buy them (section 2) |
+| **Fine-pitch adjusters, micrometers** | µm–mm | Buy them (see *Buy, assemble, or machine*) |
 | **Flexures** | µm–0.1 mm | No friction, no backlash |
 
 <div class="warning mt-6">
@@ -189,7 +189,7 @@ Motion by **bending** material instead of sliding or rolling.
 
 ---
 
-# Section 6: take-aways
+# Take-aways
 
 - **Adjustment** is often cheaper and better than precision
 - Always add a way to **lock** the adjustment
@@ -197,4 +197,3 @@ Motion by **bending** material instead of sliding or rolling.
 - **Kinematic mounts** give µm repeatability
 - **Dowels** locate: one round hole, one slot
 - **Flexures**: fine motion without friction or backlash
-

@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 1. What parts actually cost
+# What parts <span class="marker">actually</span> cost
 
 Material, tools, and time are not free
 
@@ -19,8 +19,8 @@ Material, tools, and time are not free
 | **Inspection** | Measuring what you asked for | Number of tight tolerances |
 | **Finishing** | Deburring, anodizing, coating, cleaning | Surface area, masking, special requirements |
 
-<div class="takeaway mt-6">
-For one-off lab parts, programming and setup are usually <strong>most</strong> of the cost. The machine hours come second, the material a distant third.
+<div class="takeaway mt-6" v-click>
+For one-off lab parts, programming and setup are usually <strong>most</strong> of the cost.<br/> Machine hours come second, material a distant third.
 </div>
 
 <!--

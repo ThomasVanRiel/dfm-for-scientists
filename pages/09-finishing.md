@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 9. Finishing and secondary operations
+# Finishing and secondary operations
 
 The part isn't done when it leaves the mill
 
@@ -140,7 +140,7 @@ Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 
 ---
 
-# Section 9: take-aways
+# Take-aways
 
 - Coatings add **thickness**: mask or compensate fits and threads
 - Specify **edge breaks**

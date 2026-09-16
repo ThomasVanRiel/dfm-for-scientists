@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 4. Holes and threads
+# Holes and threads
 
 Small topic, endless trouble
 
@@ -174,7 +174,7 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 <div>
 
 - Use the **clearance** size, not the thread size: an M6 screw doesn't go into a Ø6 hole
-- Clearance holes give **play**: they don't locate parts (use dowels, section 6)
+- Clearance holes give **play**: they don't locate parts (use dowels, see *Adjustability*)
 - **Counterbores** let screw heads sit flush
 - Use the CAD **hole wizard**, so the workshop can read the intent
 
@@ -249,7 +249,7 @@ Every different screw size means:
 
 ---
 
-# Section 4: take-aways
+# Take-aways
 
 - Use **standard** drill sizes. Ream only where it matters
 - **Blind holes** need extra drill depth for the cone and tap
@@ -259,4 +259,3 @@ Every different screw size means:
 - **Clearance holes** don't locate parts
 - Use **inserts** in soft materials
 - Use **few** screw sizes
-

@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 10. Sheet metal covers
+# Sheet metal covers
 
 Safety guards and demo enclosures
 
@@ -214,7 +214,7 @@ A clean cover turns a lab setup into a demo, for about the price of an afternoon
 
 ---
 
-# Section 10: take-aways
+# Take-aways
 
 - Covers are **large, thin, and imprecise**: make them from **sheet metal**, not milled plates
 - Put every hole in the **flat pattern**

@@ -69,7 +69,7 @@ That 90 % costs:
 - **Tool wear**: roughing tools wear out
 - **Attention**: someone loads, watches, clears chips
 - **Waste**: chips are recycled at a fraction of the price you paid
-- **Distortion**: removing lots of material releases internal stress (see section 7)
+- **Distortion**: removing lots of material releases internal stress (see *Materials*)
 
 </div>
 

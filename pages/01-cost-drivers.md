@@ -32,7 +32,7 @@ A part with features on 5 faces needs *at least* 5 setups.
 
 ---
 
-# Section 1: take-aways
+# Take-aways
 
 - A quote is mostly **time**: programming, setups, cutting, measuring
 - **Setups** and **tolerances** often cost more than the material

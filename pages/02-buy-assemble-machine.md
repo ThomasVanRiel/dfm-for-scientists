@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 2. Buy, assemble, or machine?
+# Buy, assemble, or machine?
 
 The cheapest part is the one you don't have to make
 
@@ -37,7 +37,7 @@ Your own design time counts too. A €150 catalog stage is cheap compared to a w
 
 - Optical posts, mounts, breadboards
 - Linear and rotation stages, micrometer heads
-- Kinematic mounts (see section 6)
+- Kinematic mounts (see *Adjustability*)
 
 ### Structure
 
@@ -131,7 +131,7 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 - Joints need **alignment**: a fit, dowel pins, or screws
 - Stiffness depends on the joints
 - More parts to assemble and keep track of
-- Tolerances add up across the joint (see section 5)
+- Tolerances add up across the joint (see *Tolerances and fits*)
 - A press fit holds by **friction**: there is a torque and axial load limit
 
 </div>
@@ -154,7 +154,7 @@ class: text-sm
 | **CNC turning** | Round parts: shafts, spacers, flanges. Fast and accurate | Anything that isn't rotationally symmetric |
 | **Laser cutting** | Fast 2D profiles in sheet and thin plate | Thick plate, heat-affected edges, no pockets or threads |
 | **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges; lower accuracy |
-| **Sheet metal bending** | Enclosures, brackets, covers (section 10). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
+| **Sheet metal bending** | Enclosures, brackets, covers (see *Sheet metal*). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
 | **Welding** | Large frames, joining thick sections | Distortion; precise faces need machining afterward |
 | **3D printing** | Complex shapes, jigs, quick iterations | Anisotropic strength, creep, accuracy, outgassing |
 
@@ -168,10 +168,9 @@ Don't go deep here. The goal is that they know these processes exist and roughly
 
 ---
 
-# Section 2: take-aways
+# Take-aways
 
 - **Buy** before you design: catalog and configurable parts are fast and cheap
 - Design around **standard stock sizes**
 - Build **assemblies of simple pieces** instead of carving one monolith
 - Pick the **process** that suits the shape, not the other way around
-

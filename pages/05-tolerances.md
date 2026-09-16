@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 5. Tolerances and fits
+# Tolerances and fits
 
 Tolerance only what matters
 
@@ -170,7 +170,7 @@ The shaft is always bigger than the hole. The flange is pushed on with an arbor 
 
 ### What this buys, and what it costs
 
-- **Two easy parts** instead of one expensive one (section 1)
+- **Two easy parts** instead of one expensive one (see *What parts actually cost*)
 - Only **one diameter on each part** is tightly toleranced
 - The other 175 mm of shaft can be ordinary turned stock
 - A damaged flange can be **pressed off and replaced**; a shoulder turned from solid cannot
@@ -235,7 +235,7 @@ Only specify Ra where it matters: sealing faces, sliding surfaces, optical mount
 - Clearance holes
 - Pockets for weight reduction or clearance
 - Chamfers and edge breaks
-- Anything that can be **adjusted** (section 6)
+- Anything that can be **adjusted** (see *Adjustability*)
 
 </div>
 
@@ -290,7 +290,7 @@ Four spacers, each **10 ± 0.1 mm**, go into a housing slot of **40.5 ± 0.1 mm*
 
 - Tolerances **add up** along a chain
 - Fewer parts in the chain = less stack-up
-- Or design in **adjustment** (section 6)
+- Or design in **adjustment** (see *Adjustability*)
 
 </div>
 
@@ -336,7 +336,7 @@ Keep this light. The goal is not to make them GD&T experts, but to understand th
 
 ---
 
-# Section 5: take-aways
+# Take-aways
 
 - Cost rises **steeply** with tighter tolerances
 - Use **ISO 2768-m** as the default; tighten only **functional** features
@@ -344,4 +344,3 @@ Keep this light. The goal is not to make them GD&T experts, but to understand th
 - Specify **Ra** only where it matters
 - Tolerances **stack up**; fewer parts in the chain helps
 - Dimension from **datums**
-

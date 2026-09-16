@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# 7. Materials from a manufacturing perspective
+# Materials from a manufacturing perspective
 
 Machinability, stability, and the lab environment
 
@@ -53,7 +53,7 @@ class: text-sm
 - Use **stress-relieved** or **cast tooling plate**
 - Remove material **symmetrically**
 - **Rough**, unclamp, let it rest, then **finish**
-- Avoid removing 90 % of a block (section 1)
+- Avoid removing 90 % of a block (see *What parts actually cost*)
 - Leave **stiffness** in the part: ribs, flanges
 
 </div>
@@ -146,7 +146,7 @@ class: text-sm
 
 ---
 
-# Section 7: take-aways
+# Take-aways
 
 - **Aluminum** is the default: cheap and fast to machine
 - **Stainless** and **titanium** cost much more machine time
