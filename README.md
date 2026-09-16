@@ -4,8 +4,7 @@ A [Slidev](https://sli.dev) deck: a crash course for scientists who design their
 test setups — what parts really cost, how a workshop makes them, and how to design
 parts that are cheap, fast, and easy to build.
 
-Thomas Van Riel, KU Leuven. **Work in progress**: the content is a draft, and every
-slide carries a banner saying so (`global-top.vue` — delete that file when it's final).
+Thomas Van Riel, KU Leuven.
 
 ## Running it
 
@@ -37,7 +36,6 @@ components/*.vue   Diagram components used by the slides (<BlindHole />, <Sketch
 sketches/          Hand-drawn SVGs shown by <Sketch name="..." /> — see sketches/README.md
 fonts/             Committed webfonts — see fonts/README.md
 style.css          Typography and the shared callout classes
-global-top.vue     Work-in-progress banner on every slide
 slide-top.vue      Slide number in the corner of every slide except the cover
 ```
 
