@@ -14,19 +14,19 @@ layout: section
 
 ### A typical scientist design
 
-- A **monolithic** 120 × 80 × 60 mm aluminum block
-- **Sharp** internal corners everywhere
-- A 5 mm wide pocket, **40 mm deep**
-- Features on **five faces**
+- A flanged shaft turned from **one piece** of Ø100 × 192 mm steel bar
+- **Sharp** internal corners at every shoulder
+- A 5 mm wide groove, **40 mm deep**
+- A bolt circle, a keyway, and a flat: **four setups**
 - **±0.01 mm** on every dimension
-- M2.5, M3, M4, and M5 threads
+- M2.5, M3, M4, and M5 threads in the flange face
 - Sent as a STEP file only
 
 <div class="todo mt-4">Replace with a real (anonymised) design from our lab, with the drawing handed out on paper.</div>
 
 </div>
 
-<Sketch name="scientist-design" class="h-96" hint="The monolithic block: sharp internal corners, the deep 5 mm pocket, features on five faces" />
+<Sketch name="scientist-design" class="h-96" hint="The flanged shaft turned from solid: sharp shoulders, the deep narrow groove, keyway and flat and bolt circle on four setups" />
 
 </div>
 

@@ -21,6 +21,7 @@ fonts:
 # is a jsDelivr URL. A drilled-hole centre mark.
 favicon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e293b'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23fcd34d' stroke-width='2.5'/%3E%3Cpath d='M16 5v22M5 16h22' stroke='%23fcd34d' stroke-width='1.2'/%3E%3C/svg%3E"
 mdc: true
+transition: slide-left | slide-right
 layout: cover
 class: text-left
 drawings:
@@ -96,7 +97,7 @@ layout: two-cols
 
 # How we usually design
 
-1. Draw a solid block that fits the bounding box
+1. Draw a solid that fits the bounding box
 2. Remove everything you don't need
 3. Add ±0.01 mm to be safe
 4. Send a STEP file to the workshop
@@ -108,7 +109,7 @@ layout: two-cols
 
 ### What the workshop sees
 
-- 90 % of the block turned into chips
+- 90 % of the stock turned into chips
 - 4–5 setups, each re-clamped and re-zeroed
 - 8 different tools, some too long to be stiff
 - Sharp internal corners no tool can make
@@ -118,6 +119,8 @@ layout: two-cols
 </div>
 
 <!--
+I know this list because I wrote it from memory, not from research.
+
 Most people in the room will recognise themselves in the left column. That's fine: this isn't a lack of intelligence, it's how CAD teaches you to think. Subtractive modeling in CAD is free. Subtractive machining is not.
 -->
 
@@ -176,7 +179,7 @@ Set expectations early. Nobody here needs to become a mechanical engineer; we as
 
 If people want to learn real mechanical design: point them to the proper courses / the engineers in the department.
 
-The honest version: your job is to run experiments and pump out a shitload of papers, not to spend weeks on a bracket.
+The honest version: your job is to run experiments and pump out a shitload of papers, not to spend weeks on a shaft.
 -->
 
 ---
@@ -222,6 +225,20 @@ If possible: co-teach with a machinist, and do a workshop tour after section 3 s
 
 ---
 src: ./pages/01-cost.md
+---
+
+<!--
+  Section 1's worked example comes in two flavours. Include exactly one:
+  01-cost-milling.md for an audience that mills, 01-cost-turning.md for one
+  that turns. Everything else in section 1 is shared.
+-->
+
+---
+src: ./pages/01-cost-milling.md
+---
+
+---
+src: ./pages/01-cost-drivers.md
 ---
 
 ---

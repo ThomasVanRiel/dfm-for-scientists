@@ -150,6 +150,51 @@ The letter sets the <strong>position</strong>, the number sets the <strong>width
 
 ---
 
+# The fit that holds our flange on
+
+<div class="grid grid-cols-2 gap-10 mt-4">
+
+<div>
+
+### Ø25 H7/p6
+
+- Hole in the flange, H7: **25.000 to 25.021**
+- Shaft, p6: **25.022 to 25.035**
+- Interference: **0.001 to 0.035 mm**
+
+The shaft is always bigger than the hole. The flange is pushed on with an arbor press and held by friction alone: no key, no screw, no glue.
+
+</div>
+
+<div>
+
+### What this buys, and what it costs
+
+- **Two easy parts** instead of one expensive one (section 1)
+- Only **one diameter on each part** is tightly toleranced
+- The other 175 mm of shaft can be ordinary turned stock
+- A damaged flange can be **pressed off and replaced**; a shoulder turned from solid cannot
+
+<div class="warning mt-4">
+The joint holds by <strong>friction</strong>. It has a torque and axial load limit the solid part doesn't, and pressing adds a little <strong>runout</strong>. If the load is high, add a key or a shoulder.
+</div>
+
+</div>
+
+</div>
+
+<div class="aside mt-6">
+Thirty-five microns of interference is the difference between a part and a pile of parts.
+</div>
+
+<!--
+Worth saying out loud: the press fit is the entire reason the cheap version is cheap. It replaces a feature that would otherwise have to be carved out of solid bar with a tolerance on two diameters.
+
+If there's an arbor press in the workshop, press one on during the tour.
+-->
+
+---
+
 # Surface finish: Ra
 
 | Process | Typical Ra (µm) | Use |

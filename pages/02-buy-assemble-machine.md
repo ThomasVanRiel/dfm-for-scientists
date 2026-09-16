@@ -102,25 +102,25 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 
 ---
 
-# One block or three plates?
+# One turned part, or two pressed together?
 
-<Sketch name="monolith-vs-plates" class="h-96" hint="The same bracket twice: milled from one solid block, and bolted together from three plates" />
+<Sketch name="solid-vs-pressed" class="h-96" hint="The same flanged shaft twice: turned from one piece of Ø100 bar, and a Ø25 shaft with a separate flange pressed onto it" />
 
 ---
 
-# Plates instead of a monolithic block
+# Assemble instead of carving one monolith
 
 <div class="grid grid-cols-2 gap-10 mt-4">
 
 <div>
 
-### Why plates win
+### Why an assembly wins
 
-- Each plate is mostly **one setup**
-- 2D profiles can be **laser or waterjet cut**
-- Start from standard thicknesses
-- Change one plate, not the whole part
+- Each piece is mostly **one setup**, from **stock that is already the right size**
+- The shaft is bar you barely touch; the flange is a short slice
+- Change one piece, not the whole part
 - Deep "pockets" become open space between plates
+- 2D profiles can be **laser or waterjet cut**
 
 </div>
 
@@ -128,17 +128,18 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 
 ### What to watch
 
-- Joints need screws and **alignment** (dowel pins)
+- Joints need **alignment**: a fit, dowel pins, or screws
 - Stiffness depends on the joints
 - More parts to assemble and keep track of
-- Tolerances add up across plates (see section 5)
+- Tolerances add up across the joint (see section 5)
+- A press fit holds by **friction**: there is a torque and axial load limit
 
 </div>
 
 </div>
 
 <div class="takeaway mt-8">
-An L-bracket from two plates and four screws is often faster than one milled L, and easier to modify.
+A Ø25 shaft with a flange pressed on beats the same shape turned from Ø100 bar. An L-bracket from two plates and four screws beats one milled L. Same rule, round or square.
 </div>
 
 ---
@@ -171,6 +172,6 @@ Don't go deep here. The goal is that they know these processes exist and roughly
 
 - **Buy** before you design: catalog and configurable parts are fast and cheap
 - Design around **standard stock sizes**
-- Build assemblies from **simple plates** instead of carving one monolith
+- Build **assemblies of simple pieces** instead of carving one monolith
 - Pick the **process** that suits the shape, not the other way around
 
