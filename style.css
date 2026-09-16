@@ -27,13 +27,17 @@
 }
 
 /*
-  Title + subtitle across the top, two columns, full-width prose at the bottom.
-  Slidev's own `two-cols-header` layout ships without a gap between the columns
-  and puts the bottom row flush against them, so set the spacing once here
-  rather than with margin utilities on every slide that uses it.
+  Slidev's two-column layouts ship with no gap at all, so set it once here
+  rather than with margin utilities on every slide that uses one. `two-cols`
+  covers plain left/right; `two-cols-header` adds a full-width header and a
+  full-width bottom row.
+
+  Note the class names do not match the layout names: `layout: two-cols`
+  renders a root class of `two-columns`, while `two-cols-header` matches.
 */
-.slidev-layout.two-cols-header {
-  column-gap: 2.5rem;
+.slidev-layout.two-cols-header,
+.slidev-layout.two-columns {
+  column-gap: 1.5rem;
   row-gap: 1.5rem;
 }
 
@@ -126,32 +130,16 @@
   font-family: 'Newsreader', ui-serif, Georgia, serif;
   font-style: italic;
   font-size: 0.95em;
-  /*
-    The quiet grey is baked into the colour rather than set with `opacity`: the
-    entrance animation below ends at `opacity: 1` and holds it, which would
-    override anything set here.
-  */
   color: #5f6b7a;
   position: relative;
 }
 
 /*
-  Entrance animations. Slidev keeps every slide mounted and toggles `display`,
-  so a plain CSS animation replays each time a slide is shown, with no clicks
-  involved. Everything on a slide arrives together: these are for arrival, not
-  for revealing content point by point.
+  The one animation in the deck. Slidev keeps every slide mounted and toggles
+  `display`, so a plain CSS animation replays each time a slide is shown, with
+  no clicks involved: the stroke draws itself on every time you come back to
+  the slide. Everything else arrives with the slide, unanimated.
 */
-
-@keyframes slide-enter {
-  from {
-    opacity: 0;
-    transform: translateY(0.6rem);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 
 @keyframes marker-sweep {
   from {
@@ -162,31 +150,14 @@
   }
 }
 
-.slidev-layout h1,
-.slidev-layout h2,
-.slidev-layout h3,
-.slidev-layout p,
-.slidev-layout ul,
-.slidev-layout ol,
-.slidev-layout table,
-.sketch,
-.sketch-placeholder,
-.takeaway,
-.warning,
-.tip,
-.aside {
-  animation: slide-enter 0.4s ease-out both;
-}
-
 /*
-  The highlighter stroke draws itself on, just after the title has landed: the
-  delay here has to clear the entrance animation above, or the stroke sweeps
-  across a word that is still moving.
+  A short delay before the sweep, so the audience reads the title first and the
+  stroke lands on a word they have already taken in.
 */
 .marker::before {
   /* An explicit end state: clip-path cannot interpolate to `none`. */
   clip-path: inset(0 -2% 0 0);
-  animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.9s both;
+  animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.7s both;
 }
 
 @media print {
@@ -218,7 +189,7 @@
 }
 
 /*
-  Click-triggered marker: <span class="marker" v-click>Scientists</span>
+  Click-triggered marker: [Scientists]{.marker v-click}
 
   v-click would hide the whole span, word included. Here the word stays put and
   only the highlighter stroke waits for the click, then sweeps in as usual.
