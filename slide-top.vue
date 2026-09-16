@@ -1,4 +1,4 @@
-<!-- Slide number / total in the bottom-right corner of every slide except the cover, at a fixed width so it doesn't shift. -->
+<!-- Slide number in the bottom-right corner of every slide except the cover, at a fixed width so it doesn't shift. -->
 <script setup>
 import { unref } from 'vue'
 import { useNav, useSlideContext } from '@slidev/client'
@@ -8,7 +8,7 @@ const { total } = useNav()
 </script>
 
 <template>
-  <div v-if="unref($frontmatter)?.layout !== 'cover'" class="slide-number">{{ unref($page) }}/{{ total }}</div>
+  <div v-if="unref($frontmatter)?.layout !== 'cover'" class="slide-number">{{ unref($page) }}</div>
 </template>
 
 <style scoped>
