@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: materials
 ---
 
 # Materials from a [manufacturing]{.marker} perspective

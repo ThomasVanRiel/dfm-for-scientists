@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: sheet-metal
 ---
 
 # [Sheet metal]{.marker} covers

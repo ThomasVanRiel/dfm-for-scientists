@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: tolerances
 ---
 
 # Tolerances and fits

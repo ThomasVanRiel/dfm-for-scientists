@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: holes-threads
 ---
 
 # Holes and threads

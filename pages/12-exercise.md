@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: exercise
 ---
 
 # Exercise: redesign a scientist design

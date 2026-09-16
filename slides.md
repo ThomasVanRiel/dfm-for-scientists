@@ -335,35 +335,28 @@ Getting back: browser back, or press `o` and click the closing slide.
 
 ---
 src: ./pages/04-holes-threads.md
-routeAlias: holes-threads
 ---
 
 ---
 src: ./pages/05-tolerances.md
-routeAlias: tolerances
 ---
 
 ---
 src: ./pages/06-adjustability.md
-routeAlias: adjustability
 ---
 
 ---
 src: ./pages/07-materials.md
-routeAlias: materials
 ---
 
 ---
 src: ./pages/09-finishing.md
-routeAlias: finishing
 ---
 
 ---
 src: ./pages/10-sheet-metal.md
-routeAlias: sheet-metal
 ---
 
 ---
 src: ./pages/12-exercise.md
-routeAlias: exercise
 ---

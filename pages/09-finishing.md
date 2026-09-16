@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: finishing
 ---
 
 # Finishing and secondary operations

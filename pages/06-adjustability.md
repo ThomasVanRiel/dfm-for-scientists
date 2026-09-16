@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: adjustability
 ---
 
 # Adjustability [instead of]{.marker} precision
