@@ -42,7 +42,53 @@ this seminar adds ours.
 Thomas Van Riel, KU Leuven
 </div>
 
-<TitleDrawing class="absolute right-10 bottom-8 w-110" />
+<Sketch name="title" class="absolute right-10 bottom-8 w-110" />
+
+---
+layout: two-cols
+class: text-left
+---
+
+# Why this seminar exists
+
+You and the workshop want the same thing: a part that works, soon.
+You just describe it in different languages.
+
+<div class="mt-8">
+
+- You think in **function**: stiffness, alignment, vacuum, budget
+- The workshop thinks in **process**: setups, tools, time on the machine
+- The drawing in between is where money and weeks quietly disappear
+
+</div>
+
+<div class="todo mt-8">
+Introduce yourself here: who you are, what you make, how many "simple" parts came back with questions.
+</div>
+
+::right::
+
+<div class="mt-16 ml-6">
+
+### What you get out of the next hour
+
+- A feel for **what a part actually costs**, and which of your choices drive it
+- A handful of rules that make parts cheaper without touching the function
+- The vocabulary to have a five-minute conversation with a machinist instead of a five-email thread
+
+</div>
+
+<div class="takeaway mt-10 ml-6">
+Nothing here asks you to compromise your experiment. It asks you to get it built sooner.
+</div>
+
+<!--
+Set the tone: this is not engineers lecturing scientists. Most bad-to-make parts come from people who were being careful, not careless.
+
+Ask for a show of hands: who has waited more than a month for a part? Who has had a part come back with a phone call asking what a dimension meant? That's the whole seminar in two questions.
+
+Keep this short, three minutes. The next slide is where they recognise themselves.
+-->
 
 ---
 layout: two-cols
