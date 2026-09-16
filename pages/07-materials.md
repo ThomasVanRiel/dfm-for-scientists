@@ -12,21 +12,24 @@ class: text-sm
 
 # Machinability and cost
 
-| Material | Machinability | Notes |
-|---|---|---|
-| **Aluminum 6061 / 6082** | Excellent | Default choice. Cheap, fast to machine, light |
-| **Aluminum 7075** | Excellent | Stronger, more expensive |
-| **Cast aluminum tooling plate** | Excellent | Stress-free and precision flat. Great for base plates |
-| **Free-cutting brass** | Excellent | Easy, but contains zinc and lead (not for vacuum bake-out) |
-| **Structural / free-cutting steel** | Good | Cheap, stiff, rusts |
-| **Stainless 303** | Fair | The machinable stainless |
-| **Stainless 304 / 316L** | Poor | Gummy, work-hardens, wears tools. Slower and more expensive |
-| **Titanium** | Poor | Slow, expensive tools, only when you really need it |
-| **POM (Delrin)** | Excellent | Stable, low friction. The default plastic |
-| **PEEK** | Good | Expensive. Vacuum and chemically resistant |
-| **PTFE (Teflon)** | Fair | Creeps and deforms, hard to hold tolerances |
+| Material | Machinability | Cost | Notes |
+|---|:---:|:---:|---|
+| **Aluminum 6061 / 6082** | <Rating :value="4" tone="blue" label="Excellent" /> | <Rating :value="1" tone="amber" label="Low" /> | Default choice. Cheap, fast to machine, light |
+| **Aluminum 7075** | <Rating :value="4" tone="blue" label="Excellent" /> | <Rating :value="2" tone="amber" label="Moderate" /> | Stronger, more expensive |
+| **Cast aluminum tooling plate** | <Rating :value="4" tone="blue" label="Excellent" /> | <Rating :value="2" tone="amber" label="Moderate" /> | Stress-free and precision flat. Great for base plates |
+| **Free-cutting brass** | <Rating :value="4" tone="blue" label="Excellent" /> | <Rating :value="3" tone="amber" label="High" /> | Easy, but contains zinc and lead (not for vacuum bake-out) |
+| **Structural / free-cutting steel** | <Rating :value="3" tone="blue" label="Good" /> | <Rating :value="1" tone="amber" label="Low" /> | Cheap, stiff, rusts |
+| **Stainless 303** | <Rating :value="2" tone="blue" label="Fair" /> | <Rating :value="2" tone="amber" label="Moderate" /> | The machinable stainless |
+| **Stainless 304 / 316L** | <Rating :value="1" tone="blue" label="Poor" /> | <Rating :value="3" tone="amber" label="High" /> | Gummy, work-hardens, wears tools. Slower and more expensive |
+| **Titanium** | <Rating :value="1" tone="blue" label="Poor" /> | <Rating :value="4" tone="amber" label="Very high" /> | Slow, expensive tools, only when you really need it |
+| **POM (Delrin)** | <Rating :value="4" tone="blue" label="Excellent" /> | <Rating :value="1" tone="amber" label="Low" /> | Stable, low friction. The default plastic |
+| **PEEK** | <Rating :value="3" tone="blue" label="Good" /> | <Rating :value="4" tone="amber" label="Very high" /> | Expensive. Vacuum and chemically resistant |
+| **PTFE (Teflon)** | <Rating :value="2" tone="blue" label="Fair" /> | <Rating :value="2" tone="amber" label="Moderate" /> | Creeps and deforms, hard to hold tolerances |
 
-<div class="todo mt-2">Add relative prices from our supplier.</div>
+<div class="text-xs opacity-70 mt-2">
+<Rating :value="3" tone="blue" /> more circles = easier to machine &nbsp;·&nbsp;
+<Rating :value="3" tone="amber" /> more circles = more expensive
+</div>
 
 ---
 
