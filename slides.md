@@ -143,10 +143,14 @@ The examples are real ones from later in the deck, so this doubles as a trailer.
 -->
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
 
 # How we usually design
+
+::left::
+
+### What you do
 
 1. Draw a solid that fits the bounding box
 2. Remove everything you don't need
@@ -155,8 +159,6 @@ layout: two-cols
 5. Wait. Wonder why it takes so long
 
 ::right::
-
-<div class="mt-16 ml-6">
 
 ### What the workshop sees
 
@@ -167,7 +169,6 @@ layout: two-cols
 - Tolerances nobody can measure without a CMM
 - No drawing, so the machinist has to phone you anyway
 
-</div>
 
 <!--
 I know this list because I wrote it from memory, not from research.
@@ -181,22 +182,24 @@ layout: statement
 
 # How will this part be made?
 
-<div class="text-xl opacity-70 mt-6">
 Every feature costs machine time, tool changes, setups, and someone's attention.<br>
-Ask it <strong>before</strong> you draw anything.
-</div>
+Ask it [before]{.marker} you draw anything.
 
 <!--
 This is the one sentence they should remember. Come back to it at the end of every section.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # What this seminar is, and isn't
 
-<div class="grid grid-cols-2 gap-10 mt-6">
+We change how a part gets made, not what it does
 
-<div>
+::left::
+
+<v-click>
 
 ### It is
 
@@ -205,9 +208,11 @@ This is the one sentence they should remember. Come back to it at the end of eve
 - Without giving up the function you designed for
 - Knowing what to ask the workshop, and when
 
-</div>
+</v-click>
 
-<div>
+::right::
+
+<v-click>
 
 ### It isn't
 
@@ -215,14 +220,13 @@ This is the one sentence they should remember. Come back to it at the end of eve
 - How to size a shaft, pick a bearing, or design a stiff frame
 - How to make a design elegant
 
-There is a time and place for that, and better channels to learn it.
+</v-click>
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
-Your time is best spent designing experiments, interpreting results, and publishing papers. This seminar is about getting parts off your desk quickly.
+<div class="takeaway mt-8" v-click>
+Your time is best spent designing experiments, interpreting results, and publishing papers.<br/>
+This seminar is about getting parts off your desk and in your lab quickly.
 </div>
 
 <!--
@@ -237,7 +241,7 @@ The honest version: your job is to run experiments and pump out a shitload of pa
 
 # Course outline
 
-<div class="mt-8 text-lg mx-auto" style="max-width: 34rem">
+<div class="mt-8 text-lg mx-auto" >
 
 - What parts actually cost
 - Buy, assemble, or machine?
