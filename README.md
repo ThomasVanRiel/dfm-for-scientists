@@ -58,7 +58,8 @@ Defined in `style.css`, used across the deck:
 - `.warning` — amber callout for a trap
 - `.tip` — green callout for something small and practical to apply
 - `.todo` — dashed placeholder for content that still needs real workshop data
-- `.marker` — hand-drawn highlighter stroke behind a word
+- `.marker` — hand-drawn highlighter stroke behind a word. Write it as an MDC
+  span, `[function]{.marker}`; it falls back to bold when printed or exported
 
 `grep -rn 'class="todo"' slides.md pages` lists what's still missing.
 

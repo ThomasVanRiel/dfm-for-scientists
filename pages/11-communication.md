@@ -4,7 +4,7 @@ layout: section
 
 # Communicating with the workshop
 
-Talk to the machinist before the design is finished
+Talk to the machinist [before]{.marker} the design is finished
 
 ---
 

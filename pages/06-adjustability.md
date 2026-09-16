@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# Adjustability instead of precision
+# Adjustability [instead of]{.marker} precision
 
 Design for alignment, not for perfection
 

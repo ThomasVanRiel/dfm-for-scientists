@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# Buy, assemble, or machine?
+# [Buy]{.marker}, assemble, or machine?
 
 The cheapest part is the one you don't have to make
 
@@ -24,6 +24,10 @@ flowchart LR
 <div class="takeaway mt-8">
 Your own design time counts too. A €150 catalog stage is cheap compared to a week of designing and a week of machining.
 </div>
+
+<!--
+Replace this mermaid diagram with a professional handdrawn one.
+-->
 
 ---
 

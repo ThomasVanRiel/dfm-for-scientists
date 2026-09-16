@@ -59,6 +59,8 @@ You just describe it in different languages.
 
 ::left::
 
+### The conflict
+
 - You think in **function**: stiffness, alignment, vacuum, budget
 - The workshop thinks in **process**: setups, tools, time on the machine
 - The drawing in between is where money and weeks quietly disappear
@@ -67,7 +69,7 @@ You just describe it in different languages.
 
 ### What you get out of the next hour
 
-- A feel for **what a part actually costs**, and which of your choices drive it
+- A feel for **what a part actually costs**,<br/> and which of your choices drive it
 - A handful of rules that make parts cheaper without touching the function
 - The vocabulary to have a five-minute conversation with a machinist instead of a five-email thread
 

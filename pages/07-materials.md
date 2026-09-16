@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# Materials from a manufacturing perspective
+# Materials from a [manufacturing]{.marker} perspective
 
 Machinability, stability, and the lab environment
 

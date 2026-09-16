@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# How a milling machine sees your part
+# How a milling machine [sees]{.marker} your part
 
 The heart of the course
 

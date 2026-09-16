@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# What parts <span class="marker">actually</span> cost
+# What parts [actually]{.marker} cost
 
 Material, tools, and time are not free
 
@@ -27,4 +27,3 @@ For one-off lab parts, programming and setup are usually <strong>most</strong> o
 Ask the room first: "What do you think is the most expensive part of a machined part?" Most will say material.
 -->
 
----

@@ -4,7 +4,7 @@ layout: section
 
 # Holes and threads
 
-Small topic, endless trouble
+Small topic, [endless trouble]{.marker}
 
 ---
 

@@ -2,7 +2,7 @@
 layout: section
 ---
 
-# Sheet metal covers
+# [Sheet metal]{.marker} covers
 
 Safety guards and demo enclosures
 
