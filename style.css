@@ -21,7 +21,6 @@
   font-weight: 400;
 }
 
-.marker,
 .todo,
 .slidev-layout th {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
@@ -36,6 +35,17 @@
 .slidev-layout.two-cols-header {
   column-gap: 2.5rem;
   row-gap: 1.5rem;
+}
+
+/*
+  The theme greys subtitles with `opacity: 0.5`, which fades the whole element
+  as a group — a marker stroke inside one washes out with it, and no rule on
+  the child can undo that. Same grey, applied as a colour instead, so the
+  highlighter keeps its full strength on section title slides.
+*/
+.slidev-layout h1 + p {
+  opacity: 1;
+  color: #64748b;
 }
 
 /* Shared callouts used across the deck. */
@@ -79,10 +89,17 @@
   padding: 0.3rem 0.6rem;
 }
 
-/* Hand-drawn highlighter stroke behind a word. */
+/*
+  Hand-drawn highlighter stroke behind a word.
+
+  Deliberately no `z-index` here: it would create a stacking context, and the
+  whole span would then paint above the surrounding text, so the stroke's
+  overshoot would cover a following comma instead of running behind it. Without
+  one, the `z-index: -1` below resolves against the slide and the stroke sits
+  behind every character near it.
+*/
 .marker {
   position: relative;
-  z-index: 0;
   padding: 0 0.12em;
 }
 
@@ -92,7 +109,13 @@
   z-index: -1;
   inset: 0.02em -0.18em -0.04em -0.22em;
   transform: rotate(-1.8deg) skewX(-6deg);
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23fcd34d' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3Cpath fill='%23f59e0b' fill-opacity='0.22' d='M9,15 C62,11 128,13 193,10 L194,15 C128,17 62,16 9,20 Z M5,37 C70,40 139,36 196,39 L196,43 C139,41 70,44 5,42 Z'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  /*
+    One path, one flat fill. An earlier version layered a second path of
+    translucent amber bands over this one to suggest uneven ink; at slide size
+    they read as two hard stripes rather than texture. The irregular outline
+    carries the hand-drawn quality on its own.
+  */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23fcd34d' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
 }
 
 /*
@@ -103,8 +126,12 @@
   font-family: 'Newsreader', ui-serif, Georgia, serif;
   font-style: italic;
   font-size: 0.95em;
-  color: #475569;
-  opacity: 0.85;
+  /*
+    The quiet grey is baked into the colour rather than set with `opacity`: the
+    entrance animation below ends at `opacity: 1` and holds it, which would
+    override anything set here.
+  */
+  color: #5f6b7a;
   position: relative;
 }
 
@@ -114,6 +141,17 @@
   involved. Everything on a slide arrives together: these are for arrival, not
   for revealing content point by point.
 */
+
+@keyframes slide-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 @keyframes marker-sweep {
   from {
@@ -140,17 +178,35 @@
   animation: slide-enter 0.4s ease-out both;
 }
 
-/* The highlighter stroke draws itself on, just after the title has landed. */
+/*
+  The highlighter stroke draws itself on, just after the title has landed: the
+  delay here has to clear the entrance animation above, or the stroke sweeps
+  across a word that is still moving.
+*/
 .marker::before {
   /* An explicit end state: clip-path cannot interpolate to `none`. */
   clip-path: inset(0 -2% 0 0);
-  animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.3s both;
+  animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.9s both;
 }
 
 @media print {
   .slidev-layout *,
   .marker::before {
     animation: none !important;
+  }
+
+  /*
+    On paper the highlighter reads as a muddy box: printers drop background
+    graphics by default, and where they don't, a yellow wash costs ink and
+    hurts contrast. Fall back to the emphasis the stroke stands in for.
+  */
+  .marker {
+    font-weight: 600;
+    padding: 0;
+  }
+
+  .marker::before {
+    display: none;
   }
 }
 
