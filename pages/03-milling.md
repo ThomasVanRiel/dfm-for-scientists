@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: milling
 ---
 
 # How a milling machine [sees]{.marker} your part
@@ -149,7 +150,7 @@ This is the slide that pays for the whole section. Two numbers off a drawing, di
 - Cutting forces push thin walls away, so they end up **thicker at the top**
 - The wall **rings** like a tuning fork and leaves a poor surface
 - **Clamping** forces bend them. They spring back when released
-- Removing material on one side releases **stress** (see *Materials*)
+- Removing material on one side releases **stress** (see <Link to="materials">Materials</Link>)
 
 </div>
 

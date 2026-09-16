@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: communication
 ---
 
 # Communicating with the workshop
@@ -50,7 +51,7 @@ Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specif
 - Views with **datums** (A, B, C)
 - **Units** (mm)
 - **Material**: grade and form, e.g. "EN AW-6082 T6, plate"
-- **General tolerance**: e.g. "ISO 2768-mK"
+- **General tolerance**: e.g. "[ISO 2768-mK]{.technical}"
 - **Critical features** with explicit tolerances, clearly marked
 
 </div>

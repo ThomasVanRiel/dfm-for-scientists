@@ -6,10 +6,13 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// Matches the `fonts:` headmatter in slides.md. Variable families take a weight
-// range (one file per style); static ones need each weight listed separately.
+// Matches the `fonts:` headmatter in slides.md, plus IBM Plex Sans Condensed,
+// which has no headmatter key: it is used only by `.technical` in style.css.
+// Variable families take a weight range (one file per style); static ones need
+// each weight listed separately.
 const FAMILIES = [
   'IBM Plex Sans:ital,wght@0,300..700;1,300..700',
+  'IBM Plex Sans Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700',
   'IBM Plex Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700',
   'Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700',
 ]

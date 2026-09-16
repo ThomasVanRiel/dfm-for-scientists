@@ -24,7 +24,7 @@ A part with features on 5 faces needs *at least* 5 setups.
 - Measuring, sometimes on a CMM
 - A higher chance of scrapping the part
 
-±0.01 mm on a non-functional face buys you nothing.
+[±0.01 mm]{.technical} on a non-functional face buys you nothing.
 
 </div>
 

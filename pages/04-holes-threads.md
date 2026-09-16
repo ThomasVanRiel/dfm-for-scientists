@@ -17,7 +17,7 @@ Small topic, [endless trouble]{.marker}
 
 - A **standard diameter** is one drill and a few seconds
 - An **odd diameter** (Ø7.3) is milled in a circle: slower and less round
-- A **precise diameter** (Ø6 H7) is drilled and then **reamed**
+- A **precise diameter** ([Ø6 H7]{.technical}) is drilled and then **reamed**
 - Very small holes (< 2 mm) and very deep holes (> 10 × Ø) need special tools
 
 </div>
@@ -175,7 +175,7 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 <div>
 
 - Use the **clearance** size, not the thread size: an M6 screw doesn't go into a Ø6 hole
-- Clearance holes give **play**: they don't locate parts (use dowels, see *Adjustability*)
+- Clearance holes give **play**: they don't locate parts (use dowels, see <Link to="adjustability">Adjustability</Link>)
 - **Counterbores** let screw heads sit flush
 - Use the CAD **hole wizard**, so the workshop can read the intent
 

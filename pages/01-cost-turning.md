@@ -69,7 +69,7 @@ That 88 % costs:
 - **Tool wear**: roughing steel is hard on inserts
 - **Attention**: someone loads, watches, clears chips
 - **Waste**: chips are recycled at a fraction of the price you paid
-- **Distortion**: removing lots of material releases internal stress (see *Materials*)
+- **Distortion**: removing lots of material releases internal stress (see <Link to="materials">Materials</Link>)
 
 </div>
 

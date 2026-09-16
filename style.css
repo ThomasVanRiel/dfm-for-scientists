@@ -37,7 +37,7 @@
 */
 .slidev-layout.two-cols-header,
 .slidev-layout.two-columns {
-  column-gap: 1.5rem;
+  column-gap: 2.5rem;
   row-gap: 1.5rem;
 }
 
@@ -217,4 +217,24 @@
   .marker.slidev-vclick-target::before {
     transition: none;
   }
+}
+
+/*
+  Technical notation: ISO fit and tolerance designations, and the dimensions
+  that go with them. IBM Plex Sans Condensed keeps long strings of digits
+  narrow and sets them apart from the prose without switching to mono.
+  (IBM Plex Mono has no condensed cut; the Sans one is the only Plex condensed.)
+*/
+.technical {
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+/*
+  Fit designations like "H7/g6" must never wrap across two lines: the slash
+  reads as a line break and the pair stops looking like one symbol.
+*/
+.nowrap-first-col td:first-child,
+.nowrap-first-col th:first-child {
+  white-space: nowrap;
 }

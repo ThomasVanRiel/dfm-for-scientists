@@ -83,7 +83,7 @@ class: text-sm
 | **Flange length** | ≥ 4 × *t*, or the tool can't grip it |
 | **Holes near a bend** | ≥ 2 × *t* + radius from the bend, or they deform |
 | **Bend relief** | Small cut-out where a bend meets an edge, or the corner tears |
-| **Tolerances** | ±0.1 mm on flat cuts, ±0.5 mm across bends |
+| **Tolerances** | [±0.1 mm]{.technical} on flat cuts, [±0.5 mm]{.technical} across bends |
 
 </div>
 

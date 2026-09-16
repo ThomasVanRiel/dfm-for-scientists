@@ -1,3 +1,8 @@
+---
+layout: two-cols-header
+layoutClass: '!grid-cols-[2fr_3fr] items-center'
+---
+
 <!--
   Section 1, worked example: MILLING.
   Swap with 01-cost-turning.md in slides.md for an audience that turns.
@@ -6,17 +11,11 @@
 
 # Same function, two designs
 
-<div class="todo mb-3">Illustrative numbers at €80/h. Replace with a real before/after quote from our workshop.</div>
-
-<div class="grid grid-cols-5 gap-8 items-center">
-
-<div class="col-span-2">
+::left::
 
 <Sketch name="monolith-vs-plates" class="h-64" hint="The same bracket twice: milled from one solid block, and bolted together from three plates" />
 
-</div>
-
-<div class="col-span-3">
+::right::
 
 | | Monolithic block | Three bolted plates |
 |---|---:|---:|
@@ -29,13 +28,9 @@
 | Screws and dowels | – | €5 |
 | **Total** | **€665** | **€290** |
 
-</div>
+::bottom::
 
-</div>
-
-<div class="mt-4">
-Material is <strong>4 %</strong> of the monolithic part. Time is the other 96 %.
-</div>
+Material is **4 %** of the monolithic part. Time is the other 96 %.
 
 <!--
 The strongest version of this slide is a real part from our own workshop with the real hours. Bring the physical parts if you can.
@@ -69,7 +64,7 @@ That 90 % costs:
 - **Tool wear**: roughing tools wear out
 - **Attention**: someone loads, watches, clears chips
 - **Waste**: chips are recycled at a fraction of the price you paid
-- **Distortion**: removing lots of material releases internal stress (see *Materials*)
+- **Distortion**: removing lots of material releases internal stress (see <Link to="materials">Materials</Link>)
 
 </div>
 

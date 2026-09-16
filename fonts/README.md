@@ -5,11 +5,13 @@ latin-ext subsets from the Google Fonts CSS2 API. Committed so the deck renders
 with no network access — see `provider: none` in the `fonts:` block of `slides.md`.
 
 Re-run `npm run fonts` after changing that block, and keep the family list in
-`scripts/fetch-fonts.mjs` in sync with it.
+`scripts/fetch-fonts.mjs` in sync with it. IBM Plex Sans Condensed is the one
+family with no headmatter key: it is used only by `.technical` in `style.css`.
 
 | Family | Files | License |
 | --- | --- | --- |
 | IBM Plex Sans | variable, roman + italic | SIL Open Font License 1.1 |
+| IBM Plex Sans Condensed | static, weights 400–700, roman + italic | SIL Open Font License 1.1 |
 | IBM Plex Mono | static, weights 300–700, roman + italic | SIL Open Font License 1.1 |
 | Newsreader | variable, roman + italic | SIL Open Font License 1.1 |
 

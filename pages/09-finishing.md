@@ -30,7 +30,7 @@ The part [isn't done]{.marker} when it leaves the mill
 
 ### What that means
 
-- A hole **shrinks** by twice the build-up: an H7 fit may no longer fit
+- A hole **shrinks** by twice the build-up: an [H7]{.technical} fit may no longer fit
 - Threads get **tight**
 - Anodizing is an electrical **insulator**: grounding and contact
 - Anodizing is **porous**: not for vacuum

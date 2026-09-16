@@ -17,7 +17,7 @@ Design for alignment, not for perfection
 
 ### Demand precision
 
-- Five parts at ±0.01 mm each
+- Five parts at [±0.01 mm]{.technical} each
 - Expensive, slow, and measured on a CMM
 - Still off by the **stack-up**, temperature, and assembly
 - When the setup changes, you need **new parts**
@@ -28,7 +28,7 @@ Design for alignment, not for perfection
 
 ### Design in adjustment
 
-- Five parts at ISO 2768-m
+- Five parts at [ISO 2768-m]{.technical}
 - One or two **adjustment** features
 - Aligned to the **actual** beam, sample, or sensor
 - Can be **re-aligned** when the setup changes
@@ -51,7 +51,7 @@ In a test setup you usually align to the physics, not to the drawing. Adjustment
 | **Shims** | 0.01–1 mm steps | Cheap, stable, repeatable. Standard shim stock |
 | **Set screws / push-pull screws** | 0.1–1 mm | Fine adjustment, lock with a counter screw |
 | **Eccentric pins or bushings** | < 1 mm | Compact, rotational adjustment |
-| **Fine-pitch adjusters, micrometers** | µm–mm | Buy them (see *Buy, assemble, or machine*) |
+| **Fine-pitch adjusters, micrometers** | µm–mm | Buy them (see <Link to="buy-assemble-machine">Buy, assemble, or machine</Link>) |
 | **Flexures** | µm–0.1 mm | No friction, no backlash |
 
 <div class="warning mt-6">
@@ -134,7 +134,7 @@ Three balls on three different features:
 - **Press fit** in one part, **slip fit** in the other
 - Use **two** pins, as far apart as possible
 - Make **one hole round** and the **other a slot** (or use a diamond pin), so the pins aren't over-constrained
-- Holes are **reamed** (H7)
+- Holes are **reamed** ([H7]{.technical})
 
 </div>
 

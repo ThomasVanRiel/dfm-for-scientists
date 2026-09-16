@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: assembly
 ---
 
 # Design for assembly and [use]{.marker}
@@ -90,7 +91,7 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 ### Alignment features
 
-- **Dowel pins** for position (see *Adjustability*)
+- **Dowel pins** for position (see <Link to="adjustability">Adjustability</Link>)
 - **Spigots and recesses** for centering round parts
 - **Shoulders** to push a part against
 - **Chamfers** as a lead-in for pins and shafts

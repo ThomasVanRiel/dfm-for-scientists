@@ -54,7 +54,7 @@ class: text-sm
 - Use **stress-relieved** or **cast tooling plate**
 - Remove material **symmetrically**
 - **Rough**, unclamp, let it rest, then **finish**
-- Avoid removing 90 % of a block (see *What parts actually cost*)
+- Avoid removing 90 % of a block (see <Link to="cost">What parts actually cost</Link>)
 - Leave **stiffness** in the part: ribs, flanges
 
 </div>
@@ -85,7 +85,7 @@ class: text-sm
 <div>
 
 - A **200 mm** aluminum plate, **5 K** warmer:<br/>23 × 0.2 × 5 = **23 µm** longer
-- So ±0.01 mm means nothing without a **temperature**
+- So [±0.01 mm]{.technical} means nothing without a **temperature**
 - **Mixed materials** (aluminum on steel) bend like a bimetal, or bolts slip
 - Plastics move **5–10 ×** more than metals
 - Cryogenic setups: parts **shrink** a lot, and differently

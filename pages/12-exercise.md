@@ -19,7 +19,7 @@ routeAlias: exercise
 - **Sharp** internal corners at every shoulder
 - A 5 mm wide groove, **40 mm deep**
 - A bolt circle, a keyway, and a flat: **four setups**
-- **±0.01 mm** on every dimension
+- [**±0.01 mm**]{.technical} on every dimension
 - M2.5, M3, M4, and M5 threads in the flange face
 - Sent as a STEP file only
 

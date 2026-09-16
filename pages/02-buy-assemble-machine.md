@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: buy-assemble-machine
 ---
 
 # [Buy]{.marker}, assemble, or machine?
@@ -41,7 +42,7 @@ Replace this mermaid diagram with a professional handdrawn one.
 
 - Optical posts, mounts, breadboards
 - Linear and rotation stages, micrometer heads
-- Kinematic mounts (see *Adjustability*)
+- Kinematic mounts (see <Link to="adjustability">Adjustability</Link>)
 
 ### Structure
 
@@ -135,7 +136,7 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 - Joints need **alignment**: a fit, dowel pins, or screws
 - Stiffness depends on the joints
 - More parts to assemble and keep track of
-- Tolerances add up across the joint (see *Tolerances and fits*)
+- Tolerances add up across the joint (see <Link to="tolerances">Tolerances and fits</Link>)
 - A press fit holds by **friction**: there is a torque and axial load limit
 
 </div>
@@ -158,7 +159,7 @@ class: text-sm
 | **CNC turning** | Round parts: shafts, spacers, flanges. Fast and accurate | Anything that isn't rotationally symmetric |
 | **Laser cutting** | Fast 2D profiles in sheet and thin plate | Thick plate, heat-affected edges, no pockets or threads |
 | **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges; lower accuracy |
-| **Sheet metal bending** | Enclosures, brackets, covers (see *Sheet metal*). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
+| **Sheet metal bending** | Enclosures, brackets, covers (see <Link to="sheet-metal">Sheet metal</Link>). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
 | **Welding** | Large frames, joining thick sections | Distortion; precise faces need machining afterward |
 | **3D printing** | Complex shapes, jigs, quick iterations | Anisotropic strength, creep, accuracy, outgassing |
 

@@ -1,5 +1,6 @@
 ---
 layout: section
+routeAlias: cost
 ---
 
 # What parts [actually]{.marker} cost
