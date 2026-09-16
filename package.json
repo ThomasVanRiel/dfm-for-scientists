@@ -6,7 +6,7 @@
     "build": "slidev build",
     "dev": "slidev --open",
     "dev:lan": "slidev --remote",
-    "dev:tunnel": "slidev --remote --tunnel",
+    "dev:tunnel": "node scripts/ensure-cloudflared.mjs && slidev --remote --tunnel",
     "export": "slidev export",
     "fonts": "node scripts/fetch-fonts.mjs"
   },
