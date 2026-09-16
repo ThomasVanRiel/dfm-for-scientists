@@ -32,18 +32,18 @@ const path = xy.reduce((d, [px, py], i) => {
 <template>
   <svg viewBox="0 0 460 290" class="w-full" role="img" aria-label="Relative cost rises steeply as the tolerance tightens from ±0.5 mm to ±0.001 mm">
     <!-- Axes -->
-    <line x1="50" :y1="bottom" x2="440" :y2="bottom" stroke="#d1d5db" />
-    <line x1="50" y1="20" x2="50" :y2="bottom" stroke="#d1d5db" />
-    <text x="40" y="125" style="font-size: 14px" fill="#6b7280" text-anchor="middle" transform="rotate(-90 40 125)">relative cost</text>
+    <line x1="50" :y1="bottom" x2="440" :y2="bottom" stroke="var(--sk-rule)" />
+    <line x1="50" y1="20" x2="50" :y2="bottom" stroke="var(--sk-rule)" />
+    <text x="40" y="125" style="font-size: 14px" fill="var(--sk-label)" text-anchor="middle" transform="rotate(-90 40 125)">relative cost</text>
 
-    <path :d="path" fill="none" stroke="#2563eb" stroke-width="2" />
+    <path :d="path" fill="none" stroke="var(--sk-accent)" stroke-width="2" />
 
     <g v-for="(p, i) in points" :key="p.tol">
-      <circle :cx="xy[i][0]" :cy="xy[i][1]" r="4" fill="#2563eb" stroke="#ffffff" stroke-width="2" />
-      <text :x="xy[i][0]" :y="bottom + 18" style="font-size: 14px" fill="#1f2937" text-anchor="middle">{{ p.label }}</text>
-      <text :x="xy[i][0]" :y="bottom + 33" style="font-size: 13px" fill="#6b7280" text-anchor="middle">{{ p.process }}</text>
+      <circle :cx="xy[i][0]" :cy="xy[i][1]" r="4" fill="var(--sk-accent)" stroke="var(--sk-paper)" stroke-width="2" />
+      <text :x="xy[i][0]" :y="bottom + 18" style="font-size: 14px" fill="var(--sk-ink)" text-anchor="middle">{{ p.label }}</text>
+      <text :x="xy[i][0]" :y="bottom + 33" style="font-size: 13px" fill="var(--sk-label)" text-anchor="middle">{{ p.process }}</text>
     </g>
 
-    <text x="440" :y="bottom + 52" style="font-size: 14px" fill="#6b7280" text-anchor="end">tolerance in mm, tighter →</text>
+    <text x="440" :y="bottom + 52" style="font-size: 14px" fill="var(--sk-label)" text-anchor="end">tolerance in mm, tighter →</text>
   </svg>
 </template>

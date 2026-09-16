@@ -52,6 +52,25 @@
   color: #64748b;
 }
 
+/*
+  Sketch palette. The inline SVG components draw with these roles rather than
+  raw hexes, so the one dark-mode block below re-tints every drawing at once:
+  ink is the part outline, rule the thin construction and dimension lines,
+  stock the material a part is cut from, paper the void inside it.
+*/
+:root {
+  --sk-ink: #1f2937;
+  --sk-ink-soft: #475569;
+  --sk-rule: #9ca3af;
+  --sk-label: #6b7280;
+  --sk-paper: #ffffff;
+  --sk-stock: #e5e7eb;
+  --sk-accent: #2563eb;
+  --sk-warn: #d97706;
+  --sk-alert: #dc2626;
+  --sk-highlight: #fcd34d;
+}
+
 /* Shared callouts used across the deck. */
 
 .takeaway {
@@ -118,8 +137,18 @@
     translucent amber bands over this one to suggest uneven ink; at slide size
     they read as two hard stripes rather than texture. The irregular outline
     carries the hand-drawn quality on its own.
+
+    The path is a *mask*, not an image: the colour comes from `background-color`,
+    so a theme can restroke the highlighter by setting `--marker-stroke` alone
+    instead of carrying a second copy of the path with a different fill. Only
+    the path's alpha is sampled, which is why its own fill is a flat black. The
+    prefixed `-webkit-mask` is for older WebKit; both read the one variable.
   */
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23fcd34d' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  --marker-stroke: #fcd34d;
+  --marker-path: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M7,10 C38,5 88,8 138,5 C163,4 184,7 195,6 C199,18 196,31 198,45 C152,48 104,44 57,47 C36,48 19,45 3,46 C6,34 1,22 7,10 Z'/%3E%3C/svg%3E");
+  background-color: var(--marker-stroke);
+  -webkit-mask: var(--marker-path) no-repeat center / 100% 100%;
+  mask: var(--marker-path) no-repeat center / 100% 100%;
 }
 
 /*
@@ -237,4 +266,80 @@
 .nowrap-first-col td:first-child,
 .nowrap-first-col th:first-child {
   white-space: nowrap;
+}
+
+/*
+  Dark mode. The deck is authored light and presented light; this exists so the
+  slides are comfortable to browse on a laptop in a dark room.
+
+  Only the hand-picked colours need a counterpart — the theme handles its own
+  text and background. Callout tints become translucent so they sit on whatever
+  the theme's dark background is rather than a second flat colour. Slidev puts
+  the `dark` class on <html>.
+*/
+html.dark {
+  /*
+    Sketches invert: the ink that was near-black goes near-white, and paper and
+    stock swap to slide-dark tints. The accents only need lifting — fully
+    saturated blue and amber go muddy against a dark ground.
+  */
+  --sk-ink: #dfe5ec;
+  --sk-ink-soft: #aab6c5;
+  --sk-rule: #7c8899;
+  --sk-label: #9aa7b8;
+  --sk-paper: #1b2230;
+  --sk-stock: #323c4b;
+  --sk-accent: #60a5fa;
+  --sk-warn: #f59e0b;
+  --sk-alert: #f87171;
+
+  /*
+    Hand-drawn sketch files are dark ink on white. `multiply` makes their paper
+    vanish on a light slide; on a dark one it erases the drawing instead, so
+    invert the image and switch to `screen`, which drops white the same way.
+  */
+  .sketch img {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+  }
+
+  .slidev-layout h1 + p {
+    color: #94a3b8;
+  }
+
+  .takeaway {
+    border-left-color: #3b82f6;
+    background: rgb(37 99 235 / 0.16);
+  }
+
+  .warning {
+    border-left-color: #f59e0b;
+    background: rgb(217 119 6 / 0.16);
+  }
+
+  .tip {
+    border-left-color: #10b981;
+    background: rgb(5 150 105 / 0.16);
+  }
+
+  .todo {
+    border-color: #f59e0b;
+    color: #fcd34d;
+  }
+
+  .aside {
+    color: #94a3b8;
+  }
+
+  /*
+    The highlighter is restroked deep instead of dimmed, so the text on top
+    keeps following the theme to near-white. A light amber wash would need the
+    text forced dark to stay readable, which reads as a light-mode island on a
+    dark slide; this way only the stroke changes. Blue rather than a dark amber:
+    it picks up the accent the callouts and sketches already use, and a dimmed
+    yellow goes brown long before it is dark enough to sit under white text.
+  */
+  .marker::before {
+    --marker-stroke: #1e3a8a;
+  }
 }
