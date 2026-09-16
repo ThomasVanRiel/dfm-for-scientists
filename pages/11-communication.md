@@ -67,7 +67,15 @@ Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specif
 
 </div>
 
-<div class="todo mt-8">Add our workshop's drawing template and a good example drawing.</div>
+<div class="takeaway mt-6">
+The drawing has to be right the first time. It is the one document the workshop builds from, and nobody checks your intent against it.
+</div>
+
+<div class="aside mt-4">
+In CAD, undo is your most-used command. A workshop only has redo.
+</div>
+
+<div class="todo mt-6">Add our workshop's drawing template and a good example drawing.</div>
 
 ---
 
