@@ -9,6 +9,9 @@ info: |
   A crash course for scientists who design their own test setups:
   what parts really cost, how a workshop makes them, and how to design
   parts that are cheap, fast, and easy to build.
+
+  Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/),
+  except third-party material — see LICENSE.
 # `both` puts the dark-mode toggle in the nav bar. The deck is designed light
 # and presents light; dark is for reading it in bed. The overrides the callouts
 # need for it live at the bottom of style.css.
@@ -46,6 +49,7 @@ this seminar adds the workshop's.
 
 <div class="absolute bottom-10 left-14 font-mono text-sm opacity-70">
 Dr. Ing. Thomas Van Riel, KU Leuven
+<div class="text-xs opacity-80 mt-1">CC BY 4.0 — share and adapt, with credit</div>
 </div>
 
 <!-- <Sketch name="title" class="absolute right-10 bottom-8 w-110" /> -->

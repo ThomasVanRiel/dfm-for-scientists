@@ -1,0 +1,31 @@
+Design for Manufacturing for Scientists
+Copyright (c) 2026 Thomas Van Riel
+
+This work is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+Deed:       https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The licence covers the slide content, sketches, diagrams and code in this
+repository authored by Thomas Van Riel.
+
+It does NOT cover third-party material included or referenced here, which
+remains under its own terms. In particular:
+
+  public/sniper-driving.mp4   A short excerpt from "Meet the Sniper" (2008),
+                              a promotional video for Team Fortress 2,
+                              (C) Valve Corporation. Team Fortress and Valve
+                              are trademarks of Valve Corporation. The excerpt
+                              is used here for illustration in an educational
+                              talk, as quotation; it is not licensed by this
+                              work, and no affiliation with or endorsement by
+                              Valve is implied. Reuse of this deck does not
+                              carry any right to reuse the clip.
+  fonts/                      IBM Plex and Newsreader, both under the SIL
+                              Open Font License 1.1 — see fonts/README.md.
+  node_modules/, Slidev       Under their respective upstream licences.

@@ -120,6 +120,15 @@ Dark mode inverts the image and switches to `screen`, which keeps hues but
 flips lightness — so near-black ink and saturated accents both survive the
 trip, while a pale wash does not.
 
+## License
+
+The deck — slides, sketches, diagrams and the code that renders them — is
+licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): share and
+adapt it for any purpose, with credit.
+
+Third-party material keeps its own terms, notably the *Team Fortress 2* clip in
+`public/` and the fonts in `fonts/`. See `LICENSE` for the details.
+
 ## Deploying
 
 Pushing to `main` builds the deck and publishes it to GitHub Pages

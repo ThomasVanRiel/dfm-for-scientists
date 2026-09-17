@@ -71,6 +71,10 @@ layout: none
   <source src="/sniper-driving.mp4" type="video/mp4" />
 </SlidevVideo>
 
+<div class="absolute bottom-1 left-0 px-3 py-1.5 text-xs font-mono text-black"> 
+Clip from &ldquo;Meet the Sniper&rdquo; (2008), Team Fortress 2 &mdash; &copy; Valve Corporation.
+</div>
+
 <!--
 Play the clip, then move straight to ISO 2768.
 -->
