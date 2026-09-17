@@ -1,0 +1,20 @@
+GIMP Palette
+Name: DFM Sketch
+Columns: 5
+# Colours the deck draws with. See the Colours table in README.md.
+# Sketches in sketches/ carry literal colours and use the light column.
+ 31  41  55	Part outline #1f2937
+ 71  85 105	Secondary outline #475569
+156 163 175	Construction / dimension #9ca3af
+107 114 128	Label #6b7280
+255 255 255	Paper (void) #ffffff
+229 231 235	Stock #e5e7eb
+ 37  99 235	Accent / tool / correct #2563eb
+217 119   6	Caution #d97706
+220  38  38	Wrong / impossible #dc2626
+252 211  77	Highlighter #fcd34d
+# Callout fills, to be drawn at 25 % alpha on white
+191 221 255	Takeaway wash 25% #bfdbff
+255 239 175	Warning wash 25% #ffefaf
+179 247 215	Tip wash 25% #b3f7d7
+  5 150 105	Tip bar #059669

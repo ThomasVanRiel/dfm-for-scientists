@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     width="400mm" height="300mm" viewBox="0 0 400 300"
+     version="1.1" id="svg-dfm-sketch"
+     inkscape:version="1.x" sodipodi:docname="dfm-sketch.svg">
+  <title id="title-dfm-sketch">DFM sketch template</title>
+  <defs id="defs-dfm-sketch">
+    <linearGradient inkscape:swatch="solid" id="sk-ink" inkscape:label="Part outline">
+      <stop offset="0" style="stop-color:#1f2937;stop-opacity:1" id="sk-ink-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-ink-soft" inkscape:label="Secondary outline">
+      <stop offset="0" style="stop-color:#475569;stop-opacity:1" id="sk-ink-soft-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-rule" inkscape:label="Construction / dimension">
+      <stop offset="0" style="stop-color:#9ca3af;stop-opacity:1" id="sk-rule-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-label" inkscape:label="Label">
+      <stop offset="0" style="stop-color:#6b7280;stop-opacity:1" id="sk-label-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-paper" inkscape:label="Paper (void)">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:1" id="sk-paper-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-stock" inkscape:label="Stock">
+      <stop offset="0" style="stop-color:#e5e7eb;stop-opacity:1" id="sk-stock-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-accent" inkscape:label="Accent / tool / correct">
+      <stop offset="0" style="stop-color:#2563eb;stop-opacity:1" id="sk-accent-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-warn" inkscape:label="Caution">
+      <stop offset="0" style="stop-color:#d97706;stop-opacity:1" id="sk-warn-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-alert" inkscape:label="Wrong / impossible">
+      <stop offset="0" style="stop-color:#dc2626;stop-opacity:1" id="sk-alert-stop" />
+    </linearGradient>
+    <linearGradient inkscape:swatch="solid" id="sk-highlight" inkscape:label="Highlighter">
+      <stop offset="0" style="stop-color:#fcd34d;stop-opacity:1" id="sk-highlight-stop" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview id="namedview" pagecolor="#ffffff" bordercolor="#cccccc"
+     borderopacity="1" inkscape:showpageshadow="0" inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm" showgrid="false" />
+  <g inkscape:groupmode="layer" id="layer-swatches"
+     inkscape:label="Swatches (reference, sits below the page)" sodipodi:insensitive="false">
+    <rect x="10" y="310" width="30" height="30" style="fill:url(#sk-ink);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-ink" />
+    <text x="10" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Part outline</text>
+    <text x="10" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#1f2937</text>
+    <rect x="48" y="310" width="30" height="30" style="fill:url(#sk-ink-soft);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-ink-soft" />
+    <text x="48" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Secondary outline</text>
+    <text x="48" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#475569</text>
+    <rect x="86" y="310" width="30" height="30" style="fill:url(#sk-rule);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-rule" />
+    <text x="86" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Construction / dimension</text>
+    <text x="86" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#9ca3af</text>
+    <rect x="124" y="310" width="30" height="30" style="fill:url(#sk-label);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-label" />
+    <text x="124" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Label</text>
+    <text x="124" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#6b7280</text>
+    <rect x="162" y="310" width="30" height="30" style="fill:url(#sk-paper);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-paper" />
+    <text x="162" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Paper (void)</text>
+    <text x="162" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#ffffff</text>
+    <rect x="200" y="310" width="30" height="30" style="fill:url(#sk-stock);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-stock" />
+    <text x="200" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Stock</text>
+    <text x="200" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#e5e7eb</text>
+    <rect x="238" y="310" width="30" height="30" style="fill:url(#sk-accent);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-accent" />
+    <text x="238" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Accent / tool / correct</text>
+    <text x="238" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#2563eb</text>
+    <rect x="276" y="310" width="30" height="30" style="fill:url(#sk-warn);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-warn" />
+    <text x="276" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Caution</text>
+    <text x="276" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#d97706</text>
+    <rect x="314" y="310" width="30" height="30" style="fill:url(#sk-alert);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-alert" />
+    <text x="314" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Wrong / impossible</text>
+    <text x="314" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#dc2626</text>
+    <rect x="352" y="310" width="30" height="30" style="fill:url(#sk-highlight);stroke:#9ca3af;stroke-width:0.5" id="chip-sk-highlight" />
+    <text x="352" y="348" style="font-family:sans-serif;font-size:4px;fill:#6b7280">Highlighter</text>
+    <text x="352" y="354" style="font-family:monospace;font-size:4px;fill:#9ca3af">#fcd34d</text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer-sketch" inkscape:label="Sketch" />
+</svg>
