@@ -149,6 +149,7 @@ A mnemonic for the shaft letters: <strong>h</strong> is <em>home</em>, <strong>g
 
 ---
 layout: two-cols-header
+cols: 3/4
 ---
 
 # The fit that holds our flange on
@@ -161,16 +162,16 @@ layout: two-cols-header
 - Shaft, p6: [**25.022 to 25.035**]{.technical}
 - Interference: [**0.001 to 0.035 mm**]{.technical}
 
-The shaft is always bigger than the hole. The flange is pushed on with an arbor press and held by friction alone: no key, no screw, no glue.
+The shaft is always bigger than the hole. The flange is pushed on with a press and held by friction alone: no key, no screw, no glue.
 
 ::right::
 
 ### What this buys, and what it costs
 
-- **Two easy parts** instead of one expensive one (see <Link to="cost">What parts actually cost</Link>)
+- **Two easy parts** instead of one expensive one<br/> (see <Link to="cost">What parts actually cost</Link>)
 - Only **one diameter on each part** is tightly toleranced
 - The other [175 mm]{.technical} of shaft can be ordinary turned stock
-- A damaged flange can be **pressed off and replaced**; a shoulder turned from solid cannot
+- A damaged flange can be **pressed off and replaced**;<br/> a shoulder turned from solid cannot
 
 ::bottom::
 

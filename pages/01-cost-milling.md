@@ -40,6 +40,10 @@ align: center
 
 Material is **17 %** of the monolithic part. Time is the other 83 %.
 
+<div class="aside mt-2">
+€1210 saved on this one part — more than the €800 this meeting cost. You're welcome.
+</div>
+
 <!--
 The strongest version of this slide is a real part from our own workshop with the real hours. Bring the physical parts if you can.
 

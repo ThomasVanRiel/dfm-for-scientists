@@ -253,6 +253,10 @@ The honest version: your job is to run experiments and pump out a shitload of pa
 
 </div>
 
+<div class="aside mt-8" v-click>
+Ten engineers, one hour, €80/h: this meeting costs <strong>€800</strong>. Let's make it worth it.
+</div>
+
 <!--
 The first three change how people think. Assembly is the practical toolbox. The last one is what actually changes behaviour: talking to the workshop early.
 

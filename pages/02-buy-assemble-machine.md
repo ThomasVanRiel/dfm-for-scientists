@@ -176,9 +176,17 @@ If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 m
 
 ::bottom::
 
+<div class="takeaway">
+Using standard stock is often available and results in shorter lead times.
+</div>
+
 <div class="warning mt-4">
 Rolled plate is not precision flat or precise in thickness. If a face matters, it must be machined, or use cast tooling plate.
 </div>
+
+<!--
+Refer to the part from before that was redesigned using 20 mm plates.
+-->
 
 ---
 
