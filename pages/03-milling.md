@@ -9,27 +9,30 @@ The heart of the course
 
 ---
 layout: two-cols-header
+cols: 2/3
+align: center
 ---
 
 # Tools are round
 
+A spinning end mill can't cut a sharp internal corner.
+
 ::left::
 
-<Sketch name="corner-radius"><CornerRadius /></Sketch>
+<Sketch name="corner-radius"></Sketch>
 
 ::right::
 
-A spinning end mill can't cut a sharp internal corner.
 
 - Every internal vertical corner gets **at least the tool radius**
-- Make the radius **slightly larger** than the tool radius, so the tool doesn't wrap around the corner and chatter
+- Make the radius **slightly larger** than the tool radius,<br/> so the tool doesn't wrap around the corner and chatter
 - **Larger radius = larger tool** = stiffer, faster, cheaper
 
 ::bottom::
 
 <div class="tip">
-If a square part must fit into a pocket: add <strong>dog-bone</strong> relief cuts
-<InlineSketch class="ml-3"><DogBone /></InlineSketch>
+<span>If a square part must fit into a pocket: add <strong>dog-bone</strong> relief cuts</span>
+<InlineSketch><Sketch name="dogbone" /></InlineSketch>
 </div>
 <!--
 Hold up an end mill. Let them feel that it is round.
@@ -52,7 +55,7 @@ layout: two-cols-header
 
 ::right::
 
-### What that means for your corners
+### What that means for your [corners]{.marker}
 
 - Internal radius = **tool radius**, plus a little
 - **[R1]{.technical} is the floor**, and only where the function needs it

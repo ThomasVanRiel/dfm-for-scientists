@@ -94,6 +94,27 @@
   border-radius: 0 6px 6px 0;
 }
 
+/*
+  A callout with a drawing in it: the drawing sits after the text, centred
+  against it, and keeps its size when the sentence is long.
+
+  Deliberately scoped with :has() to the callouts that carry one. `display:
+  flex` on every callout would make each <strong>, <span> and <br> inside a
+  sentence its own flex item, spaced out by the gap — 11 of the deck's 34
+  callouts have inline markup as a direct child, so their sentences would come
+  apart. That is also why the text beside a drawing goes in a <span>: it needs
+  to be one item, not one per fragment.
+*/
+:is(.takeaway, .warning, .tip):has(> .inline-sketch) {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+:is(.takeaway, .warning, .tip) > .inline-sketch {
+  flex-shrink: 0;
+}
+
 /* Placeholder content that must be replaced with real workshop data. */
 .todo {
   border: 2px dashed #d97706;
