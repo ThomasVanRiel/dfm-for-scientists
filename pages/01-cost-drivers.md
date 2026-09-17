@@ -14,6 +14,11 @@ layout: two-cols-header
 
 A part with features on 5 faces needs *at least* 5 setups.
 
+
+<div class="todo mt-8">
+  Add sketch of a part with features on 5 axes.
+</div>
+
 ::right::
 
 ### Every tight tolerance means
