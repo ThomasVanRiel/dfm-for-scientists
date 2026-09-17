@@ -196,6 +196,7 @@ This is the one sentence they should remember. Come back to it at the end of eve
 
 ---
 layout: two-cols-header
+cols: 3/2
 ---
 
 # What this seminar is, and isn't
@@ -204,26 +205,22 @@ We change how a part gets made, not what it does
 
 ::left::
 
-<v-click>
+### It is ...
 
-### It is
-
-- Taking a part that is **already calculated and designed**
-- And making it **cheaper, faster, and easier** to build
-- Without giving up the function you designed for
-- Knowing what to ask the workshop, and when
-
-</v-click>
+- ... taking a part that is **already calculated and designed**,
+- and making it **cheaper, faster, and easier** to build.
+- Without giving up the function you designed for.
+- Knowing what to ask the workshop, and when.
 
 ::right::
 
 <v-click>
 
-### It isn't
+### It isn't ...
 
-- A course in mechanical design
-- How to size a shaft, pick a bearing, or design a stiff frame
-- How to make a design elegant
+- ... a course in mechanical design.
+- How to size a shaft, pick a bearing,<br/> or design a stiff frame.
+- How to make a design elegant.
 
 </v-click>
 
