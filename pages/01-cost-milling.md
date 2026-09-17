@@ -16,22 +16,29 @@ align: center
 
 <Sketch name="monolith-vs-plates" class="h-64" hint="The same bracket twice: milled from one solid block, and bolted together from three plates" />
 
+<FancyArrow from="(140, 270)" to="(193, 346)" arc="-0.25" color="var(--sk-accent)" width="2" />
+
 ::right::
 
 | | Monolithic block | Three bolted plates |
 |---|---:|---:|
-| Material | €25 | €15 |
-| Programming | 2.0 h → €160 | 1.0 h → €80 |
-| Setups | 4 × 0.5 h → €160 | 3 × 0.25 h → €60 |
-| Cycle time | 3.0 h → €240 | 1.0 h → €80 |
-| Inspection | 0.5 h → €40 | 0.25 h → €20 |
-| Finishing | €40 | €30 |
+| Material | €300 | €85 |
+| Programming | 3.0 h → €240 | 1.5 h → €120 |
+| Setups | 4 × 0.75 h → €240 | 3 × 0.25 h → €60 |
+| Cycle time | 10.0 h → €800 | 2.0 h → €160 |
+| Inspection | 1.0 h → €80 | 0.5 h → €40 |
+| Finishing | €60 | €40 |
 | Screws and dowels | – | €5 |
-| **Total** | **€665** | **€290** |
+| **Total** | <span data-id="mono-total">**€1720**</span> | <span data-id="plates-total">**€510**</span> |
+
+<FancyArrow class="cost-arrow" from="[data-id=mono-total]@bottom" to="[data-id=plates-total]@bottom"
+  arc="-0.5" color="var(--sk-accent)" width="2">
+  <span class="block translate-y-4 font-semibold text-[var(--sk-accent)]">−70 %</span>
+</FancyArrow>
 
 ::bottom::
 
-Material is **4 %** of the monolithic part. Time is the other 96 %.
+Material is **17 %** of the monolithic part. Time is the other 83 %.
 
 <!--
 The strongest version of this slide is a real part from our own workshop with the real hours. Bring the physical parts if you can.
@@ -47,17 +54,17 @@ layout: two-cols-header
 
 ::left::
 
-A [120 × 80 × 60 mm]{.technical} aluminum block:
+A [460 × 120 × 133 mm]{.technical} aluminum block:
 
-- 576 cm³, about **1.55 kg** of material
-- The final part is **58 cm³**
-- **90 %** leaves the machine as chips
+- 7340 cm³, about **19.8 kg** of material
+- The final part is **1650 cm³**
+- **78 %** leaves the machine as chips
 
 Every one of those cm³ is removed by a tool that has to reach it, from a direction the part can be clamped in.
 
 ::right::
 
-That 90 % costs:
+That 78 % costs:
 
 - **Machine time**: every cm³ is removed by a spinning tool
 - **Tool wear**: roughing tools wear out
@@ -72,5 +79,5 @@ Start from the closest standard stock size, not from the bounding box.
 </div>
 
 <div class="aside mt-4">
-You paid for 1.55 kg of aluminium and took home 157 g. The rest left in a bin worth 30 cents a kilo.
+You paid for 19.8 kg of aluminium and took home 4.4 kg, leaving €233 worth of chips.
 </div>
