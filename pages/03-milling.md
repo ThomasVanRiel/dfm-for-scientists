@@ -93,8 +93,7 @@ Make pockets wider or shallower, or open them to one side. Or build the part fro
 </div>
 
 ---
-layout: two-cols-header
-align: bottom
+layout: default
 ---
 
 # How deep, for a given diameter
@@ -108,18 +107,12 @@ Cutting depth divided by tool diameter, **L/D**, decides which tool comes out of
 | **5–8 × D** | Extra-long or necked | Light passes only, much slower, chatter marks |
 | **> 8 × D** | Special tooling | Consider wire EDM, or redesign the part |
 
-::left::
-
-### Work it out before you draw
 
 A [**2 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which means roughly [**6 mm**]{.technical} of depth before it gets slow.
-
-::right::
 
 <div class="warning">
 The exercise part's groove is <strong class="technical">5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
 </div>
-
 
 <!--
 This is the slide that pays for the whole section. Two numbers off a drawing, divided, and you know whether the workshop will sigh.
@@ -127,16 +120,17 @@ This is the slide that pays for the whole section. Two numbers off a drawing, di
 
 ---
 layout: two-cols-header
+cols: 4/3
 ---
 
 # Thin walls vibrate
 
 ::left::
 
-- Cutting forces push thin walls away, so they end up **thicker at the top**
-- The wall **rings** like a tuning fork and leaves a poor surface
-- **Clamping** forces bend them. They spring back when released
-- Removing material on one side releases **stress** (see <Link to="materials">Materials</Link>)
+- Cutting forces push thin walls away,<br/> so they end up **thicker at the top**
+- The wall **rings** like a tuning fork<br/> and leaves a poor surface
+- **Clamping** forces bend them.<br/> They spring back when released
+- Removing material on one side releases **stress**<br/> (see <Link to="materials">Materials</Link>)
 
 ::right::
 
@@ -165,7 +159,7 @@ On a 3-axis mill, the tool only comes **from above**.
 
 ::right::
 
-### Design for fewer setups
+Design for fewer setups
 
 - Put features on **as few faces as possible**
 - Put all features that must align with each other **on the same face**

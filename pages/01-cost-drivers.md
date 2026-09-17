@@ -12,7 +12,7 @@ layout: two-cols-header
 - A new alignment error between faces
 - Checking the first cut before continuing
 
-A part with features on 5 faces needs *at least* 5 setups.
+A part with features on 5 faces needs *at least* 5 setups — unless it goes on a 5-axis machine, which reaches them in one or two.
 
 
 <div class="todo mt-8">
@@ -29,6 +29,10 @@ A part with features on 5 faces needs *at least* 5 setups.
 - A higher chance of scrapping the part
 
 [±0.01 mm]{.technical} on a non-functional face buys you nothing.
+
+<!--
+If someone asks about 5-axis: it trades setups for machine rate and programming time. One clamping, no alignment error between faces, but a higher hourly rate and more programming, and not every shop has one. Ask what the shop actually has before you design for it.
+-->
 
 ---
 

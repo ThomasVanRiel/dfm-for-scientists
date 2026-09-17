@@ -370,7 +370,13 @@ html.dark {
     background: rgb(5 150 105 / 0.16);
   }
 
-  .todo {
+  .todo,
+  /*
+    Scoped to Sketch.vue, but reachable from here and worth reaching: until the
+    sketches/ files exist, this placeholder is what most slides show, and its
+    light-mode brown is unreadable on a dark ground.
+  */
+  .sketch-placeholder {
     border-color: #f59e0b;
     color: #fcd34d;
   }

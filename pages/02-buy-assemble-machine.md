@@ -181,7 +181,7 @@ Using standard stock is often available and results in shorter lead times.
 </div>
 
 <div class="warning mt-4">
-Rolled plate is not precision flat or precise in thickness. If a face matters, it must be machined, or use cast tooling plate.
+Rolled plate is not precision flat or precise in thickness.<br/> If a face matters, it must be machined, or use cast tooling plate.
 </div>
 
 <!--
@@ -254,7 +254,7 @@ Don't go deep here. The goal is that they know these processes exist and roughly
 
 # Take-aways
 
-- **Buy** before you design: catalog and configurable parts are fast and cheap
+- **Check the catalog before you draw**: a part you can buy is faster and cheaper than one you design
 - Design around **standard stock sizes**
 - Build **assemblies of simple pieces** instead of carving one monolith
 - Pick the **process** that suits the shape, not the other way around

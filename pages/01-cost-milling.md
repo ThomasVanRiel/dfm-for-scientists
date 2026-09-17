@@ -24,16 +24,16 @@ align: center
 |---|---:|---:|
 | Material | €300 | €85 |
 | Programming | 3.0 h → €240 | 1.5 h → €120 |
-| Setups | 4 × 0.75 h → €240 | 3 × 0.25 h → €60 |
+| Setups | 4 × 0.75 h → €240 | 5 × 0.25 h → €100 |
 | Cycle time | 10.0 h → €800 | 2.0 h → €160 |
 | Inspection | 1.0 h → €80 | 0.5 h → €40 |
-| Finishing | €60 | €40 |
+| Finishing and assembly | €60 | €40 + 0.5 h → €80 |
 | Screws and dowels | – | €5 |
-| **Total** | <span data-id="mono-total">**€1720**</span> | <span data-id="plates-total">**€510**</span> |
+| **Total** | <span data-id="mono-total">**€1720**</span> | <span data-id="plates-total">**€590**</span> |
 
 <FancyArrow class="cost-arrow" from="[data-id=mono-total]@bottom" to="[data-id=plates-total]@bottom"
   arc="-0.5" color="var(--sk-accent)" width="2">
-  <span class="block translate-y-4 font-semibold text-[var(--sk-accent)]">−70 %</span>
+  <span class="block translate-y-4 font-semibold text-[var(--sk-accent)]">−66 %</span>
 </FancyArrow>
 
 ::bottom::
@@ -41,17 +41,18 @@ align: center
 Material is **17 %** of the monolithic part. Time is the other 83 %.
 
 <div class="aside mt-2">
-€1210 saved on this one part — more than the €800 this meeting cost. You're welcome.
+€1130 saved on this one part — more than the €800 this meeting cost. You're welcome.
 </div>
 
 <!--
 The strongest version of this slide is a real part from our own workshop with the real hours. Bring the physical parts if you can.
 
-The plates column is three setups for three parts, because each plate is mostly one operation. The screws and dowels line is what the assembly costs you back.
+The plates column is five setups: the two small plates have holes on two sides, so two setups each, and the large plate is one. The plate material is ordered to size, so nobody pays to mill it to size. Finishing here is deburring every edge, breaking the sharp corners, cleaning, and the anodizing bill — no coating masking on this part. The three plates have more edges to deburr but far less surface to machine, so the finishing half still lands slightly cheaper; the half hour of assembly on top of it, plus the screws and dowels line, is what the split costs you back.
 -->
 
 ---
 layout: two-cols-header
+cols: 2/3
 ---
 
 # Chips are not free

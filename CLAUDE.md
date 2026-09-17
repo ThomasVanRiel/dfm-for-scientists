@@ -34,9 +34,6 @@ quantity.
 Commit to `main` directly. Do not create a branch unless I ask for one, and do
 not push — this sandbox has no keys.
 
-Commit only the files for the thing we just worked on. There is usually other
-work in progress in the tree; leave it alone.
-
 ## House style
 
 - Match the surrounding slides: sentence-case headings, bold for the term being
