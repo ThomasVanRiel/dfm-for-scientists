@@ -85,6 +85,55 @@ align: center
 - Cryogenic setups: parts **shrink** a lot, and differently
 
 ---
+layout: two-cols-header
+---
+
+# Combining metals: the least noble one corrodes
+
+::left::
+
+| Galvanic series | V vs SCE | |
+|---|---:|:--|
+| Magnesium | ≈ −1.6 | <Galvanic :value="-4" label="Dissolves fastest" /> |
+| Zinc (galvanized steel) | ≈ −1.0 | <Galvanic :value="-3" /> |
+| **Aluminum** | −0.9 … −0.75 | <Galvanic :value="-2" /> |
+| Carbon steel, tin, solder | −0.70 … −0.50 | <Galvanic :value="-1" /> |
+| **Brass, copper** | −0.36 … −0.30 | <Galvanic :value="1" /> |
+| **Stainless** | −0.10 … −0.05 | <Galvanic :value="2" /> |
+| Titanium | −0.10 … +0.15 | <Galvanic :value="3" /> |
+| Graphite, carbon fibre, gold | +0.15 … +0.25 | <Galvanic :value="4" label="Protected, and hard on its neighbours" /> |
+
+<div class="text-xs opacity-70 mt-2 text-center">
+<Galvanic :value="-2" :max="2" /> dissolves &nbsp;·&nbsp;
+<Galvanic :value="2" :max="2" /> protected &nbsp;·&nbsp;
+corrosion potential in seawater
+</div>
+
+::right::
+
+### Seen in the lab
+
+- Stainless **screws** in an aluminum plate:<br/> fine, the plate is the large anode
+- Steel **dowels** pressed into aluminum:<br/> the aluminum goes first
+- **Brass or bronze** on aluminum<br/>bushings, inserts, fittings: the classic mistake
+
+::bottom::
+
+<div class="takeaway">
+Cut the <strong>path</strong> with a plastic washer or bush, treat the <strong>surface</strong> with <Link to="finishing">anodizing</Link> or plating, or remove the <strong>water</strong> with a dry joint that gives a drop nowhere to sit. You only need one of the three.
+</div>
+
+<!--
+What helps, in the order you should reach for it. Break the path: a plastic washer, a shouldered bush, a bonded-in titanium or stainless fitting. Treat the surface: anodizing, passivation, plating — but remember a screw cuts straight through an anodized face, and plating wears through where parts rub. Remove the water: dry air, and no crevices, blind gaps or upward-facing joints for a drop to sit in.
+
+The numbers are measured corrosion potentials of the alloys in seawater (ASTM G82), not textbook standard electrode potentials. That matters: E° for iron and chromium would put stainless near the corroding end, while in practice its passive oxide layer lands it next to copper. Passive is the key word — starve stainless of oxygen, in a crevice or under a gasket, and it drops back down the list.
+
+The bottom row is the one that surprises people: graphite and carbon fibre sit at the noble end with gold, and they conduct. A carbon-fibre tube or breadboard bolted straight to an aluminum fitting is a large cathode against a small anode — the worst area ratio there is — and it eats the aluminum. Use a bonded-in titanium or stainless fitting, or an insulating bush.
+
+Dry lab air is why most setups survive this at all. It becomes real the moment there is condensation, a cooling circuit, a cleaning step, or anything outdoors. Brass inserts pressed into aluminum are the other common offender.
+-->
+
+---
 
 # Lab-specific concerns
 
@@ -143,5 +192,6 @@ align: center
 - **Stainless** and **titanium** cost much more machine time
 - Removing lots of material causes **warping**. Use stress-free plate
 - **Thermal expansion** often beats your tolerance
+- **Mixing metals** costs you twice: bimetal bending and galvanic corrosion
 - Check **vacuum**, **magnetic**, and **chemical** compatibility early
 
