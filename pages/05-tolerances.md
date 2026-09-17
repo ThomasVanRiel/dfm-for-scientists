@@ -84,7 +84,7 @@ Play the clip, then move straight to ISO 2768.
 layout: two-cols-header
 ---
 
-# General tolerances: ISO 2768
+# General tolerances – ISO 2768
 
 One note on the drawing covers every dimension without its own tolerance.
 
@@ -110,13 +110,15 @@ One note on the drawing covers every dimension without its own tolerance.
 
 ---
 layout: two-cols-header
-cols: 3/2
-align: center
+cols: 4/2
+align: stretch
 ---
 
-# Fits: ISO 286
+# Fits – ISO 286
 
 For shafts in holes, give a **fit** instead of a ± tolerance.
+
+The letter sets the <strong>position</strong>, the number sets the <strong>width</strong> of the tolerance band. Capital = hole, small = shaft.
 
 ::left::
 
@@ -127,20 +129,24 @@ For shafts in holes, give a **fit** instead of a ± tolerance.
 | [**H7/k6**]{.technical} | Transition | Accurate location, light press |
 | [**H7/p6**]{.technical} | Interference | Press fit, permanent |
 
+<div class="takeaway mt-2">
+An <strong>outside diameter</strong> is easier to machine and measure than a bore, so give it the tighter grade: <span class="technical">6</span> on the shaft, <span class="technical">7</span> in the hole.
+</div>
+
 ::right::
 
 ### Example: [Ø10 H7/g6]{.technical}
 
-- Hole [H7]{.technical}: **10.000 to 10.015**
-- Shaft [g6]{.technical}: **9.986 to 9.995**
-- Clearance: [**0.005 to 0.029 mm**]{.technical}
+- Hole [H7]{.technical}: [**10.000 to 10.015**]{.technical}
+- Shaft [g6]{.technical}: [**9.986 to 9.995**]{.technical}
+- Clearance: [**0.005 to 0.029 mm**]{.technical.marker}
+
+<div class="tip mt-2">
+Rule of thumb per <span class="technical">10 mm</span> of diameter: sliding <span class="technical">+10 µm</span>, interference <span class="technical">−10 µm</span>.
+</div>
 
 ::bottom::
 
-<div class="tip" v-click>
-The letter sets the <strong>position</strong>, the number sets the <strong>width</strong> of the tolerance band.<br/>
-Capital = hole, small = shaft.
-</div>
 
 <div class="tip mt-2" v-click>
 A mnemonic for the shaft letters: <strong>h</strong> is <em>home</em>, <strong>g</strong> is <em>glide</em>, <strong>p</strong> is <em>press</em>.
@@ -171,11 +177,12 @@ The shaft is always bigger than the hole. The flange is pushed on with an arbor 
 - The other [175 mm]{.technical} of shaft can be ordinary turned stock
 - A damaged flange can be **pressed off and replaced**; a shoulder turned from solid cannot
 
-<div class="warning mt-4">
+::bottom::
+
+<div class="warning">
 The joint holds by <strong>friction</strong>. It has a torque and axial load limit the solid part doesn't, and pressing adds a little <strong>runout</strong>. If the load is high, add a key or a shoulder.
 </div>
 
-::bottom::
 
 <div class="aside mt-6">
 Thirty-five microns of interference is the difference between a part and a pile of parts.

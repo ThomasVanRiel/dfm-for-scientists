@@ -21,9 +21,19 @@
   font-weight: 400;
 }
 
-.todo,
-.slidev-layout th {
+.todo {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/*
+  Table headers are the prose face at a heavier weight, not a second typeface.
+  The theme's reset hands `th` a flat `font-weight: 400`, so the weight has to
+  be stated to get any separation at all; 600 sets the row apart from the body
+  without the jump to bold. Stated here rather than left to the browser
+  default, which the reset has already overridden.
+*/
+.slidev-layout th {
+  font-weight: 600;
 }
 
 /*
@@ -281,12 +291,18 @@
 }
 
 /*
-  A table whose every cell is a dimension or a designation, e.g. the tap drill
-  and clearance hole tables. One rule on the table beats a span around each of
-  its thirty cells. Body cells only: the header row keeps the mono face every
-  other table in the deck uses.
+  A table that is entirely notation, e.g. the tap drill and clearance hole
+  tables, or the ISO 2768 grid: one rule on the table beats a span around each
+  of its thirty cells. Header cells included — a table marked technical is
+  notation top to bottom, and its headers are often values themselves.
+
+  The `th` half has to be spelled out because the mono rule at the top of this
+  file is a rule, and a rule always beats inheritance from the table. Same
+  specificity, so this one wins by coming later. `.technical` covers a table
+  wrapped in a div rather than marked on the table itself.
 */
-.technical-table td {
+.technical-table :is(td, th),
+.technical :is(td, th) {
   font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-feature-settings: 'tnum';
 }

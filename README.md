@@ -59,9 +59,14 @@ incantation:
 ---
 layout: two-cols-header
 cols: 2/3         # a ratio, or CSS track sizes: `2fr 3fr`, `40% 60%`, `300px 1fr`
-align: center     # vertical alignment of the two columns: center, top, bottom
+align: center     # center, top, bottom, or stretch
 ---
 ```
+
+`align: stretch` spreads each column over the full row: the first block stays
+at the top and the last one drops to the bottom, so two columns that both end
+in a callout have their callouts on one line while their headings still start
+together.
 
 Both keys are optional and default to the built-in behaviour: equal columns,
 aligned to the top. `layoutClass` still works for anything else, and still wins.

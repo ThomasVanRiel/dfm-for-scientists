@@ -14,7 +14,12 @@
 
   `cols` takes a bare ratio (2/3, 2:3, 2 3), or any pair of CSS track sizes
   (2fr 3fr, 40% 60%, 300px 1fr) when the split isn't a simple ratio.
-  `align` is the vertical alignment of the two columns: center, top, bottom.
+
+  `align` is the vertical alignment of the two columns: center, top, bottom,
+  or stretch. `stretch` spreads each column over the full row: its first block
+  stays at the top and its last block drops to the bottom, so two columns that
+  both end in a callout have their callouts on one line while their headings
+  still start together.
 
   Everything else is the built-in, class names included, so the gap rules in
   style.css still apply: the default slot is the full-width header, then
@@ -41,9 +46,16 @@ const columns = computed(() => {
   return RATIO.test(cols) ? cols.split(/[/:\s]+/).map(n => `${n}fr`).join(' ') : cols
 })
 
-const ALIGN = { center: 'center', middle: 'center', top: 'start', bottom: 'end' }
+const ALIGN = { center: 'center', middle: 'center', top: 'start', bottom: 'end', stretch: 'stretch' }
 
 const alignItems = computed(() => props.align ? ALIGN[props.align] ?? props.align : undefined)
+
+/*
+  Stretching the column is only half of it: the box fills the row, but its
+  content still stacks from the top. The class below turns each column into a
+  flex column so the last block can be pushed down to meet the bottom.
+*/
+const spread = computed(() => props.align === 'stretch')
 </script>
 
 <template>
@@ -54,10 +66,10 @@ const alignItems = computed(() => props.align ? ALIGN[props.align] ?? props.alig
     <div class="col-header">
       <slot />
     </div>
-    <div class="col-left" :class="props.class">
+    <div class="col-left" :class="[props.class, { spread }]">
       <slot name="left" />
     </div>
-    <div class="col-right" :class="props.class">
+    <div class="col-right" :class="[props.class, { spread }]">
       <slot name="right" />
     </div>
     <div class="col-bottom" :class="props.class">
@@ -82,6 +94,22 @@ const alignItems = computed(() => props.align ? ALIGN[props.align] ?? props.alig
 .col-right {
   grid-area: 2 / 2 / 3 / 3;
 }
+/*
+  `align: stretch`. The column fills the row and its last block drops to the
+  bottom of it; everything before that keeps its place at the top. Two columns
+  of different lengths then agree on both edges instead of only the top one.
+*/
+.col-left.spread,
+.col-right.spread {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-left.spread > :last-child,
+.col-right.spread > :last-child {
+  margin-top: auto;
+}
+
 .col-bottom {
   /* Pinned to the bottom of the slide even when `align` moves the columns. */
   align-self: end;
