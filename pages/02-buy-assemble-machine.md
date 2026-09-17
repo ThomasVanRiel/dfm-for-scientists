@@ -31,12 +31,12 @@ Replace this mermaid diagram with a professional handdrawn one.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Catalog components
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Positioning and optics
 
@@ -49,9 +49,7 @@ Replace this mermaid diagram with a professional handdrawn one.
 - Aluminum extrusion profiles and brackets
 - Standard angle brackets, gussets, T-nuts
 
-</div>
-
-<div>
+::right::
 
 ### Configurable parts
 
@@ -64,34 +62,30 @@ Replace this mermaid diagram with a professional handdrawn one.
 - Dowel pins, bearings, bushings, springs
 - Shaft collars, couplings, leveling feet
 
-</div>
+::bottom::
 
-</div>
+<div class="todo">Add the suppliers our lab already has accounts with.</div>
 
-<div class="todo mt-6">Add the suppliers our lab already has accounts with.</div>
-
+---
+layout: two-cols-header
 ---
 
 # Design with standard stock
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 Material comes in standard sizes. Use them:
 
-- **Plate**: e.g. 5, 6, 8, 10, 12, 15, 20, 25, 30 mm
+- **Plate**: e.g. [5, 6, 8, 10, 12, 15, 20, 25, 30 mm]{.technical}
 - **Round and square bar**, **flat bar**
 - **Tube**: round, square, rectangular
 - **Angle** and **channel**
 
 <div class="todo mt-4">Replace with the sizes our supplier stocks.</div>
 
-</div>
+::right::
 
-<div>
-
-If a part is 20 mm thick, draw it 20 mm, not 18.5 mm:
+If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 mm]{.technical}:
 
 - The faces can stay as delivered
 - One fewer operation
@@ -101,10 +95,6 @@ If a part is 20 mm thick, draw it 20 mm, not 18.5 mm:
 Rolled plate is not precision flat or precise in thickness. If a face matters, it must be machined, or use cast tooling plate.
 </div>
 
-</div>
-
-</div>
-
 ---
 
 # One turned part, or two pressed together?
@@ -112,12 +102,12 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 <Sketch name="solid-vs-pressed" class="h-96" hint="The same flanged shaft twice: turned from one piece of Ø100 bar, and a Ø25 shaft with a separate flange pressed onto it" />
 
 ---
+layout: two-cols-header
+---
 
 # Assemble instead of carving one monolith
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Why an assembly wins
 
@@ -127,9 +117,7 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 - Deep "pockets" become open space between plates
 - 2D profiles can be **laser or waterjet cut**
 
-</div>
-
-<div>
+::right::
 
 ### What to watch
 
@@ -139,12 +127,10 @@ Rolled plate is not precision flat or precise in thickness. If a face matters, i
 - Tolerances add up across the joint (see <Link to="tolerances">Tolerances and fits</Link>)
 - A press fit holds by **friction**: there is a torque and axial load limit
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
-A Ø25 shaft with a flange pressed on beats the same shape turned from Ø100 bar. An L-bracket from two plates and four screws beats one milled L. Same rule, round or square.
+<div class="takeaway">
+A <span class="technical">Ø25</span> shaft with a flange pressed on beats the same shape turned from <span class="technical">Ø100</span> bar. An L-bracket from two plates and four screws beats one milled L. Same rule, round or square.
 </div>
 
 ---

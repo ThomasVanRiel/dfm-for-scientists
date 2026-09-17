@@ -8,25 +8,23 @@ routeAlias: finishing
 The part [isn't done]{.marker} when it leaves the mill
 
 ---
+layout: two-cols-header
+---
 
 # Anodizing and coatings add thickness
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 | Finish | Layer (µm) | Notes |
 |---|---:|---|
-| Anodizing (Type II) | 5–25 | About half grows outward |
-| Hard anodizing (Type III) | 25–75 | Wear resistant, about half outward |
-| Electroless nickel | 5–25 | Very uniform, also in holes |
-| Chromate conversion | < 1 | Stays conductive |
-| Passivation (stainless) | ≈ 0 | Improves corrosion resistance |
-| Powder coating | 60–120 | Not for precision surfaces |
+| Anodizing (Type II) | [5–25]{.technical} | About half grows outward |
+| Hard anodizing (Type III) | [25–75]{.technical} | Wear resistant, about half outward |
+| Electroless nickel | [5–25]{.technical} | Very uniform, also in holes |
+| Chromate conversion | [< 1]{.technical} | Stays conductive |
+| Passivation (stainless) | [≈ 0]{.technical} | Improves corrosion resistance |
+| Powder coating | [60–120]{.technical} | Not for precision surfaces |
 
-</div>
-
-<div>
+::right::
 
 ### What that means
 
@@ -40,45 +38,35 @@ The part [isn't done]{.marker} when it leaves the mill
 - **Mask** fits, threads, and contact surfaces
 - Tell the workshop **before** machining, so they can compensate
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Deburring and edge breaks
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Every machined edge leaves a **burr**
 - Sharp edges **cut** people, gloves, and cables
 - Burrs **prevent** parts from sitting flat
 - Burrs inside **cross holes** are hard to reach, and can come loose later
 
-</div>
-
-<div>
+::right::
 
 ### On the drawing
 
-- A general note: **"Break all edges 0.2–0.5 mm"**
+- A general note: **"Break all edges [0.2–0.5 mm]{.technical}"**
 - Or specify per ISO 13715
 - Mark edges that must stay **sharp** (e.g. knife edges) explicitly
 - Avoid intersecting holes where you can
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Heat treatment and welding
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Heat treatment
 
@@ -87,9 +75,7 @@ The part [isn't done]{.marker} when it leaves the mill
 - Order: **rough machine → heat treat → grind or finish**
 - Specify what you need: e.g. **hardness in HRC**
 
-</div>
-
-<div>
+::right::
 
 ### Welding
 
@@ -98,21 +84,19 @@ The part [isn't done]{.marker} when it leaves the mill
 - Order: **weld → stress relieve → machine** the precise faces
 - Leave **machining allowance** on faces that matter
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 The order of operations is part of the design. Discuss it with the workshop.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Cleaning for sensitive environments
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 
@@ -121,9 +105,7 @@ Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 - **Silicone** lubricants spread and are hard to remove
 - Fingerprints are contamination too
 
-</div>
-
-<div>
+::right::
 
 ### What to do
 
@@ -134,10 +116,6 @@ Vacuum, optics, cleanrooms, and biology all need **clean** parts.
 - Avoid blind holes where you can
 
 <div class="todo mt-4">Add our lab's cleaning procedure.</div>
-
-</div>
-
-</div>
 
 ---
 

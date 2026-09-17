@@ -260,6 +260,17 @@
 }
 
 /*
+  A table whose every cell is a dimension or a designation, e.g. the tap drill
+  and clearance hole tables. One rule on the table beats a span around each of
+  its thirty cells. Body cells only: the header row keeps the mono face every
+  other table in the deck uses.
+*/
+.technical-table td {
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+/*
   Fit designations like "H7/g6" must never wrap across two lines: the slash
   reads as a line break and the pair stops looking like one symbol.
 */

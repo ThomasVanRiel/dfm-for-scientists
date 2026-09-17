@@ -33,6 +33,7 @@ are self-hosted or inlined, and nothing is fetched from a CDN.
 slides.md          Headmatter, cover, and the intro slides; pulls in pages/ via `src:`
 pages/01-*.md ..   One file per numbered section, in presentation order
 components/*.vue   Diagram components used by the slides (<BlindHole />, <Sketch />, ...)
+layouts/*.vue      Slide layouts that override Slidev's built-ins of the same name
 sketches/          Hand-drawn SVGs shown by <Sketch name="..." /> — see sketches/README.md
 fonts/             Committed webfonts — see fonts/README.md
 style.css          Typography and the shared callout classes
@@ -49,6 +50,21 @@ For the common title / subtitle / two columns / full-width closing line shape,
 use Slidev's `two-cols-header` layout rather than nesting divs: the default slot
 is the full-width header, then `::left::`, `::right::`, and `::bottom::`. The
 column and row gaps are set once in `style.css`.
+
+`layouts/two-cols-header.vue` overrides the built-in layout to take the column
+split from the frontmatter, so an uneven split doesn't need a utility-class
+incantation:
+
+```yaml
+---
+layout: two-cols-header
+cols: 2/3         # a ratio, or CSS track sizes: `2fr 3fr`, `40% 60%`, `300px 1fr`
+align: center     # vertical alignment of the two columns: center, top, bottom
+---
+```
+
+Both keys are optional and default to the built-in behaviour: equal columns,
+aligned to the top. `layoutClass` still works for anything else, and still wins.
 
 ### Shared classes
 

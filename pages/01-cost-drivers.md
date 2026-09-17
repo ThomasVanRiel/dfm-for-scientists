@@ -1,8 +1,9 @@
+---
+layout: two-cols-header
+---
 # Setups and tolerances drive the price
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Every setup means
 
@@ -13,9 +14,7 @@
 
 A part with features on 5 faces needs *at least* 5 setups.
 
-</div>
-
-<div>
+::right::
 
 ### Every tight tolerance means
 
@@ -25,10 +24,6 @@ A part with features on 5 faces needs *at least* 5 setups.
 - A higher chance of scrapping the part
 
 [±0.01 mm]{.technical} on a non-functional face buys you nothing.
-
-</div>
-
-</div>
 
 ---
 

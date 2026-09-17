@@ -8,98 +8,89 @@ routeAlias: milling
 The heart of the course
 
 ---
+layout: two-cols-header
+---
 
 # Tools are round
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-
-<div>
+::left::
 
 <Sketch name="corner-radius"><CornerRadius /></Sketch>
 
-</div>
-
-<div>
+::right::
 
 A spinning end mill can't cut a sharp internal corner.
 
 - Every internal vertical corner gets **at least the tool radius**
 - Make the radius **slightly larger** than the tool radius, so the tool doesn't wrap around the corner and chatter
 - **Larger radius = larger tool** = stiffer, faster, cheaper
-- If a square part must fit into a pocket: add **dog-bone** relief cuts
 
+::bottom::
+
+<div class="tip">
+If a square part must fit into a pocket: add <strong>dog-bone</strong> relief cuts
+<InlineSketch class="ml-3"><DogBone /></InlineSketch>
 </div>
-
-</div>
-
 <!--
 Hold up an end mill. Let them feel that it is round.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Tools come in sizes
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### What the workshop has
 
-- Common diameters: **3, 4, 5, 6, 8, 10, 12, 16, 20 mm**
-- **2 mm is the smallest we use reliably**
-- Below 2 mm: tools snap, often inside your part. Recovering from that costs a setup, sometimes the part
+- Common diameters: [**3, 4, 5, 6, 8, 10, 12, 16, 20 mm**]{.technical}
+- **[2 mm]{.technical} is the smallest we use reliably**
+- Below [2 mm]{.technical}: tools snap, often inside your part. Recovering from that costs a setup, sometimes the part
 - Odd sizes exist, but may have to be ordered
 
-</div>
-
-<div>
+::right::
 
 ### What that means for your corners
 
 - Internal radius = **tool radius**, plus a little
-- **R1 is the floor**, and only where the function needs it
-- **R3 or more** lets a 6 mm tool in: stiffer, faster, cheaper
-- A radius below R1 is not "slightly tighter". It is a different class of tooling
+- **[R1]{.technical} is the floor**, and only where the function needs it
+- **[R3]{.technical} or more** lets a [6 mm]{.technical} tool in: stiffer, faster, cheaper
+- A radius below [R1]{.technical} is not "slightly tighter". It is a different class of tooling
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-6">
+<div class="takeaway">
 Rounding up every internal corner you don't actually need is the cheapest change you can make to a drawing.
 </div>
 
-<div class="todo mt-4">Confirm the stocked diameters and the 2 mm floor with our machinist.</div>
-
+---
+layout: two-cols-header
 ---
 
 # Tools are short
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-
-<div>
+::left::
 
 <Sketch name="pocket-depth"><PocketDepth /></Sketch>
 
-</div>
-
-<div>
+::right::
 
 - A standard end mill only has flutes over about **2–3 × its diameter**. Deeper than that is a *different tool*, not a deeper cut
 - Longer tools **deflect** (stiffness drops with length³) and **chatter**
 - They need slow feeds and light cuts, so they take a long time
-- A 6 mm slot, 40 mm deep: expensive or impossible
+- A [6 mm]{.technical} slot, [40 mm]{.technical} deep: expensive or impossible
 - Narrow **and** deep is the combination to avoid
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-6">
+<div class="takeaway">
 Make pockets wider or shallower, or open them to one side. Or build the part from plates.
 </div>
 
+---
+layout: two-cols-header
 ---
 
 # How deep, for a given diameter
@@ -107,75 +98,63 @@ Make pockets wider or shallower, or open them to one side. Or build the part fro
 Cutting depth divided by tool diameter, **L/D**, decides which tool comes out of the drawer.
 
 | L/D | Tool needed | What it costs you |
-|---|---|---|
+|---:|---|---|
 | **≤ 3 × D** | Standard end mill | Normal feeds. No problem |
 | **3–5 × D** | Long series | Reduced feeds, noticeably slower |
 | **5–8 × D** | Extra-long or necked | Light passes only, much slower, chatter marks |
 | **> 8 × D** | Special tooling | Consider wire EDM, or redesign the part |
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div>
+::left::
 
 ### Work it out before you draw
 
-A **2 mm** corner radius means a 2 mm tool, which means roughly **6 mm** of depth before it gets slow.
+A [**2 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which means roughly [**6 mm**]{.technical} of depth before it gets slow.
 
-</div>
-
-<div>
+::right::
 
 <div class="warning">
-The exercise part's groove is <strong>5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
+The exercise part's groove is <strong class="technical">5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
 </div>
 
-</div>
+::bottom::
 
-</div>
-
-<div class="todo mt-4">Confirm these L/D bands with our machinist.</div>
+<div class="todo">Confirm these L/D bands with our machinist.</div>
 
 <!--
 This is the slide that pays for the whole section. Two numbers off a drawing, divided, and you know whether the workshop will sigh.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Thin walls vibrate
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Cutting forces push thin walls away, so they end up **thicker at the top**
 - The wall **rings** like a tuning fork and leaves a poor surface
 - **Clamping** forces bend them. They spring back when released
 - Removing material on one side releases **stress** (see <Link to="materials">Materials</Link>)
 
-</div>
-
-<div>
+::right::
 
 ### Rules of thumb
 
-- Metals: walls **≥ 1 mm**, more for tall walls
-- Plastics: walls **≥ 2 mm**
+- Metals: walls [**≥ 1 mm**]{.technical}, more for tall walls
+- Plastics: walls [**≥ 2 mm**]{.technical}
 - Keep wall height moderate relative to thickness
 - Add **ribs** or a lip at the top for stiffness
 
 <div class="todo mt-4">Check these numbers with our machinist.</div>
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Every feature needs a direction
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 On a 3-axis mill, the tool only comes **from above**.
 
@@ -184,9 +163,7 @@ On a 3-axis mill, the tool only comes **from above**.
 - Features on different faces are only as well aligned as the setups
 - Holes at odd angles need special fixtures or a 5-axis machine
 
-</div>
-
-<div>
+::right::
 
 ### Design for fewer setups
 
@@ -195,10 +172,6 @@ On a 3-axis mill, the tool only comes **from above**.
 - Prefer holes parallel to the main axes
 - Ask: "From which direction is this cut?"
 
-</div>
-
-</div>
-
 ---
 
 # Holding the part
@@ -206,21 +179,19 @@ On a 3-axis mill, the tool only comes **from above**.
 <Sketch name="vise-clamping" class="h-96" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
 
 ---
+layout: two-cols-header
+---
 
 # The machinist has to hold it
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - A vise needs **two parallel faces** to grip
 - The jaws cover a few mm, and **nothing can be cut there**
 - Clamping force **distorts** thin or delicate parts
 - Round, organic, or fully machined parts have **nothing to grip**
 
-</div>
-
-<div>
+::right::
 
 ### Help the machinist
 
@@ -229,11 +200,9 @@ On a 3-axis mill, the tool only comes **from above**.
 - Provide **holes** that can be used to bolt the part to a fixture
 - Don't machine every surface just because you can
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 If you can't imagine how the part is clamped, the machinist can't either.
 </div>
 
@@ -260,7 +229,7 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 
 # Take-aways
 
-- Tools are **round**: internal corners need radii, and **2 mm** is the smallest tool
+- Tools are **round**: internal corners need radii, and [**2 mm**]{.technical} is the smallest tool
 - Tools are **short**: flutes run about 2–3 × D, and depth over **3 × D** starts costing money
 - Thin walls **vibrate and deflect**
 - Every face with features is **another setup**

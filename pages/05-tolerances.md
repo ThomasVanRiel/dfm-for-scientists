@@ -8,12 +8,12 @@ routeAlias: tolerances
 Tolerance only what [matters]{.marker}
 
 ---
+layout: two-cols-header
+---
 
 # Two ways to get it wrong
 
-<div class="grid grid-cols-2 gap-10 mt-8">
-
-<div>
+::left::
 
 ### [±0.01 mm]{.technical} everywhere
 
@@ -22,9 +22,7 @@ Tolerance only what [matters]{.marker}
 - Temperature alone changes an aluminum part by more than that
 - The machinist can't tell which ones really matter
 
-</div>
-
-<div>
+::right::
 
 ### Nothing specified
 
@@ -33,11 +31,9 @@ Tolerance only what [matters]{.marker}
 - Nobody can say whether a part is **good or bad**
 - You get a phone call, or a part that doesn't work
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-10">
+<div class="takeaway">
 Specify tight tolerances on <strong>functional</strong> features. Use a general tolerance for everything else.
 </div>
 
@@ -85,6 +81,8 @@ Play the clip, then move straight to ISO 2768.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # General tolerances: ISO 2768
 
@@ -100,27 +98,20 @@ One note on the drawing covers every dimension without its own tolerance.
 
 </div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div>
+::left::
 
 - Write e.g. **"General tolerances [ISO 2768-mK]{.technical}"** in the title block
 - The **m** class is a sensible default for machined lab parts
 
-</div>
-
-<div>
+::right::
 
 - The second letter (**H, K, L**) covers geometric tolerances such as flatness and perpendicularity
 - Only dimensions that need more get an explicit tolerance
 
-</div>
-
-</div>
-
 ---
 layout: two-cols-header
-layoutClass: '!grid-cols-[3fr_2fr] items-center'
+cols: 3/2
+align: center
 ---
 
 # Fits: ISO 286
@@ -142,7 +133,7 @@ For shafts in holes, give a **fit** instead of a ± tolerance.
 
 - Hole [H7]{.technical}: **10.000 to 10.015**
 - Shaft [g6]{.technical}: **9.986 to 9.995**
-- Clearance: **0.005 to 0.029 mm**
+- Clearance: [**0.005 to 0.029 mm**]{.technical}
 
 ::bottom::
 
@@ -156,12 +147,12 @@ A mnemonic for the shaft letters: <strong>h</strong> is <em>home</em>, <strong>g
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # The fit that holds our flange on
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### [Ø25 H7/p6]{.technical}
 
@@ -171,24 +162,20 @@ A mnemonic for the shaft letters: <strong>h</strong> is <em>home</em>, <strong>g
 
 The shaft is always bigger than the hole. The flange is pushed on with an arbor press and held by friction alone: no key, no screw, no glue.
 
-</div>
-
-<div>
+::right::
 
 ### What this buys, and what it costs
 
 - **Two easy parts** instead of one expensive one (see <Link to="cost">What parts actually cost</Link>)
 - Only **one diameter on each part** is tightly toleranced
-- The other 175 mm of shaft can be ordinary turned stock
+- The other [175 mm]{.technical} of shaft can be ordinary turned stock
 - A damaged flange can be **pressed off and replaced**; a shoulder turned from solid cannot
 
 <div class="warning mt-4">
 The joint holds by <strong>friction</strong>. It has a torque and axial load limit the solid part doesn't, and pressing adds a little <strong>runout</strong>. If the load is high, add a key or a shoulder.
 </div>
 
-</div>
-
-</div>
+::bottom::
 
 <div class="aside mt-6">
 Thirty-five microns of interference is the difference between a part and a pile of parts.
@@ -217,12 +204,12 @@ Only specify Ra where it matters: sealing faces, sliding surfaces, optical mount
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Which features are functional?
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div>
+::left::
 
 ### Tolerance these
 
@@ -232,9 +219,7 @@ Only specify Ra where it matters: sealing faces, sliding surfaces, optical mount
 - **Sealing** faces (O-rings, flanges)
 - Features that set **optical or beam alignment**
 
-</div>
-
-<div>
+::right::
 
 ### General tolerance is enough
 
@@ -244,49 +229,43 @@ Only specify Ra where it matters: sealing faces, sliding surfaces, optical mount
 - Chamfers and edge breaks
 - Anything that can be **adjusted** (see <Link to="adjustability">Adjustability</Link>)
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 For each tolerance, you should be able to say what goes wrong if it's missed.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Exercise: tolerance stack-up
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-
-<div>
+::left::
 
 Four spacers, each [**10 ± 0.1 mm**]{.technical}, go into a housing slot of [**40.5 ± 0.1 mm**]{.technical}.
 
 **Does it always fit? What is the gap?**
 
-</div>
+::right::
 
 <Sketch name="stack-up" class="h-80" hint="Four 10 mm spacers in a 40.5 mm slot, with the gap at the end" />
 
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Stack-up: the answer
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Worst case
 
 - Nominal gap: [40.5 − 4 × 10 = **0.5 mm**]{.technical}
 - Tolerances add: [4 × 0.1 + 0.1 = **±0.5 mm**]{.technical}
-- Gap: [**0.0 to 1.0 mm**]{.technical}: it just fits, with up to 1 mm of play
+- Gap: [**0.0 to 1.0 mm**]{.technical}: it just fits, with up to [1 mm]{.technical} of play
 
-</div>
-
-<div>
+::right::
 
 ### Statistical (RSS)
 
@@ -299,17 +278,13 @@ Four spacers, each [**10 ± 0.1 mm**]{.technical}, go into a housing slot of [**
 - Fewer parts in the chain = less stack-up
 - Or design in **adjustment** (see <Link to="adjustability">Adjustability</Link>)
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Datums and GD&T, lightly
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Datums
 
@@ -318,9 +293,7 @@ Four spacers, each [**10 ± 0.1 mm**]{.technical}, go into a housing slot of [**
 - **3-2-1**: 3 points define a plane, 2 a line, 1 a point
 - Dimension features **from datums**, not from each other
 
-</div>
-
-<div>
+::right::
 
 ### GD&T: tolerances on form and position
 
@@ -332,10 +305,6 @@ Four spacers, each [**10 ± 0.1 mm**]{.technical}, go into a housing slot of [**
 | <span class="text-2xl">⌖</span> | Position of a feature relative to datums |
 
 Know what you're asking for: each one must be **measured**.
-
-</div>
-
-</div>
 
 <!--
 Keep this light. The goal is not to make them GD&T experts, but to understand that "the hole must be in the right place" means "relative to what?"

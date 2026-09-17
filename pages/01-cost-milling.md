@@ -1,6 +1,7 @@
 ---
 layout: two-cols-header
-layoutClass: '!grid-cols-[2fr_3fr] items-center'
+cols: 2/3
+align: center
 ---
 
 <!--
@@ -39,14 +40,14 @@ The plates column is three setups for three parts, because each plate is mostly 
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Chips are not free
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+::left::
 
-<div>
-
-A 120 × 80 × 60 mm aluminum block:
+A [120 × 80 × 60 mm]{.technical} aluminum block:
 
 - 576 cm³, about **1.55 kg** of material
 - The final part is **58 cm³**
@@ -54,9 +55,7 @@ A 120 × 80 × 60 mm aluminum block:
 
 Every one of those cm³ is removed by a tool that has to reach it, from a direction the part can be clamped in.
 
-</div>
-
-<div>
+::right::
 
 That 90 % costs:
 
@@ -66,11 +65,9 @@ That 90 % costs:
 - **Waste**: chips are recycled at a fraction of the price you paid
 - **Distortion**: removing lots of material releases internal stress (see <Link to="materials">Materials</Link>)
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 Start from the closest standard stock size, not from the bounding box.
 </div>
 

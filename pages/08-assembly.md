@@ -8,12 +8,12 @@ routeAlias: assembly
 Someone has to put it together, and change it next month
 
 ---
+layout: two-cols-header
+---
 
 # Part count vs. part complexity
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Fewer parts
 
@@ -21,20 +21,16 @@ Someone has to put it together, and change it next month
 - Fewer tolerances in the chain
 - But: each part is more **complex** to machine
 
-</div>
-
-<div>
+::right::
 
 ### Simpler parts
 
 - Each part is **fast** to make, and easy to change
 - But: more screws, dowels, and **alignment**
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 Combine parts where the function allows it. Split them where machining demands it.
 </div>
 
@@ -43,12 +39,12 @@ Ask for each part: <em>does this need to be separate?</em> It should move relati
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Access for tools and hands
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Can a **hex key** reach every screw? Straight, or only with a ball end?
 - Can you **see** what you're doing?
@@ -56,9 +52,7 @@ Ask for each part: <em>does this need to be separate?</em> It should move relati
 - Does the **assembly order** work? Can the last screw still be reached?
 - Can you **remove one part** without disassembling everything?
 
-</div>
-
-<div>
+::right::
 
 ### Try it in CAD
 
@@ -66,28 +60,22 @@ Ask for each part: <em>does this need to be separate?</em> It should move relati
 - Check the **assembly sequence**, not just the final state
 - Leave room around screw heads
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Only one way to assemble it
 
 Poka-yoke: make mistakes **impossible**, not just unlikely.
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div>
+::left::
 
 - **Asymmetric** hole patterns: the part fits one way only
 - **One offset dowel pin** instead of a symmetric pair
 - **Different connectors** for different signals
 - **Shoulders and steps** that prevent upside-down mounting
 
-</div>
-
-<div>
+::right::
 
 ### Alignment features
 
@@ -97,26 +85,20 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 - **Chamfers** as a lead-in for pins and shafts
 - **Labels** and engraved arrows where orientation matters
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Cables and connectors
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Cables are **part of the design**, not an afterthought
 - Plan **routing channels**, clips, and tie-down points
 - Respect the **minimum bend radius**, especially for fibers and coax
 - Add **strain relief** so connectors don't carry the load
 
-</div>
-
-<div>
+::right::
 
 ### Also
 
@@ -125,28 +107,22 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 - Plan **grounding** paths (watch out for anodizing)
 - **Label** cables and connectors
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Test setups always change
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Design for modification
 
-- **Hole grids** (e.g. M6 on 25 mm, like an optical table)
+- **Hole grids** (e.g. [M6]{.technical} on [25 mm]{.technical}, like an optical table)
 - **Spare holes** and mounting points
 - **Modular** plates instead of one integrated block
 - **Screws**, not glue or welds, where possible
 
-</div>
-
-<div>
+::right::
 
 ### Design for maintenance
 
@@ -154,10 +130,6 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 - **Access** to what needs cleaning or calibration
 - Keep the **CAD and drawings** with the setup
 - Document **adjustments** and how to realign
-
-</div>
-
-</div>
 
 ---
 

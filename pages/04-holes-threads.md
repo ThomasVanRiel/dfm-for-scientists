@@ -8,21 +8,19 @@ routeAlias: holes-threads
 Small topic, [endless trouble]{.marker}
 
 ---
+layout: two-cols-header
+---
 
 # Use standard drill sizes
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - A **standard diameter** is one drill and a few seconds
-- An **odd diameter** (Ø7.3) is milled in a circle: slower and less round
+- An **odd diameter** ([Ø7.3]{.technical}) is milled in a circle: slower and less round
 - A **precise diameter** ([Ø6 H7]{.technical}) is drilled and then **reamed**
-- Very small holes (< 2 mm) and very deep holes (> 10 × Ø) need special tools
+- Very small holes ([< 2 mm]{.technical}) and very deep holes ([> 10 × Ø]{.technical}) need special tools
 
-</div>
-
-<div>
+::right::
 
 ### Through or blind?
 
@@ -30,41 +28,31 @@ Small topic, [endless trouble]{.marker}
 - **Blind holes** need an extra drill depth, trap chips and fluid, and are hard to clean
 - **Flat-bottom** holes need a separate end mill operation
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Blind holes have a cone
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-
-<div>
+::left::
 
 <Sketch name="blind-hole"><BlindHole /></Sketch>
 
-</div>
+::right::
 
-<div>
-
-- Drills have a **118°** (or 135°) point that leaves a cone
+- Drills have a [**118°**]{.technical} (or [135°]{.technical}) point that leaves a cone
 - A tap can't cut a full thread to the bottom
 - So the **drill depth** must be deeper than the **thread depth**
 - On a drawing, state both: `M6 ↧ 12, drill Ø5 ↧ 16`
 - Don't let the cone break through the other side of the part
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # How deep should a thread be?
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - The **first few threads** carry most of the load
 - In steel, engagement beyond **≈ 1.5 × D** adds little strength
@@ -72,9 +60,9 @@ Small topic, [endless trouble]{.marker}
 - In plastics, tapped threads are weak: use **inserts**
 - Deeper threads = longer tapping, more broken taps
 
-</div>
+::right::
 
-<div>
+<div class="technical-table">
 
 | Thread | Tap drill | 1.5 × D | 2 × D |
 |---|---:|---:|---:|
@@ -84,19 +72,17 @@ Small topic, [endless trouble]{.marker}
 | M6 | 5.0 | 9 | 12 |
 | M8 | 6.8 | 12 | 16 |
 
+</div>
+
 <div class="text-xs opacity-60 mt-1">All dimensions in mm, coarse metric threads.</div>
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Thread one part, never both
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Threaded holes in both parts
 
@@ -105,13 +91,13 @@ Small topic, [endless trouble]{.marker}
 - The thread starts in both holes never line up: the screw **binds**, or pushes the parts apart
 - Two holes to tap, two chances to break a tap
 
-</div>
+::right::
 
 <Sketch name="threaded-both-sides" class="h-80" hint="Left: both parts tapped, a gap stays between them. Right: clearance hole in the top part, threaded hole in the bottom part, parts clamped together" />
 
-</div>
+::bottom::
 
-<div class="takeaway mt-6">
+<div class="takeaway">
 Screw head → <strong>clearance hole</strong> → <strong>threaded hole</strong>. Only the last part holds a thread.<br>
 Taken apart often? Use a <strong>stud and nut</strong>: the stud stays in, the nut takes the wear.
 </div>
@@ -121,30 +107,26 @@ This one comes up constantly. Ask the room: "why doesn't this clamp?" and let so
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Edge cases: yes, sometimes you do
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - **Jacking screws**: threaded in one part, pushing on the other to lift or separate
 - **Differential screws**: two pitches, one in each part, for very fine adjustment
 - **Turnbuckles**: left-hand and right-hand thread to pull things together
 - **Captive screws**: a thread in the cover so the screw can't fall out, a thinned shank so it spins free
 
-</div>
+::right::
 
-<div>
-
-- **Threaded tubes** (e.g. SM1 lens tubes): the thread *is* the joint
+- **Threaded tubes** (e.g. [SM1]{.technical} lens tubes): the thread *is* the joint
 - **Set screws**: clamp a shaft or a sliding part with their tip
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 If your design really needs one of these, you already know it does. Carry on, you clearly don't need this slide.
 </div>
 
@@ -153,12 +135,14 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Clearance holes and counterbores
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+::left::
 
-<div>
+<div class="technical-table">
 
 | Screw | Clearance (medium) | Counterbore Ø | Counterbore depth |
 |---|---:|---:|---:|
@@ -168,28 +152,24 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 | M6 | 6.6 | 11 | 6.4 |
 | M8 | 9.0 | 15 | 8.6 |
 
-<div class="text-xs opacity-60 mt-1">mm; clearance per ISO 273, counterbores for ISO 4762 socket head cap screws. Check your CAD hole wizard.</div>
-
 </div>
 
-<div>
+<div class="text-xs opacity-60 mt-1">mm; clearance per ISO 273, counterbores for ISO 4762 socket head cap screws. Check your CAD hole wizard.</div>
 
-- Use the **clearance** size, not the thread size: an M6 screw doesn't go into a Ø6 hole
+::right::
+
+- Use the **clearance** size, not the thread size: an [M6]{.technical} screw doesn't go into a [Ø6]{.technical} hole
 - Clearance holes give **play**: they don't locate parts (use dowels, see <Link to="adjustability">Adjustability</Link>)
 - **Counterbores** let screw heads sit flush
 - Use the CAD **hole wizard**, so the workshop can read the intent
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Threads in soft materials
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### The problem
 
@@ -197,9 +177,7 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 - Steel screws **strip** soft threads easily
 - Test setups get taken apart **a lot**
 
-</div>
-
-<div>
+::right::
 
 ### The fixes
 
@@ -209,21 +187,19 @@ Keep this light. The point is not to forbid these, but to make clear they are de
 - A **through hole with a nut** where there is room
 - Longer engagement (2 × D)
 
-</div>
+::bottom::
 
-</div>
-
-<div class="warning mt-8">
+<div class="warning">
 In vacuum: a screw in a blind hole traps a volume of air that leaks out slowly (a "virtual leak"). Use vented screws or a vent hole.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Use as few screw sizes as possible
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 Every different screw size means:
 
@@ -232,21 +208,15 @@ Every different screw size means:
 - Another box of screws to stock
 - More chance of the wrong screw in the wrong hole
 
-</div>
-
-<div>
+::right::
 
 ### Pick a small set
 
-- e.g. **M3** for small parts, **M6** for structure
-- Match the lab's **optical table** thread (often M6)
+- e.g. [**M3**]{.technical} for small parts, [**M6**]{.technical} for structure
+- Match the lab's **optical table** thread (often [M6]{.technical})
 - Use the same **screw lengths** where possible
 
 <div class="todo mt-4">Agree on a lab standard with the workshop.</div>
-
-</div>
-
-</div>
 
 ---
 

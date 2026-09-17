@@ -6,38 +6,32 @@ routeAlias: exercise
 # Exercise: redesign a scientist design
 
 ---
+layout: two-cols-header
+---
 
 # The part
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### A typical scientist design
 
-- A flanged shaft turned from **one piece** of Ø100 × 192 mm steel bar
+- A flanged shaft turned from **one piece** of [Ø100 × 192 mm]{.technical} steel bar
 - **Sharp** internal corners at every shoulder
-- A 5 mm wide groove, **40 mm deep**
+- A [5 mm]{.technical} wide groove, [**40 mm deep**]{.technical}
 - A bolt circle, a keyway, and a flat: **four setups**
 - [**±0.01 mm**]{.technical} on every dimension
-- M2.5, M3, M4, and M5 threads in the flange face
+- [M2.5]{.technical}, [M3]{.technical}, [M4]{.technical}, and [M5]{.technical} threads in the flange face
 - Sent as a STEP file only
 
 <div class="todo mt-4">Replace with a real (anonymised) design from our lab, with the drawing handed out on paper.</div>
 
-</div>
+::right::
 
 <Sketch name="scientist-design" class="h-96" hint="The flanged shaft turned from solid: sharp shoulders, the deep narrow groove, keyway and flat and bolt circle on four setups" />
-
-</div>
 
 ---
 
 # The exercise
-
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
 
 ### In teams (30–45 min)
 
@@ -49,10 +43,6 @@ routeAlias: exercise
 ### Then
 
 The machinist estimates the **time** for the original and each redesign. We compare.
-
-</div>
-
-</div>
 
 <!--
 The time comparison is the punchline. Ideally the machinist estimates the original in front of the group first, talking through each setup.

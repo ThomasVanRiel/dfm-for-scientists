@@ -44,24 +44,22 @@ The two-part column is three setups for two parts: one for the shaft, two for th
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Chips are not free
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+::left::
 
-<div>
-
-To turn the flanged shaft from solid you buy Ø100 bar, 192 mm long:
+To turn the flanged shaft from solid you buy [Ø100]{.technical} bar, [192 mm]{.technical} long:
 
 - 1508 cm³, about **11.8 kg** of steel
 - The final part is **183 cm³**, about **1.4 kg**
 - **88 %** leaves the machine as chips
 
-The flange is 12 mm of that length. The other 180 mm of Ø100 bar exists only so a Ø25 shaft can be cut out of the middle of it.
+The flange is [12 mm]{.technical} of that length. The other [180 mm]{.technical} of [Ø100]{.technical} bar exists only so a [Ø25]{.technical} shaft can be cut out of the middle of it.
 
-</div>
-
-<div>
+::right::
 
 That 88 % costs:
 
@@ -71,11 +69,9 @@ That 88 % costs:
 - **Waste**: chips are recycled at a fraction of the price you paid
 - **Distortion**: removing lots of material releases internal stress (see <Link to="materials">Materials</Link>)
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 Start from the closest standard stock size, not from the bounding box. Here that means two stock sizes, not one big one.
 </div>
 

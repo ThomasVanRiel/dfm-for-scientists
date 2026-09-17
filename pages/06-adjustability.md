@@ -8,12 +8,12 @@ routeAlias: adjustability
 Design for alignment, not for perfection
 
 ---
+layout: two-cols-header
+---
 
 # Precision or adjustment?
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div>
+::left::
 
 ### Demand precision
 
@@ -22,9 +22,7 @@ Design for alignment, not for perfection
 - Still off by the **stack-up**, temperature, and assembly
 - When the setup changes, you need **new parts**
 
-</div>
-
-<div>
+::right::
 
 ### Design in adjustment
 
@@ -33,11 +31,9 @@ Design for alignment, not for perfection
 - Aligned to the **actual** beam, sample, or sensor
 - Can be **re-aligned** when the setup changes
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 In a test setup you usually align to the physics, not to the drawing. Adjustment gets you there more cheaply.
 </div>
 
@@ -47,24 +43,24 @@ In a test setup you usually align to the physics, not to the drawing. Adjustment
 
 | Feature | Range | Notes |
 |---|---|---|
-| **Slotted holes** | mm | Simplest. Lock with screws, maybe a dowel afterward |
-| **Shims** | 0.01–1 mm steps | Cheap, stable, repeatable. Standard shim stock |
-| **Set screws / push-pull screws** | 0.1–1 mm | Fine adjustment, lock with a counter screw |
-| **Eccentric pins or bushings** | < 1 mm | Compact, rotational adjustment |
-| **Fine-pitch adjusters, micrometers** | µm–mm | Buy them (see <Link to="buy-assemble-machine">Buy, assemble, or machine</Link>) |
-| **Flexures** | µm–0.1 mm | No friction, no backlash |
+| **Slotted holes** | [mm]{.technical} | Simplest. Lock with screws, maybe a dowel afterward |
+| **Shims** | [0.01–1 mm]{.technical} steps | Cheap, stable, repeatable. Standard shim stock |
+| **Set screws / push-pull screws** | [0.1–1 mm]{.technical} | Fine adjustment, lock with a counter screw |
+| **Eccentric pins or bushings** | [< 1 mm]{.technical} | Compact, rotational adjustment |
+| **Fine-pitch adjusters, micrometers** | [µm–mm]{.technical} | Buy them (see <Link to="buy-assemble-machine">Buy, assemble, or machine</Link>) |
+| **Flexures** | [µm–0.1 mm]{.technical} | No friction, no backlash |
 
 <div class="warning mt-6">
 Always include a way to <strong>lock</strong> the adjustment. An adjustment that drifts is worse than none.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Exact constraint
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 A rigid body has **6 degrees of freedom**: 3 translations, 3 rotations.
 
@@ -72,9 +68,7 @@ A rigid body has **6 degrees of freedom**: 3 translations, 3 rotations.
 - **Over-constrained**: constrained more than once. It rocks, jams, or gets stressed and warps
 - **Under-constrained**: it wobbles
 
-</div>
-
-<div>
+::right::
 
 ### Examples
 
@@ -82,27 +76,21 @@ A rigid body has **6 degrees of freedom**: 3 translations, 3 rotations.
 - A shaft in **two tight bearings** that aren't perfectly aligned: over-constrained
 - **Two tight dowel pins**: over-constrained (next slides)
 
-</div>
-
-</div>
-
 <!--
 Physicists usually love this. Connect it to degrees of freedom they already know from mechanics.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Kinematic mounts
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-
-<div>
+::left::
 
 <Sketch name="kinematic-mount"><KinematicMount /></Sketch>
 
-</div>
-
-<div>
+::right::
 
 ### Kelvin clamp
 
@@ -116,19 +104,15 @@ Three balls on three different features:
 
 - Repeatability of **micrometers** when you remove and replace it
 - Needs **preload**: gravity, springs, or magnets
-- **Maxwell** variant: three V-grooves at 120°
+- **Maxwell** variant: three V-grooves at [120°]{.technical}
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Dowel pins for repeatable positioning
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Screws **clamp**, dowels **locate**. Clearance holes have play
 - **Press fit** in one part, **slip fit** in the other
@@ -136,19 +120,13 @@ Three balls on three different features:
 - Make **one hole round** and the **other a slot** (or use a diamond pin), so the pins aren't over-constrained
 - Holes are **reamed** ([H7]{.technical})
 
-</div>
-
-<div>
+::right::
 
 ### Practical details
 
 - **Blind** dowel holes: add a vent, or use pins with an extraction thread
 - Don't put dowels in **both** parts as press fits: you'll never get them apart
 - Drill and ream both parts **together** for the best alignment, if the workshop agrees
-
-</div>
-
-</div>
 
 ---
 
@@ -157,12 +135,12 @@ Three balls on three different features:
 <Sketch name="dowel-hole-slot" class="h-96" hint="Two plates located by two dowel pins: a round hole at one pin, a slot pointing at it for the other" />
 
 ---
+layout: two-cols-header
+---
 
 # Flexures
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 Motion by **bending** material instead of sliding or rolling.
 
@@ -171,9 +149,7 @@ Motion by **bending** material instead of sliding or rolling.
 - Small range: typically µm to a fraction of a mm
 - Can be made from one piece by milling or wire EDM
 
-</div>
-
-<div>
+::right::
 
 ### Typical uses
 
@@ -183,10 +159,6 @@ Motion by **bending** material instead of sliding or rolling.
 - Strain relief between parts with different thermal expansion
 
 <div class="warning mt-4">Keep stresses well below the fatigue limit. Ask for help sizing them.</div>
-
-</div>
-
-</div>
 
 ---
 

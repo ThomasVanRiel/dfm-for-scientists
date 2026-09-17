@@ -18,7 +18,7 @@ const { total } = useNav()
   bottom: 0.75rem;
   right: 1.5rem;
   width: 7ch;
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8rem;
   line-height: 1;
   color: #1e293b;

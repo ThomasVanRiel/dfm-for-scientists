@@ -8,20 +8,18 @@ routeAlias: communication
 Talk to the machinist [before]{.marker} the design is finished
 
 ---
+layout: two-cols-header
+---
 
 # Why a STEP file is not enough
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### A STEP file contains
 
 - Geometry
 
-</div>
-
-<div>
+::right::
 
 ### A STEP file does not tell the workshop
 
@@ -32,21 +30,19 @@ Talk to the machinist [before]{.marker} the design is finished
 - **Quantity**, and whether spares are needed
 - **What the part does**, and what's critical
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specification.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # What a drawing needs
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Views with **datums** (A, B, C)
 - **Units** (mm)
@@ -54,21 +50,17 @@ Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specif
 - **General tolerance**: e.g. "[ISO 2768-mK]{.technical}"
 - **Critical features** with explicit tolerances, clearly marked
 
-</div>
+::right::
 
-<div>
-
-- **Threads** with depth: "M6 ↧ 12"
+- **Threads** with depth: "[M6 ↧ 12]{.technical}"
 - **Finish**: coating, masking, Ra, edge breaks, cleaning
 - **Quantity**
 - **Revision**, date, and **contact person**
 - A note on **function**, if it helps
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-6">
+<div class="takeaway">
 The drawing has to be right the first time. It is the one document the workshop builds from, and nobody checks your intent against it.
 </div>
 
@@ -79,12 +71,12 @@ In CAD, undo is your most-used command. A workshop only has redo.
 <div class="todo mt-6">Add our workshop's drawing template and a good example drawing.</div>
 
 ---
+layout: two-cols-header
+---
 
 # Dimension from datums
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 ### Chain dimensioning
 
@@ -94,9 +86,7 @@ Each hole dimensioned from the previous one.
 - Hole 5 can be off by 4 × the tolerance
 - The machinist has to add up numbers
 
-</div>
-
-<div>
+::right::
 
 ### Baseline dimensioning
 
@@ -106,26 +96,28 @@ Each hole dimensioned from **one datum**.
 - Matches how the part is **clamped and measured**
 - Easy to program
 
-</div>
+::bottom::
 
-</div>
-
-<div class="takeaway mt-8">
+<div class="takeaway">
 Dimension the way the part <strong>functions</strong>: from the faces and holes it's aligned by.
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Chain vs. baseline
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+::left::
 
 <Sketch name="chain-dimensioning" class="h-88" hint="A plate with five holes, each dimensioned from the previous hole" />
 
+::right::
+
 <Sketch name="baseline-dimensioning" class="h-88" hint="The same plate, every hole dimensioned from datum edges A and B" />
 
-</div>
-
+---
+layout: two-cols-header
 ---
 
 # Talk to the machinist early
@@ -141,17 +133,13 @@ flowchart LR
 
 </div>
 
-<div class="grid grid-cols-2 gap-10 mt-8">
-
-<div>
+::left::
 
 - Changes on a **sketch** cost minutes
 - Changes in a **finished drawing** cost hours
 - Changes to a **made part** cost the part
 
-</div>
-
-<div>
+::right::
 
 ### Questions to ask
 
@@ -160,10 +148,6 @@ flowchart LR
 - "Which tolerances can you hold easily?"
 - "Do we have this material in stock?"
 - "Could this be bought, or laser cut?"
-
-</div>
-
-</div>
 
 ---
 

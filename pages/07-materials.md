@@ -33,21 +33,19 @@ class: text-sm
 </div>
 
 ---
+layout: two-cols-header
+---
 
 # Residual stress: parts that warp
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 - Rolled plate and bar contain **internal stresses** from production
 - Remove lots of material, especially from **one side**, and the part **bows**
 - It can look fine on the machine and warp **after unclamping**
 - Hours or days later it may still move
 
-</div>
-
-<div>
+::right::
 
 ### What helps
 
@@ -57,17 +55,15 @@ class: text-sm
 - Avoid removing 90 % of a block (see <Link to="cost">What parts actually cost</Link>)
 - Leave **stiffness** in the part: ribs, flanges
 
-</div>
-
-</div>
-
+---
+layout: two-cols-header
+cols: 2/3
+align: center
 ---
 
 # Thermal expansion
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-
-<div>
+::left::
 
 | Material | α (µm / m·K) |
 |---|---:|
@@ -80,19 +76,13 @@ class: text-sm
 | PEEK | ≈ 47 |
 | POM | ≈ 110 |
 
-</div>
+::right::
 
-<div>
-
-- A **200 mm** aluminum plate, **5 K** warmer:<br/>23 × 0.2 × 5 = **23 µm** longer
+- A [**200 mm**]{.technical} aluminum plate, **5 K** warmer:<br/>[23 × 0.2 × 5 = **23 µm**]{.technical} longer
 - So [±0.01 mm]{.technical} means nothing without a **temperature**
 - **Mixed materials** (aluminum on steel) bend like a bimetal, or bolts slip
 - Plastics move **5–10 ×** more than metals
 - Cryogenic setups: parts **shrink** a lot, and differently
-
-</div>
-
-</div>
 
 ---
 
