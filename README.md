@@ -84,6 +84,42 @@ Defined in `style.css`, used across the deck:
 
 `grep -rn 'class="todo"' slides.md pages` lists what's still missing.
 
+### Colours
+
+Everything the deck draws with, for picking in Inkscape's RGBA field. The
+sketch roles exist as CSS variables so the inline SVG components in
+`components/` re-tint themselves in dark mode; a hand-drawn file from
+`sketches/` carries literal colours instead, so use the light column there.
+
+| Role | Variable | Light | Dark |
+| --- | --- | --- | --- |
+| Part outline | `--sk-ink` | `#1f2937` | `#dfe5ec` |
+| Secondary outline | `--sk-ink-soft` | `#475569` | `#aab6c5` |
+| Construction and dimension lines | `--sk-rule` | `#9ca3af` | `#7c8899` |
+| Labels | `--sk-label` | `#6b7280` | `#9aa7b8` |
+| Void inside a part | `--sk-paper` | `#ffffff` | `#1b2230` |
+| Stock a part is cut from | `--sk-stock` | `#e5e7eb` | `#323c4b` |
+| Tool, and anything correct | `--sk-accent` | `#2563eb` | `#60a5fa` |
+| Caution | `--sk-warn` | `#d97706` | `#f59e0b` |
+| Wrong, or impossible | `--sk-alert` | `#dc2626` | `#f87171` |
+| Highlighter | `--sk-highlight` | `#fcd34d` | — |
+
+The callouts, and the fill that matches each one when drawn at **25 % alpha on
+white** — Inkscape composites the same way the slide does, so a 25 % wash of
+the third column lands exactly on the second:
+
+| Callout | Bar | Fill | Fill at 25 % |
+| --- | --- | --- | --- |
+| `.takeaway` | `#2563eb` | `#eff6ff` | `#bfdbff` |
+| `.warning` | `#d97706` | `#fffbeb` | `#ffefaf` |
+| `.tip` | `#059669` | `#ecfdf5` | `#b3f7d7` |
+
+Drawing for both themes: a hand-drawn sketch is dark ink on white, blended
+with `mix-blend-mode: multiply` so its paper disappears into a light slide.
+Dark mode inverts the image and switches to `screen`, which keeps hues but
+flips lightness — so near-black ink and saturated accents both survive the
+trip, while a pale wash does not.
+
 ## Deploying
 
 Pushing to `main` builds the deck and publishes it to GitHub Pages
