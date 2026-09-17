@@ -3,7 +3,7 @@ theme: default
 addons:
   - fancy-arrow
 title: DfM for Scientists (Work in progress – draft)
-author: Thomas Van Riel
+author: Dr. Ing. Thomas Van Riel
 info: |
   ## Design for Manufacturing for Scientists
   A crash course for scientists who design their own test setups:
