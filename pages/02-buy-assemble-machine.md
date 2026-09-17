@@ -11,23 +11,111 @@ The cheapest part is the one you don't have to make
 
 # Decide in this order
 
-```mermaid
-flowchart LR
-  A[Need a part] --> B{In a catalog?}
-  B -- yes --> C[Buy it]
-  B -- no --> D{Configurable part?}
-  D -- yes --> E[Configure and order]
-  D -- no --> F{Build from plates,<br/>stock, profiles?}
-  F -- yes --> G[Assemble]
-  F -- no --> H[Machine it]
-```
-
-<div class="takeaway mt-8">
-Your own design time counts too. A €150 catalog stage is cheap compared to a week of designing and a week of machining.
+<div class="ladder">
+<div class="rung" v-click="1">
+<div class="q"><span class="step">1</span>In a <strong>catalog</strong>?</div>
+<div class="edge"><span class="word">yes</span>→</div>
+<div class="tip">Buy it</div>
+</div>
+<div class="edge down" v-click="2">no ↓</div>
+<div class="rung" v-click="2">
+<div class="q"><span class="step">2</span>A <strong>configurable</strong> part?</div>
+<div class="edge"><span class="word">yes</span>→</div>
+<div class="tip">Configure and order</div>
+</div>
+<div class="edge down" v-click="3">no ↓</div>
+<div class="rung" v-click="3">
+<div class="q"><span class="step">3</span>Built from <strong>plates, stock, profiles</strong>?</div>
+<div class="edge"><span class="word">yes</span>→</div>
+<div class="tip">Assemble</div>
+</div>
+<div class="edge down" v-click="4">no ↓</div>
+<div class="rung" v-click="4">
+<div class="nothing"><span class="step"></span>Nothing off the shelf fits</div>
+<div class="edge"><span class="word"></span>→</div>
+<div class="warning final">Machine it</div>
+</div>
 </div>
 
+<div class="takeaway mt-8" v-click="5">
+Your own design time counts too.<br/>
+A €150 catalog stage is cheap compared to a week of designing and a week of machining.
+</div>
+
+<style>
+.ladder {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* Question, the answer that leaves the ladder, and the path that stays on it. */
+.rung {
+  display: grid;
+  grid-template-columns: 26rem 4rem 1fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.q {
+  border: 1px solid var(--sk-rule);
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+}
+
+/*
+  A fixed width, so the last rung can carry an empty one and still line its
+  text up with the questions above it. Same trick as `.word` below: the
+  placeholder does the aligning, not a magic padding.
+*/
+.step {
+  display: inline-block;
+  width: 1.1rem;
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
+  color: var(--sk-label);
+}
+
+.edge {
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85em;
+  color: var(--sk-label);
+}
+
+/* Holds the arrow's place when there is no "yes" in front of it. */
+.edge .word {
+  display: inline-block;
+  width: 2.2rem;
+}
+
+/* The "no" sits under the question it belongs to, on the path down. */
+.down {
+  padding-left: 1.4rem;
+}
+
+/*
+  The last rung has no question: every answer above it was no. Saying that in
+  the question column keeps the row from reading as a gap, and it is the
+  sentence the audience is thinking by the time they get there. Unboxed and
+  in the label grey, because it is a statement, not a decision.
+*/
+.nothing {
+  border: 1px dashed var(--sk-rule);
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  color: var(--sk-label);
+}
+
+.final {
+  font-weight: 500;
+}
+</style>
+
 <!--
-Replace this mermaid diagram with a professional handdrawn one.
+Prototype B: the same decision as a ladder, in the deck's own type and
+colours, using .tip and .warning for the outcomes so dark mode comes free.
+Reads top to bottom, and each rung can take a v-click if it should arrive one
+question at a time.
 -->
 
 ---
@@ -53,8 +141,8 @@ layout: two-cols-header
 
 ### Configurable parts
 
-- Shafts, spacers, plates, blocks cut to your dimensions
-- Choose length, holes, and threads from a web form
+- Shafts, spacers, plates, blocks cut to spec
+- Choose length, holes, and threads
 - Typically delivered in days, with a known price
 
 ### Machine elements
@@ -62,9 +150,6 @@ layout: two-cols-header
 - Dowel pins, bearings, bushings, springs
 - Shaft collars, couplings, leveling feet
 
-::bottom::
-
-<div class="todo">Add the suppliers our lab already has accounts with.</div>
 
 ---
 layout: two-cols-header
@@ -81,8 +166,6 @@ Material comes in standard sizes. Use them:
 - **Tube**: round, square, rectangular
 - **Angle** and **channel**
 
-<div class="todo mt-4">Replace with the sizes our supplier stocks.</div>
-
 ::right::
 
 If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 mm]{.technical}:
@@ -90,6 +173,8 @@ If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 m
 - The faces can stay as delivered
 - One fewer operation
 - Less material removed, so less distortion
+
+::bottom::
 
 <div class="warning mt-4">
 Rolled plate is not precision flat or precise in thickness. If a face matters, it must be machined, or use cast tooling plate.
