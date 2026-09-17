@@ -76,7 +76,7 @@ Start from the closest standard stock size, not from the bounding box. Here that
 </div>
 
 <div class="aside mt-4">
-You paid for 11.8 kg of steel and took home 1.4 kg. The rest left in a bin worth 20 cents a kilo.
+You paid for 11.8 kg of steel and took home 1.4 kg and left €40 worth of chips.
 </div>
 
 ---
