@@ -8,3 +8,5 @@ dist
 .agents
 .claude
 skills-lock.json
+
+ref/

@@ -64,17 +64,12 @@ The curve is qualitative. The typical tolerances per process are rough orders of
 -->
 
 ---
-layout: center
+layout: none
 ---
 
-<!-- Replace the placeholder with e.g.:
-<video src="/professionals-have-standards.mp4" controls class="h-120 mx-auto" />
-(put the file in public/)
--->
-
-<div class="todo text-center p-16">
-Video: TF2 "Meet the Sniper", "Professionals have standards"
-</div>
+<SlidevVideo autoplay autoreset="slide" class="w-full h-full object-cover" >
+  <source src="/sniper-driving.mp4" type="video/mp4" />
+</SlidevVideo>
 
 <!--
 Play the clip, then move straight to ISO 2768.
