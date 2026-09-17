@@ -45,7 +45,7 @@ this seminar adds the workshop's.
 </div>
 
 <div class="absolute bottom-10 left-14 font-mono text-sm opacity-70">
-Thomas Van Riel, KU Leuven
+Dr. Ing. Thomas Van Riel, KU Leuven
 </div>
 
 <!-- <Sketch name="title" class="absolute right-10 bottom-8 w-110" /> -->

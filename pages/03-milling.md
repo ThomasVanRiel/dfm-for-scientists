@@ -94,6 +94,7 @@ Make pockets wider or shallower, or open them to one side. Or build the part fro
 
 ---
 layout: two-cols-header
+align: bottom
 ---
 
 # How deep, for a given diameter
@@ -119,9 +120,6 @@ A [**2 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which me
 The exercise part's groove is <strong class="technical">5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
 </div>
 
-::bottom::
-
-<div class="todo">Confirm these L/D bands with our machinist.</div>
 
 <!--
 This is the slide that pays for the whole section. Two numbers off a drawing, divided, and you know whether the workshop will sigh.
@@ -149,7 +147,6 @@ layout: two-cols-header
 - Keep wall height moderate relative to thickness
 - Add **ribs** or a lip at the top for stiffness
 
-<div class="todo mt-4">Check these numbers with our machinist.</div>
 
 ---
 layout: two-cols-header
