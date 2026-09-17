@@ -1,5 +1,5 @@
 // Downloads the deck's webfonts into fonts/ so the slides render with no network
-// access at all. Re-run with `npm run fonts` after changing the `fonts:` block in
+// access at all. Re-run with `pnpm fonts` after changing the `fonts:` block in
 // slides.md; keep the two in sync (slides.md sets `provider: none`, which stops
 // Slidev from injecting the Google Fonts <link>).
 import { mkdir, writeFile } from 'node:fs/promises'

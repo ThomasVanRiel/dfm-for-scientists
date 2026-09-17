@@ -9,17 +9,17 @@ Thomas Van Riel, KU Leuven.
 ## Running it
 
 ```sh
-npm install
-npm run dev        # opens localhost:3030
+pnpm install
+pnpm dev        # opens localhost:3030
 ```
 
 | Script | What it does |
 | --- | --- |
-| `npm run dev` | Dev server with hot reload, opens a browser |
-| `npm run dev:lan` | Same, but reachable from the LAN so a phone can drive the slides |
-| `npm run build` | Static site into `dist/` |
-| `npm run export` | PDF export |
-| `npm run fonts` | Re-download the self-hosted webfonts into `fonts/` |
+| `pnpm dev` | Dev server with hot reload, opens a browser |
+| `pnpm dev:lan` | Same, but reachable from the LAN so a phone can drive the slides |
+| `pnpm build` | Static site into `dist/` |
+| `pnpm export` | PDF export |
+| `pnpm fonts` | Re-download the self-hosted webfonts into `fonts/` |
 
 Presenter mode is at `/presenter`; press `o` for the slide overview and `g` to jump to a
 slide number. Drawings made during a talk are not persisted (`drawings.persist: false`).
