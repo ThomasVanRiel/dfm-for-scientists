@@ -21,7 +21,7 @@ const { total } = useNav()
   font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8rem;
   line-height: 1;
-  color: #1e293b;
+  color: var(--sk-ink);
   text-align: right;
   white-space: nowrap;
   user-select: none;

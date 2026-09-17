@@ -12,7 +12,7 @@ info: |
 # `both` puts the dark-mode toggle in the nav bar. The deck is designed light
 # and presents light; dark is for reading it in bed. The overrides the callouts
 # need for it live at the bottom of style.css.
-colorSchema: both
+colorSchema: light
 fonts:
   sans: IBM Plex Sans
   serif: Newsreader
