@@ -250,6 +250,7 @@ class: text-sm
 | **CNC turning** | Round parts: shafts, spacers, flanges. Fast and accurate | Anything that isn't rotationally symmetric |
 | **Laser cutting** | Fast 2D profiles in sheet and thin plate | Thick plate, heat-affected edges, no pockets or threads |
 | **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges; lower accuracy |
+| **Wire EDM** | Hardened steel and any conductive metal, sharp internal corners, accurate profiles through thick stock | Slow; through-profiles only, no blind features; conductive materials only |
 | **Sheet metal bending** | Enclosures, brackets, covers (see <Link to="sheet-metal">Sheet metal</Link>). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
 | **Welding** | Large frames, joining thick sections | Distortion; precise faces need machining afterward |
 | **3D printing** | Complex shapes, jigs, quick iterations | Anisotropic strength, creep, accuracy, outgassing |
@@ -259,6 +260,8 @@ Combine them: a laser-cut plate with a few milled precision features is often th
 </div>
 
 <!--
+Wire EDM is on this list because it is cheap for us — our shop is the exception. Elsewhere it is the expensive last resort, so say that.
+
 Don't go deep here. The goal is that they know these processes exist and roughly what they're for, so they can ask the workshop "could this be laser cut?"
 -->
 
