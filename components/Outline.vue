@@ -63,6 +63,9 @@ const groups = [
 const order = groups.flatMap((g) => g.items.map((i) => i.to))
 const nextIndex = computed(() => order.indexOf(props.next))
 
+// Chapter number: position in the running order, counted across the groups.
+const number = (to) => order.indexOf(to) + 1
+
 function state(to) {
   const i = order.indexOf(to)
   if (nextIndex.value < 0) return 'ahead'
@@ -81,6 +84,7 @@ function state(to) {
         <ul>
           <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
             <span class="caret" aria-hidden="true">&#9656;</span>
+            <span class="num">{{ number(item.to) }}</span>
             <Link :to="item.to">{{ item.label }}</Link>
           </li>
         </ul>
@@ -138,6 +142,24 @@ li {
 
 li.next .caret {
   visibility: visible;
+}
+
+/* Right-aligned in a fixed width so the titles line up past ten. */
+.num {
+  flex: none;
+  width: 1.7ch;
+  text-align: right;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.8em;
+  color: var(--sk-label);
+}
+
+li.passed .num {
+  opacity: 0.5;
+}
+
+li.next .num {
+  color: var(--sk-accent);
 }
 
 li :deep(a) {
