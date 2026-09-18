@@ -218,8 +218,7 @@ layout: two-cols-header
 
 ### Why an assembly wins
 
-- Each piece is mostly **one setup**, from **stock that is already the right size**
-- The shaft is bar you barely touch; the flange is a short slice
+- Each piece is mostly **one setup**, from **stock already near size**
 - Change one piece, not the whole part
 - Deep "pockets" become open space between plates
 - 2D profiles can be **laser or waterjet cut**
@@ -229,15 +228,14 @@ layout: two-cols-header
 ### What to watch
 
 - Joints need **alignment**: a fit, dowel pins, or screws
-- Stiffness depends on the joints
+- **Stiffness and tolerances** live in the joint (see <Link to="tolerances">Tolerances and fits</Link>)
 - More parts to assemble and keep track of
-- Tolerances add up across the joint (see <Link to="tolerances">Tolerances and fits</Link>)
-- A press fit holds by **friction**: there is a torque and axial load limit
+- A press fit holds by **friction** — torque and axial load limits
 
 ::bottom::
 
 <div class="takeaway">
-A <span class="technical">Ø25</span> shaft with a flange pressed on beats the same shape turned from <span class="technical">Ø100</span> bar. An L-bracket from two plates and four screws beats one milled L. Same rule, round or square.
+An L-bracket from two plates and four screws beats one milled L. Same rule, round or square.
 </div>
 
 ---
