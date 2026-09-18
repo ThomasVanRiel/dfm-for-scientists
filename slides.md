@@ -304,10 +304,6 @@ src: ./pages/08-assembly.md
 src: ./pages/11-communication.md
 ---
 
----
-src: ./pages/12-closing.md
----
-
 <!--
   ─────────────────────────────────────────────────────────────────────────
   BACKUP SECTIONS
@@ -337,6 +333,7 @@ routeAlias: backup
 - <Link to="finishing">Finishing and secondary operations</Link>
 - <Link to="sheet-metal">Sheet metal covers</Link>
 - <Link to="exercise">Closing exercise: redesign a scientist design</Link>
+- <Link to="workshop-tricks">Workshop tricks</Link>
 
 </div>
 
@@ -374,3 +371,12 @@ src: ./pages/10-sheet-metal.md
 ---
 src: ./pages/12-exercise.md
 ---
+
+---
+src: ./pages/13-workshop-tricks.md
+---
+
+---
+src: ./pages/12-closing.md
+---
+
