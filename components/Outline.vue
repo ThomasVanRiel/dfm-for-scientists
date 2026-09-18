@@ -11,7 +11,8 @@
   utility (`outline-style: solid`), so that name draws a solid box around the
   whole slide. Same for any other bare utility word.
 
-  The list below is the single source of truth for the running order. Adding or
+  Four groups, two to a column, each under its own heading. The list below is
+  the single source of truth for the running order. Adding or
   moving a section means editing it here and moving the matching `src:` block
   (and its <Outline> interlude) in slides.md.
 -->
@@ -80,36 +81,46 @@ function state(to) {
     <h1>{{ title }}</h1>
 
     <div class="groups">
-      <template v-for="g in groups" :key="g.title">
+      <section v-for="g in groups" :key="g.title" class="group">
+        <h2>{{ g.title }}</h2>
         <ul>
           <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
             <span class="num">{{ number(item.to) }}</span>
             <Link :to="item.to">{{ item.label }}</Link>
           </li>
         </ul>
-        <div class="rail">
-          <span class="line" aria-hidden="true" />
-          <span class="label">{{ g.title }}</span>
-        </div>
-      </template>
+      </section>
     </div>
   </div>
 </template>
 
 <style scoped>
 /*
-  One column of chapters, and a rail to the right of each group: a hairline
-  spanning the group's rows with its name beside it. The grid is two columns
-  wide and each group fills one row of it, so the rail is exactly as tall as
-  the chapters it brackets.
+  Four groups, filled down the columns rather than across, so the two long
+  groups stack on the left and the two short ones on the right.
 */
 .groups {
   display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: max-content max-content;
   grid-template-columns: max-content max-content;
-  column-gap: 1.1rem;
-  row-gap: 0.55rem;
+  align-items: start;
+  column-gap: 3.5rem;
+  row-gap: 1.5rem;
   width: max-content;
-  margin: 1.4rem auto 0;
+  margin: 1.5rem auto 0;
+}
+
+.group h2 {
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sk-label);
+  margin: 0 0 0.3rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--sk-rule);
 }
 
 ul {
@@ -121,8 +132,8 @@ ul {
 li {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
-  line-height: 1.4;
+  gap: 0.4rem;
+  line-height: 1.45;
   font-size: 1.05rem;
 }
 
@@ -160,27 +171,5 @@ li :deep(a:hover) {
 li.passed :deep(a) {
   color: var(--sk-label);
   opacity: 0.55;
-}
-
-.rail {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-
-.line {
-  width: 1px;
-  align-self: stretch;
-  background: var(--sk-rule);
-}
-
-.label {
-  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.68rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--sk-label);
-  white-space: nowrap;
 }
 </style>

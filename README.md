@@ -47,8 +47,8 @@ are separated by `---`; a trailing HTML comment on a slide is the speaker note.
 ### The outline between sections
 
 Every section is preceded by an `<Outline next="alias" />` slide: the full course
-outline, each line a `<Link>`, so the next section is picked from the list rather than
-walked into. `next` names the section that follows *that instance in the deck* —
+outline as numbered chapters in two columns, four groups under their own headings, each
+line a `<Link>`, so the next section is picked from the list rather than walked into. `next` names the section that follows *that instance in the deck* —
 everything before it is drawn dimmed, the rest read plain. The state is positional: a
 section skipped over still dims, because the deck is past it.
 
