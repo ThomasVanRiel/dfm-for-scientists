@@ -2,11 +2,17 @@
   A hand-drawn sketch from sketches/<name>.svg (or .png/.jpg/.webp).
   Until the file exists, the default slot is shown, or a placeholder describing what to draw.
 
-  With `layer`, one drawing can carry several versions of itself: the SVG is
-  inlined instead of loaded as an image, and only the top-level group whose
-  Inkscape label (or id) matches is shown. Two `<Sketch>` tags on the same file
-  with different layers are then two views of one drawing, registered on one
-  canvas by construction — stack them with `.sketch-stack` to cross-fade.
+  An SVG is inlined into the page rather than loaded through <img>, so that the
+  lettering in a drawing is set in the deck's own webfont. An <img> is a
+  document of its own and cannot reach the @font-face rules in fonts/fonts.css,
+  which drops any <text> in the file back to the browser's default serif — in
+  the PDF export as much as on screen. Other formats still go through <img>.
+
+  With `layer`, one drawing can carry several versions of itself: only the
+  top-level group whose Inkscape label (or id) matches is shown. Two `<Sketch>`
+  tags on the same file with different layers are then two views of one
+  drawing, registered on one canvas by construction — stack them with
+  `.sketch-stack` to cross-fade.
 -->
 <script setup>
 import { computed, ref, useSlots, watchEffect } from 'vue'
@@ -21,8 +27,8 @@ const nameOf = path => path.replace(/^.*\/|\.\w+$/g, '')
 
 const files = import.meta.glob('../sketches/*.{svg,png,jpg,jpeg,webp}', { import: 'default', eager: true })
 
-// Lazy on purpose: the SVG text is only pulled into the bundle for a sketch
-// that is actually asked for by layer.
+// Lazy on purpose: the SVG text is only pulled in for a sketch a slide
+// actually asks for, rather than the whole of sketches/ on every build.
 const sources = import.meta.glob('../sketches/*.svg', { query: '?raw', import: 'default' })
 
 const src = computed(() => Object.entries(files).find(([path]) => nameOf(path) === props.name)?.[1])
@@ -30,7 +36,7 @@ const source = computed(() => Object.entries(sources).find(([path]) => nameOf(pa
 
 const raw = ref('')
 watchEffect(async () => {
-  raw.value = props.layer && source.value ? await source.value() : ''
+  raw.value = source.value ? await source.value() : ''
 })
 
 /*
@@ -44,7 +50,7 @@ watchEffect(async () => {
   throwing.
 */
 const layered = computed(() => {
-  if (!raw.value || typeof DOMParser === 'undefined') return raw.value
+  if (!raw.value || !props.layer || typeof DOMParser === 'undefined') return raw.value
 
   const svg = new DOMParser().parseFromString(raw.value, 'image/svg+xml').documentElement
   const groups = [...svg.children].filter(el => el.tagName === 'g')
@@ -68,7 +74,7 @@ const slots = useSlots()
     <div class="font-bold">✎ sketches/{{ name }}.svg</div>
     <div class="mt-1 opacity-80">has no layer “{{ layer }}”</div>
   </div>
-  <div v-else-if="layer && source" class="sketch sketch-inline" v-html="layered" />
+  <div v-else-if="source" class="sketch sketch-inline" v-html="layered" />
   <div v-else-if="src" class="sketch">
     <img :src="src" :alt="hint || name">
   </div>
