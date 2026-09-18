@@ -282,14 +282,6 @@ src: ./pages/02-buy-assemble-machine.md
 
 ---
 
-<Outline next="printing" />
-
----
-src: ./pages/14-3d-printing.md
----
-
----
-
 <Outline next="milling" />
 
 ---
@@ -326,6 +318,14 @@ src: ./pages/06-adjustability.md
 
 ---
 src: ./pages/07-materials.md
+---
+
+---
+
+<Outline next="printing" />
+
+---
+src: ./pages/14-3d-printing.md
 ---
 
 ---

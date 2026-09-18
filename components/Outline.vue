@@ -26,23 +26,20 @@ const props = defineProps({
 const groups = [
   {
     title: 'What it costs',
-    items: [{ to: 'cost', label: 'What parts actually cost' }],
-  },
-  {
-    title: 'Choosing how to make it',
     items: [
+      { to: 'cost', label: 'What parts actually cost' },
       { to: 'buy-assemble-machine', label: 'Buy, assemble, or machine?' },
-      { to: 'printing', label: '3D printing' },
     ],
   },
   {
-    title: 'Machining',
+    title: 'Manufacturing',
     items: [
       { to: 'milling', label: 'How a milling machine sees your part' },
       { to: 'holes-threads', label: 'Holes and threads' },
       { to: 'tolerances', label: 'Tolerances and fits' },
       { to: 'adjustability', label: 'Adjustability instead of precision' },
       { to: 'materials', label: 'Materials' },
+      { to: 'printing', label: '3D printing' },
     ],
   },
   {
