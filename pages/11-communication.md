@@ -115,7 +115,7 @@ align: center
 
 ::left::
 
-**label** the holes on the view, and put the numbers in a table.
+**Label** the holes on the view, and put the numbers in a table.
 
 - Every hole located from **one origin**
 - Diameter, depth and thread in the same row
@@ -211,11 +211,11 @@ flowchart LR
 
 ### Questions to ask
 
+- "Could this be bought, or laser cut?"
+- "Do we have this material in stock?"
 - "How would you make this?"
 - "Which feature makes this expensive?"
 - "Which tolerances can you hold easily?"
-- "Do we have this material in stock?"
-- "Could this be bought, or laser cut?"
 
 ---
 

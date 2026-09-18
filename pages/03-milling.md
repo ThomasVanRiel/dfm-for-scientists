@@ -76,7 +76,7 @@ layout: two-cols-header
 
 ::left::
 
-<Sketch name="pocket-depth"><PocketDepth /></Sketch>
+<Sketch name="pocket-depth" class="h-64"></Sketch>
 
 ::right::
 
@@ -228,4 +228,4 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 - Thin walls **vibrate and deflect**
 - Every face with features is **another setup**
 - The part has to be **clamped** somewhere
-- If it looks trivial in CAD, **ask** anyway
+- If it looks trivial in CAD, **think** anyway

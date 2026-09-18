@@ -249,10 +249,10 @@ class: text-sm
 | **CNC milling** | Prismatic parts, pockets, precise faces and holes | Deep narrow features, sharp internal corners, many setups |
 | **CNC turning** | Round parts: shafts, spacers, flanges. Fast and accurate | Anything that isn't rotationally symmetric |
 | **Laser cutting** | Fast 2D profiles in sheet and thin plate | Thick plate, heat-affected edges, no pockets or threads |
-| **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges; lower accuracy |
-| **Wire EDM** | Hardened steel, sharp internal corners, accurate profiles in thick stock | Slow; through-profiles only; conductive materials |
+| **Waterjet cutting** | Thick plate, almost any material, no heat | Tapered, rougher edges, lower accuracy |
+| **Wire EDM** | Hardened steel, sharp internal corners, accurate profiles in thick stock | Slow, through-profiles only, only conductive materials |
 | **Sheet metal bending** | Enclosures, brackets, covers (see <Link to="sheet-metal">Sheet metal</Link>). Light and cheap | Minimum flange lengths, bend radii, loose tolerances |
-| **Welding** | Large frames, joining thick sections | Distortion; precise faces need machining afterward |
+| **Welding** | Large frames, joining thick sections | Distortion, precise faces need machining afterward |
 | **3D printing** | Complex shapes, jigs, quick iterations | Anisotropic strength, creep, accuracy, outgassing |
 
 <div class="takeaway mt-4">
