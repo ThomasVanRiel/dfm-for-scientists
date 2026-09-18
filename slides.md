@@ -186,7 +186,7 @@ Most people in the room will recognise themselves in the left column. That's fin
 -->
 
 ---
-layout: statement
+layout: section
 ---
 
 # How will this part be made?

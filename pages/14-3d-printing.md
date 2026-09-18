@@ -8,7 +8,7 @@ routeAlias: printing
 # [3D printing]{.marker}
 
 
-Fast, and not a small machine shop
+The fastest way to be wrong cheaply
 
 ---
 layout: two-cols-header

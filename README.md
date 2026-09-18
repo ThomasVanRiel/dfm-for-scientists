@@ -49,7 +49,8 @@ are separated by `---`; a trailing HTML comment on a slide is the speaker note.
 Every section is preceded by an `<Outline next="alias" />` slide: the full course
 outline as numbered chapters in two columns, four groups under their own headings, each
 line a `<Link>`, so the next section is picked from the list rather than walked into. `next` names the section that follows *that instance in the deck* —
-everything before it is drawn dimmed, the rest read plain. The state is positional: a
+everything before it is drawn dimmed, that chapter's number carries the `.marker`
+highlighter, the rest read plain. The state is positional: a
 section skipped over still dims, because the deck is past it.
 
 `components/Outline.vue` holds the running order, grouped into parts, and is the single

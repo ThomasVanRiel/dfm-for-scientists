@@ -66,12 +66,13 @@ const nextIndex = computed(() => order.indexOf(props.next))
 // Chapter number: position in the running order, counted across the groups.
 const number = (to) => order.indexOf(to) + 1
 
-// Everything the deck has gone past is dimmed; the rest reads plain. The
-// chapter that follows gets no mark of its own — which one is actually next is
-// decided out loud while the slide is up.
+// Everything the deck has gone past is dimmed, the chapter that follows is
+// marked on its number, the rest read plain.
 function state(to) {
   if (nextIndex.value < 0) return 'ahead'
-  return order.indexOf(to) < nextIndex.value ? 'passed' : 'ahead'
+  const i = order.indexOf(to)
+  if (i < nextIndex.value) return 'passed'
+  return i === nextIndex.value ? 'next' : 'ahead'
 }
 </script>
 
@@ -84,7 +85,9 @@ function state(to) {
         <h2>{{ g.title }}</h2>
         <ul>
           <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
-            <span class="num">{{ number(item.to) }}</span>
+            <span class="num">
+              <span :class="{ marker: state(item.to) === 'next' }">{{ number(item.to) }}</span>
+            </span>
             <Link :to="item.to">{{ item.label }}</Link>
           </li>
         </ul>
@@ -151,6 +154,12 @@ li {
 
 li.passed .num {
   opacity: 0.5;
+}
+
+/* Dark enough to read through the highlighter, which is a light amber. */
+li.next .num {
+  color: var(--sk-ink);
+  font-weight: 500;
 }
 
 li :deep(a) {
