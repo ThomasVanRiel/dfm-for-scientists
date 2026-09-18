@@ -41,8 +41,20 @@ slide-top.vue      Slide number in the corner of every slide except the cover
 ```
 
 Adding a section means a new `pages/NN-name.md` starting with a `layout: section` title
-slide, plus a `src:` block at the bottom of `slides.md`. Slides within a file are
-separated by `---`; a trailing HTML comment on a slide is the speaker note.
+slide carrying a `routeAlias`, plus a `src:` block in `slides.md`. Slides within a file
+are separated by `---`; a trailing HTML comment on a slide is the speaker note.
+
+### The outline between sections
+
+Every section is preceded by an `<Outline next="alias" />` slide: the full course
+outline, each line a `<Link>`, so the next section is picked from the list rather than
+walked into. `next` names the section that follows *that instance in the deck* —
+everything before it is drawn dimmed, and it gets a caret in the gutter. The state is
+positional: a section skipped over still dims, because the deck is past it.
+
+`components/Outline.vue` holds the running order, grouped into parts, and is the single
+source of truth for it. Moving a section means editing that list and moving both its
+`src:` block and its `<Outline>` interlude in `slides.md`.
 
 ### Slide shapes
 

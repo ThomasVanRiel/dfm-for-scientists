@@ -242,29 +242,18 @@ If people want to learn real mechanical design: point them to the proper courses
 
 The honest version: your job is to run experiments and pump out a shitload of papers, not to spend weeks on a shaft.
 -->
-
 ---
 
-# Course outline
-
-<div class="mt-8 text-lg mx-auto" >
-
-- What parts actually cost
-- Buy, assemble, or machine?
-- How a milling machine sees your part
-- Design for assembly and use
-- Communicating with the workshop
-
-</div>
+<Outline next="cost" />
 
 <div class="aside mt-8" v-click>
 Ten engineers, one hour, €80/h: this meeting costs <strong>€800</strong>. Let's make it worth it.
 </div>
 
 <!--
-The first three change how people think. Assembly is the practical toolbox. The last one is what actually changes behaviour: talking to the workshop early.
+The first sections change how people think. Assembly is the practical toolbox. Communication is what actually changes behaviour: talking to the workshop early.
 
-The rest of the toolbox — holes and threads, tolerances, adjustability, materials, finishing, sheet metal — is backup after the closing slide, if the questions go there.
+This slide comes back before every section, with the next one carrying a caret. Pick from it out loud: everything here is optional except cost, the ladder, and milling, and the list is the place to say what we are skipping and why.
 
 If possible: co-teach with a machinist, and do a workshop tour after the milling section so they see clamping and tool changes in person.
 -->
@@ -287,90 +276,105 @@ src: ./pages/01-cost-milling.md
 src: ./pages/01-cost-drivers.md
 ---
 
+---
+
+<Outline next="buy-assemble-machine" />
 
 ---
 src: ./pages/02-buy-assemble-machine.md
 ---
 
 ---
+
+<Outline next="printing" />
+
+---
+src: ./pages/14-3d-printing.md
+---
+
+---
+
+<Outline next="milling" />
+
+---
 src: ./pages/03-milling.md
 ---
 
 ---
-src: ./pages/08-assembly.md
----
 
----
-src: ./pages/11-communication.md
----
-
-<!--
-  ─────────────────────────────────────────────────────────────────────────
-  BACKUP SECTIONS
-  Everything below sits after the closing slide, so a normal run of the deck
-  never reaches it. Each one keeps a routeAlias, so it can be jumped to from
-  the index slide below, from the overview (press `o`), or by typing the URL
-  directly (e.g. /tolerances).
-
-  To put a section back in the main flow, move its `src:` block above the
-  closing slide. Nothing else needs to change.
-  ─────────────────────────────────────────────────────────────────────────
--->
-
----
-layout: statement
-routeAlias: backup
----
-
-# Backup material
-
-<div class="text-left text-lg mt-10 mx-auto" style="max-width: 32rem">
-
-- <Link to="holes-threads">Holes and threads</Link>
-- <Link to="tolerances">Tolerances and fits</Link>
-- <Link to="adjustability">Adjustability instead of precision</Link>
-- <Link to="materials">Materials from a manufacturing perspective</Link>
-- <Link to="finishing">Finishing and secondary operations</Link>
-- <Link to="sheet-metal">Sheet metal covers</Link>
-- <Link to="exercise">Closing exercise: redesign a scientist design</Link>
-- <Link to="workshop-tricks">Workshop tricks</Link>
-
-</div>
-
-<!--
-Only shown if there is time left, or if a question walks straight into one of
-these. Click a line to jump; `Link` navigates by route alias.
-
-Getting back: browser back, or press `o` and click the closing slide.
--->
+<Outline next="holes-threads" />
 
 ---
 src: ./pages/04-holes-threads.md
 ---
 
 ---
+
+<Outline next="tolerances" />
+
+---
 src: ./pages/05-tolerances.md
 ---
+
+---
+
+<Outline next="adjustability" />
 
 ---
 src: ./pages/06-adjustability.md
 ---
 
 ---
+
+<Outline next="materials" />
+
+---
 src: ./pages/07-materials.md
 ---
+
+---
+
+<Outline next="assembly" />
+
+---
+src: ./pages/08-assembly.md
+---
+
+---
+
+<Outline next="finishing" />
 
 ---
 src: ./pages/09-finishing.md
 ---
 
 ---
+
+<Outline next="sheet-metal" />
+
+---
 src: ./pages/10-sheet-metal.md
 ---
 
 ---
+
+<Outline next="communication" />
+
+---
+src: ./pages/11-communication.md
+---
+
+---
+
+<Outline next="exercise" />
+
+---
 src: ./pages/12-exercise.md
 ---
+
+---
+
+<Outline next="workshop-tricks" />
 
 ---
 src: ./pages/13-workshop-tricks.md
@@ -379,4 +383,3 @@ src: ./pages/13-workshop-tricks.md
 ---
 src: ./pages/12-closing.md
 ---
-
