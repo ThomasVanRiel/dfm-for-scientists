@@ -52,6 +52,25 @@
 }
 
 /*
+  The theme centres the big text on `cover`, `statement` and `section` with
+  `my-auto` on a grid child — auto margins that eat the free space left in the
+  row. That free space only exists because a lone auto-sized track stretches to
+  the height of the grid, and Chromium does not do that stretch when it lays
+  the slide out for printing: the track collapses to the height of the text,
+  the margins get nothing to share, and the title sits at the top of the page
+  in the PDF while looking right on screen. Centring the track itself asks for
+  the same result without going through the margins.
+
+  The theme's `fact`, `quote` and `intro` are built the same way and would need
+  the same line; they are left out because the deck does not use them.
+*/
+.slidev-layout.cover,
+.slidev-layout.statement,
+.slidev-layout.section {
+  align-content: center;
+}
+
+/*
   The theme greys subtitles with `opacity: 0.5`, which fades the whole element
   as a group — a marker stroke inside one washes out with it, and no rule on
   the child can undo that. Same grey, applied as a colour instead, so the
