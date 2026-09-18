@@ -76,39 +76,36 @@ function state(to) {
     <h1>{{ title }}</h1>
 
     <div class="groups">
-      <section v-for="g in groups" :key="g.title" class="group">
-        <h2>{{ g.title }}</h2>
+      <template v-for="g in groups" :key="g.title">
         <ul>
           <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
-            <span class="caret" aria-hidden="true">▸</span>
+            <span class="caret" aria-hidden="true">&#9656;</span>
             <Link :to="item.to">{{ item.label }}</Link>
           </li>
         </ul>
-      </section>
+        <div class="rail">
+          <span class="line" aria-hidden="true" />
+          <span class="label">{{ g.title }}</span>
+        </div>
+      </template>
     </div>
   </div>
 </template>
 
 <style scoped>
+/*
+  One column of chapters, and a rail to the right of each group: a hairline
+  spanning the group's rows with its name beside it. The grid is two columns
+  wide and each group fills one row of it, so the rail is exactly as tall as
+  the chapters it brackets.
+*/
 .groups {
-  columns: 2;
-  column-gap: 3rem;
-  margin-top: 1.6rem;
-}
-
-.group {
-  break-inside: avoid;
-  margin-bottom: 1.4rem;
-}
-
-.group h2 {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--sk-label);
-  margin: 0 0 0.35rem;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 1.1rem;
+  row-gap: 0.55rem;
+  width: max-content;
+  margin: 1.4rem auto 0;
 }
 
 ul {
@@ -120,14 +117,14 @@ ul {
 li {
   display: flex;
   align-items: baseline;
-  gap: 0.4rem;
-  line-height: 1.55;
+  gap: 0.35rem;
+  line-height: 1.4;
   font-size: 1.05rem;
 }
 
 /*
-  The caret is the only thing marking the next section: a full .marker
-  highlighter here would claim to know which section is actually coming, and on
+  The caret is the only thing marking the next chapter: a full .marker
+  highlighter here would claim to know which one is actually coming, and on
   this deck that is a decision made out loud while the slide is up.
 */
 .caret {
@@ -161,5 +158,27 @@ li.passed :deep(a) {
 
 li.next :deep(a) {
   font-weight: 500;
+}
+
+.rail {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.line {
+  width: 1px;
+  align-self: stretch;
+  background: var(--sk-rule);
+}
+
+.label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sk-label);
+  white-space: nowrap;
 }
 </style>
