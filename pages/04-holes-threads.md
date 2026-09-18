@@ -5,7 +5,7 @@ routeAlias: holes-threads
 
 # Holes and threads
 
-Small topic, [endless trouble]{.marker}
+Every hole is a [tool]{.marker}, not a shape
 
 ---
 layout: two-cols-header
@@ -44,7 +44,7 @@ layout: two-cols-header
 - A tap can't cut a full thread to the bottom
 - So the **drill depth** must be deeper than the **thread depth**
 - On a drawing, state both: `M6 ↧ 12, drill Ø5 ↧ 16`
-- Don't let the cone break through the other side of the part
+- Keep the cone **well inside** the part, or go **all the way through** — a tip that just breaks through leaves a ragged eye and a burr
 
 ---
 layout: two-cols-header
