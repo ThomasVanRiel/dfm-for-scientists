@@ -141,8 +141,8 @@
 }
 
 /*
-  Both sketches are exported from one drawing onto one canvas — same width,
-  height and viewBox — so the plate lands in the same place in both and the
+  Both sketches are layers of one drawing, so they share a canvas — same width,
+  height and viewBox — the plate lands in the same place in both and the
   stack needs no nudging. `--canvas-w` and `--canvas-h` are that canvas in
   millimetres, `--mm` is rem per millimetre: together they set how big the plate
   is on the slide, and both layers move together when `--mm` changes.

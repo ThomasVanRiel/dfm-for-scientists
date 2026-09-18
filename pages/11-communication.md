@@ -71,6 +71,7 @@ In CAD, undo is your most-used command. A workshop only has redo.
 
 ---
 layout: two-cols-header
+align: stretch
 ---
 
 # Dimension from datums
@@ -85,35 +86,25 @@ Each hole dimensioned from the previous one.
 - Hole 5 can be off by 4 × the tolerance
 - The machinist has to add up numbers
 
+<Sketch name="dimensioning-chain-baseline" layer="chain" class="h-32" hint="Four holes in a row, each dimensioned from the previous one" />
+
 ::right::
 
 ### Baseline dimensioning
 
 Each hole dimensioned from **one datum**.
 
-- Every feature has **its own** tolerance relative to the reference
+- Every feature has **its own** tolerance
 - Matches how the part is **clamped and measured**
 - Easy to program
+
+<Sketch name="dimensioning-chain-baseline" layer="baseline" class="h-32" hint="The same four holes, each dimensioned from the left datum" />
 
 ::bottom::
 
 <div class="takeaway">
 Dimension the way the part <strong>functions</strong>: from the faces and holes it's aligned by.
 </div>
-
----
-layout: two-cols-header
----
-
-# Chain vs. baseline
-
-::left::
-
-<Sketch name="chain-dimensioning" class="h-88" hint="A plate with five holes, each dimensioned from the previous hole" />
-
-::right::
-
-<Sketch name="baseline-dimensioning" class="h-88" hint="The same plate, every hole dimensioned from datum edges A and B" />
 
 ---
 layout: two-cols-header
@@ -153,9 +144,9 @@ layout: two-cols
 
 ::left::
 
-<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.34; --canvas-h: 131.15">
-  <Sketch name="hole-thicket" v-click.hide="1" hint="The plate with every hole dimensioned the normal way" />
-  <Sketch name="hole-table" v-click="1" hint="The same plate, the dimensions gone, the holes numbered" />
+<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.33; --canvas-h: 131.18">
+  <Sketch name="hole-thicket-table" layer="thicket" v-click.hide="1" hint="The plate with every hole dimensioned the normal way" />
+  <Sketch name="hole-thicket-table" layer="table" v-click="1" hint="The same plate, the dimensions gone, the holes numbered" />
 </div>
 
 ::right::
