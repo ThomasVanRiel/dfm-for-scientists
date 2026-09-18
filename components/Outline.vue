@@ -121,17 +121,22 @@ ul {
 li {
   display: flex;
   align-items: baseline;
-  gap: 0.35rem;
+  gap: 0.5rem;
   line-height: 1.4;
   font-size: 1.05rem;
 }
 
-/* Right-aligned in a fixed width so the titles line up past ten. */
+/*
+  Right-aligned in a fixed width so the titles line up past ten, and centred on
+  the line rather than sitting on its baseline — at this size a baseline-aligned
+  digit reads as having dropped. Condensed, like every other number in the deck.
+*/
 .num {
   flex: none;
+  align-self: center;
   width: 1.7ch;
   text-align: right;
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8em;
   color: var(--sk-label);
 }
@@ -170,7 +175,7 @@ li.passed :deep(a) {
 }
 
 .label {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0.1em;
