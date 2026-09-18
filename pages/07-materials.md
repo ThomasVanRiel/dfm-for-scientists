@@ -52,13 +52,12 @@ layout: two-cols-header
 - Use **stress-relieved** or **cast tooling plate**
 - Remove material **symmetrically**
 - **Rough**, unclamp, let it rest, then **finish**
-- Avoid removing 90 % of a block (see <Link to="cost">What parts actually cost</Link>)
+- Avoid removing 90 % of a block<br/> (see <Link to="cost">What parts actually cost</Link>)
 - Leave **stiffness** in the part: ribs, flanges
 
 ---
 layout: two-cols-header
 cols: 2/3
-align: center
 ---
 
 # Thermal expansion
@@ -120,7 +119,7 @@ typical in seawater (± 0.1 V)
 ::bottom::
 
 <div class="takeaway">
-Cut the <strong>path</strong> with a plastic washer or bush, treat the <strong>surface</strong> with <Link to="finishing">anodizing</Link> or plating,<br/> or remove the <strong>water</strong> with a dry joint that gives a drop nowhere to sit. You only need one of the three.
+Cut the <strong>path</strong> with a plastic washer, bush, or grease, treat the <strong>surface</strong> with <Link to="finishing">anodizing</Link> or plating,<br/> or remove the <strong>water</strong> with a dry joint that gives a drop nowhere to sit. You only need one of the three.
 </div>
 
 <!--
@@ -183,8 +182,6 @@ Dry lab air is why most setups survive this at all. It becomes real the moment t
 </div>
 
 </div>
-
-<div class="todo mt-4">Add the rules specific to our lab's setups.</div>
 
 ---
 
