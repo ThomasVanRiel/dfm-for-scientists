@@ -82,6 +82,62 @@ what each is for, so they can ask "should this be printed, and on what?".
 -->
 
 ---
+class: text-sm
+---
+
+# Which plastic?
+
+| Material | Sun and weather | Softens at | Trouble to print | Reach for it when |
+|---|:---:|:---:|:---:|---|
+| **PLA** | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 60 °C]{.technical} | <Rating :value="1" tone="amber" label="None" /> | Jigs and mock-ups that stay on a bench |
+| **PETG** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 75 °C]{.technical} | <Rating :value="2" tone="amber" label="Little" /> | The default for a part that has to hold |
+| **ABS** | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Warm, and you want to smooth it with acetone |
+| **ASA** | <Rating :value="4" tone="blue" label="Excellent" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Outdoors, in the sun, for a season or more |
+| **PC** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 110 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Tough and hot, and you can dry the filament |
+| **Nylon (PA)** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 100 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Wear, living hinges, impact. It drinks water |
+
+<div class="text-xs opacity-70 mt-2">
+<Rating :value="3" tone="blue" /> more circles = survives sunlight longer &nbsp;·&nbsp;
+<Rating :value="3" tone="amber" /> more circles = more warping, enclosures, and dry filament
+</div>
+
+<div class="grid grid-cols-2 gap-x-8 mt-4">
+
+<div class="takeaway">
+<strong>ASA is ABS made for the sun.</strong> Same heat, same warping, acrylic instead of butadiene where the UV gets in.
+</div>
+
+<div class="tip">
+Full property tables, per material:<br/>
+<a href="https://help.prusa3d.com/filament-material-guide">help.prusa3d.com/filament-material-guide</a>
+</div>
+
+</div>
+
+<!--
+Two things matter more outdoors than the row you pick, and neither is in any
+table. Pigment: carbon black is a real UV absorber, so black PETG outlives
+natural PETG by a wide margin, and a "UV-stable" material in a pale colour is a
+weaker claim than it sounds. Wall thickness: UV damage is a surface effect, so
+it eats a much bigger fraction of a 1 mm wall than of a 4 mm one.
+
+The circles are my ordering, not a measurement — the same convention as the
+machinability table in the materials section. Nobody should read a one-circle
+difference as meaningful. Real UV lifetimes run from weeks to years depending on
+latitude, colour, section and load, which is exactly why the column is circles
+and not a number.
+
+The temperatures are the glass transition of the bulk polymer, rounded: where
+the part starts to go soft, not where it fails. A loaded part gives up well
+before it; an unloaded one survives past it. Nylon is the shakiest of the six,
+because printed PA varies a lot with blend and with how wet it is.
+
+The honest caveat on the last three rows: PC and nylon are not printable on a
+printer sitting open on a shelf. They want an enclosure and dry filament, and a
+wet spool prints a part that looks fine and is not.
+-->
+
+---
 layout: two-cols-header
 ---
 
@@ -182,7 +238,7 @@ layout: two-cols-header
 ### Where a printed part will betray you
 
 - **Vacuum**: plastics outgas, and layer lines and infill make **virtual leaks** that pump down for days
-- **Heat**: PLA goes soft around [60 °C]{.technical}, PETG around [75 °C]{.technical}, ABS/ASA around [95 °C]{.technical} — a sunny lab or a warm enclosure is enough
+- **Heat**: a sunny lab or a warm enclosure is already past what PLA and PETG take
 - **Time**: plastics **creep**. A printed part under a constant load slowly changes shape
 - **Chemistry**: solvents, oils and cleaning agents attack most print materials
 - **UV**: resin parts and PLA go brittle
