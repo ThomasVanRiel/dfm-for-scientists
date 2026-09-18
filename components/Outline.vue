@@ -7,6 +7,10 @@
   rest stay plain. The state is positional, not a record of what was actually
   presented: a section skipped over still dims, because the deck is past it.
 
+  The wrapper class is deliberately not `outline`: UnoCSS ships `.outline` as a
+  utility (`outline-style: solid`), so that name draws a solid box around the
+  whole slide. Same for any other bare utility word.
+
   The list below is the single source of truth for the running order. Adding or
   moving a section means editing it here and moving the matching `src:` block
   (and its <Outline> interlude) in slides.md.
@@ -72,7 +76,7 @@ function state(to) {
 </script>
 
 <template>
-  <div class="outline">
+  <div class="chapter-list">
     <h1>{{ title }}</h1>
 
     <div class="groups">
