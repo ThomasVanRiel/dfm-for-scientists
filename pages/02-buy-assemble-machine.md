@@ -177,7 +177,7 @@ If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 m
 ::bottom::
 
 <div class="takeaway">
-Using standard stock is often available and results in shorter lead times.
+Standard stock is usually in the rack already: no waiting for material, and fewer faces to machine.
 </div>
 
 <div class="warning mt-4">

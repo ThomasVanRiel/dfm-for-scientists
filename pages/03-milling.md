@@ -108,7 +108,7 @@ Cutting depth divided by tool diameter, **L/D**, decides which tool comes out of
 | **> 8 × D** | Special tooling | Consider wire EDM, or redesign the part |
 
 
-A [**2 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which means roughly [**6 mm**]{.technical} of depth before it gets slow.
+A [**1 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which means roughly [**6 mm**]{.technical} of depth before it gets slow.
 
 <div class="warning">
 The exercise part's groove is <strong class="technical">5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
