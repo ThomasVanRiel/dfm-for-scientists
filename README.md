@@ -1,12 +1,76 @@
 # Design for Manufacturing for Scientists
 
-A [Slidev](https://sli.dev) deck: a crash course for scientists who design their own
-test setups — what parts really cost, how a workshop makes them, and how to design
-parts that are cheap, fast, and easy to build.
+A crash course for scientists who design their own test setups — what parts really
+cost, how a workshop makes them, and how to design parts that are cheap, fast, and
+easy to build.
 
-Thomas Van Riel, KU Leuven.
+Thomas Van Riel, KU Leuven. Built with [Slidev](https://sli.dev), and licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [License](#license).
 
-## Running it
+The deck has two jobs, and both matter:
+
+- it is the material for a seminar I give in person, and
+- it is meant to stand on its own afterwards, for students and for anyone who
+  finds it — so the slides carry their own explanation rather than leaning on
+  what I say out loud.
+
+## Reading it on your own
+
+The built deck is published from `main`:
+**<https://thomasvanriel.github.io/dfm-for-scientists/>**
+
+Things worth knowing before you click through it:
+
+- **Arrow keys** move slide to slide. Press `o` for an overview of every slide,
+  `g` to jump to a number, and `d` to switch to dark mode for screen reading.
+- **The course outline comes back before every section**, with the next chapter
+  marked and everything already covered dimmed. Every line on it is a link, so
+  it doubles as a table of contents you can jump from.
+- **Three callouts carry the substance**, and the third slide explains them:
+  a blue *takeaway* is the one thing to keep from a slide, an amber *warning*
+  is a trap that turns up in real drawings, a green *tip* is something small you
+  can apply to the next part you draw. Skimming only the callouts is a
+  legitimate way to read the deck.
+- **Speaker notes** hold the argument behind the slides — the examples, the
+  asides, and why a rule is a rule. They are the trailing HTML comments in the
+  `pages/*.md` sources, and they show in presenter mode at `/presenter`.
+
+### What it covers
+
+The running order, in four parts:
+
+| | Part | Chapters |
+| --- | --- | --- |
+| 1–2 | What it costs | What parts actually cost · Buy, assemble, or machine? |
+| 3–8 | Manufacturing | How a milling machine sees your part · Holes and threads · Tolerances and fits · Adjustability instead of precision · Materials · 3D printing |
+| 9–11 | Assembly and finish | Design for assembly and use · Finishing and secondary operations · Sheet metal covers |
+| 12–13 | Working with the workshop | Communicating with the workshop · Workshop tricks |
+
+`components/Outline.vue` holds this list and is the single source of truth for it;
+if the table above and that file disagree, the file is right.
+
+## Giving the talk yourself
+
+The licence covers this: take the deck, cut it down, put your own workshop's
+numbers in it, and present it. A few things that make that easier.
+
+- **The deck is longer than one seminar.** The core is chapters 1 (cost),
+  2 (buy, assemble, or machine?) and 3 (milling); everything else is optional
+  and can be picked live off the outline slide, which is why the outline is a
+  list of links rather than a progress bar.
+- **Section 1 has two worked examples**, one milling and one turning
+  (`pages/01-cost-milling.md`, `pages/01-cost-turning.md`). Include exactly one,
+  whichever matches what your audience has made for them — `slides.md` pulls in
+  the milling one by default.
+- **The numbers are not yours.** Rates, lead times and stock prices are the ones
+  I quote for my own workshop; check them against yours before you say them out
+  loud in a room.
+- **`grep -rn 'class="todo"' slides.md pages`** lists the dashed placeholders
+  that still need real workshop data.
+- **Ask a machinist to co-teach**, and do a workshop tour after the milling
+  section if you can. It is worth more than any slide here.
+
+## Running it locally
 
 ```sh
 pnpm install
@@ -21,13 +85,17 @@ pnpm dev        # opens localhost:3030
 | `pnpm export` | PDF export |
 | `pnpm fonts` | Re-download the self-hosted webfonts into `fonts/` |
 
-Presenter mode is at `/presenter`; press `o` for the slide overview and `g` to jump to a
-slide number. Drawings made during a talk are not persisted (`drawings.persist: false`).
+Presenter mode is at `/presenter`, with the speaker notes and a timer. Drawings made
+during a talk are not persisted (`drawings.persist: false`).
 
 The deck is designed to need **no network at all** while presenting: fonts and favicon
-are self-hosted or inlined, and nothing is fetched from a CDN.
+are self-hosted or inlined, and nothing is fetched from a CDN. A seminar room with a
+dead WiFi is the normal case, not the bad case — and `pnpm export` gives you a PDF to
+fall back to.
 
-## Layout
+## Working on the deck
+
+### Layout
 
 ```
 slides.md          Headmatter, cover, and the intro slides; pulls in pages/ via `src:`
@@ -44,7 +112,7 @@ Adding a section means a new `pages/NN-name.md` starting with a `layout: section
 slide carrying a `routeAlias`, plus a `src:` block in `slides.md`. Slides within a file
 are separated by `---`; a trailing HTML comment on a slide is the speaker note.
 
-### The outline between sections
+#### The outline between sections
 
 Every section is preceded by an `<Outline next="alias" />` slide: the full course
 outline as numbered chapters in two columns, four groups under their own headings, each
@@ -57,7 +125,7 @@ section skipped over still dims, because the deck is past it.
 source of truth for it. Moving a section means editing that list and moving both its
 `src:` block and its `<Outline>` interlude in `slides.md`.
 
-### Slide shapes
+#### Slide shapes
 
 For the common title / subtitle / two columns / full-width closing line shape,
 use Slidev's `two-cols-header` layout rather than nesting divs: the default slot
@@ -84,7 +152,7 @@ together.
 Both keys are optional and default to the built-in behaviour: equal columns,
 aligned to the top. `layoutClass` still works for anything else, and still wins.
 
-### Shared classes
+#### Shared classes
 
 Defined in `style.css`, used across the deck:
 
@@ -97,7 +165,7 @@ Defined in `style.css`, used across the deck:
 
 `grep -rn 'class="todo"' slides.md pages` lists what's still missing.
 
-### Colours
+#### Colours
 
 Everything the deck draws with, for picking in Inkscape's RGBA field. The
 sketch roles exist as CSS variables so the inline SVG components in
@@ -137,7 +205,11 @@ trip, while a pale wash does not.
 
 The deck — slides, sketches, diagrams and the code that renders them — is
 licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): share and
-adapt it for any purpose, with credit.
+adapt it for any purpose, including commercially and including teaching it
+yourself, as long as you give credit and say what you changed. Something like:
+
+> Adapted from *Design for Manufacturing for Scientists* by Thomas Van Riel
+> (KU Leuven), CC BY 4.0 — <https://github.com/ThomasVanRiel/dfm-for-scientists>
 
 Third-party material keeps its own terms, notably the *Team Fortress 2* clip in
 `public/` and the fonts in `fonts/`. See `LICENSE` for the details.
