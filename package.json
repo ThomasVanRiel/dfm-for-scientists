@@ -7,12 +7,15 @@
     "build": "slidev build",
     "dev": "slidev --open",
     "dev:lan": "slidev --remote",
-    "export": "slidev export",
+    "export": "slidev export --executable-path /usr/bin/chromium",
     "fonts": "node scripts/fetch-fonts.mjs"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
     "@slidev/theme-default": "^0.25.0",
     "slidev-addon-fancy-arrow": "^0.20.1"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.63.0"
   }
 }
