@@ -117,13 +117,10 @@ layout: two-cols-header
 
 ---
 layout: two-cols-header
-cols: 2/3
 align: center
 ---
 
 # Hole tables
-
-A plate with forty holes, dimensioned the normal way, is **eighty dimensions** stacked on top of the geometry. Nobody can read it, and one misplaced arrow is a scrapped part.
 
 ::left::
 
@@ -136,39 +133,65 @@ A plate with forty holes, dimensioned the normal way, is **eighty dimensions** s
 ::right::
 
 <div class="warning">
-  Not always the right tool, for the same reason as chain dimensioning: if what matters is the distance <strong>between</strong> two holes — a dowel pair, a bearing spacing — dimension that pair <strong>directly</strong>, and let the table carry the rest.
+  If the distance <strong>between</strong> two holes matters, dimension that pair <strong>directly</strong>, and let the table carry the rest.
 </div>
 
 
 <div class="takeaway mt-4">
-Put the origin where the part is <strong>located and clamped</strong> — a dowel hole, or a pair of machined datum edges. Then the table reads the same way the machinist zeroes the machine.
+Put the origin where the part is <strong>located and clamped</strong> — a dowel hole, or a pair of machined datum edges.
 </div>
 
+<!--
+Set this up before the bullets: a plate with forty holes, dimensioned the normal way, is eighty dimensions stacked on top of the geometry. Nobody can read it, and one misplaced arrow is a scrapped part. The warning is the same reason chain dimensioning fails, on the previous slide.
+-->
+
 ---
-layout: two-cols-header
+layout: two-cols
 ---
 
 # One origin, one table
 
 ::left::
 
-<Sketch name="hole-table" class="h-88" hint="A plate with labelled holes A1, A2, B1-B3, C1: no dimension arrows, the origin at dowel hole A1 on the datum edges" />
+<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.34; --canvas-h: 131.15">
+  <Sketch name="hole-thicket" v-click.hide="1" hint="The plate with every hole dimensioned the normal way" />
+  <Sketch name="hole-table" v-click="1" hint="The same plate, the dimensions gone, the holes numbered" />
+</div>
 
 ::right::
 
+<v-click at="1">
+
+<div class="technical-table">
+
 | Hole | X | Y | Ø / thread |
 |---|---:|---:|---|
-| A1 | [0]{.technical} | [0]{.technical} | [⌀6 H7 ↧ 10]{.technical} |
-| A2 | [150.0]{.technical} | [0]{.technical} | [⌀6 H7 ↧ 10]{.technical} |
-| B1 | [25.0]{.technical} | [15.0]{.technical} | [M6 ↧ 12]{.technical} |
-| B2 | [75.0]{.technical} | [15.0]{.technical} | [M6 ↧ 12]{.technical} |
-| B3 | [125.0]{.technical} | [15.0]{.technical} | [M6 ↧ 12]{.technical} |
-| C1 | [40.0]{.technical} | [60.0]{.technical} | [⌀4.2 through]{.technical} |
+| 1 | -12.25 | 10.99 | ⌀4.5 |
+| 2 | -1.00 | 22.50 | ⌀2.8 |
+| 3 | 3.00 | 25.50 | ⌀2.0 |
+| 4 | 5.01 | 6.00 | ⌀1.5 ↧ 3.16 |
+| 5 | 5.10 | 0.00 | ⌀2.8 csink verso |
+| 6 | 10.89 | 14.41 | ⌀4.5 |
+| 7 | 10.89 | 14.41 | ⌀12.5 ↧ 3.46 |
+| 8 | 11.00 | 25.50 | ⌀2.0 |
+| 9 | 13.20 | 21.50 | ⌀1.5 ↧ 3.00 |
+| 10 | 15.00 | 24.00 | M3 ⌀2.5 |
+| 11 | 15.40 | 0.00 | ⌀12.0 |
+| 12 | 15.40 | 0.00 | ⌀13.0 ↧ 3.00 |
+| 13 | 16.30 | 21.00 | M2 ⌀1.6 |
+| 14 | 20.55 | 8.92 | ⌀2.8 csink verso |
+| 15 | 25.79 | 6.00 | ⌀1.5 ↧ 3.16 |
 
-
-<div class="hint mt-4">
-<span class="technical">A1</span> is the origin, so it reads <span class="technical">0, 0</span> – the dowel hole the part is located by, on the datum edges it is clamped against.
 </div>
+
+</v-click>
+
+<!--
+Sit on the thicket for a moment before clicking: let them try to read a
+dimension off it. One click and the arrows go, the plate stays put, and the
+table arrives beside it. Draw the two sketches on one page and erase the
+dimensions for the second export, so the geometry registers exactly.
+-->
 
 ---
 layout: two-cols-header

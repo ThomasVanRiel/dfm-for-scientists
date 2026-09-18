@@ -125,6 +125,50 @@
   flex-shrink: 0;
 }
 
+/*
+  Two sketches of the same drawing, stacked so one dissolves into the other on
+  a click: the geometry stays exactly where it is and only what changed — the
+  dimensions — comes and goes. Both layers fill the same grid cell, so nothing
+  reflows when the first one leaves.
+
+  Slidev's own v-click fade is 100ms, which reads as a cut at this size. The
+  longer fade is what sells the clutter clearing rather than being swapped.
+*/
+.sketch-stack {
+  display: grid;
+  place-items: start;
+  overflow: visible;
+}
+
+/*
+  Both sketches are exported from one drawing onto one canvas — same width,
+  height and viewBox — so the plate lands in the same place in both and the
+  stack needs no nudging. `--canvas-w` and `--canvas-h` are that canvas in
+  millimetres, `--mm` is rem per millimetre: together they set how big the plate
+  is on the slide, and both layers move together when `--mm` changes.
+
+  The clean drawing's ink sits in the left of the canvas; the dimensions fill
+  the rest, so the layer spills out of the column to the right. Deliberately: it
+  is only on screen before the click, and the table that replaces it is what
+  fills the space afterwards.
+*/
+.sketch-stack > * {
+  grid-area: 1 / 1;
+  width: calc(var(--canvas-w) * var(--mm));
+  height: calc(var(--canvas-h) * var(--mm));
+  min-width: 0;
+}
+
+.sketch-stack > .slidev-vclick-target {
+  transition: opacity 0.7s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sketch-stack > .slidev-vclick-target {
+    transition: none;
+  }
+}
+
 /* Placeholder content that must be replaced with real workshop data. */
 .todo {
   border: 2px dashed #d97706;
@@ -305,6 +349,17 @@
 .technical :is(td, th) {
   font-family: 'IBM Plex Sans Condensed', ui-sans-serif, system-ui, sans-serif;
   font-feature-settings: 'tnum';
+}
+
+/*
+  Notation is short, so a notation table is mostly leading. Tightening the rows
+  lets a long one — the fifteen-hole table in the communication chapter — stand
+  beside a drawing without running off the slide. The horizontal padding stays:
+  columns of digits still need air between them.
+*/
+.technical-table :is(td, th) {
+  padding-top: 0.12rem;
+  padding-bottom: 0.12rem;
 }
 
 /*
