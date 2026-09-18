@@ -3,9 +3,9 @@
   picked from the list instead of walked into.
 
   `next` names the section that follows this instance *in the deck*. Everything
-  before it is drawn as passed (dimmed), the section itself gets a caret, the
-  rest stay plain. The state is positional, not a record of what was actually
-  presented: a section skipped over still dims, because the deck is past it.
+  before it is drawn as passed (dimmed), the rest read plain. The state is
+  positional, not a record of what was actually presented: a section skipped
+  over still dims, because the deck is past it.
 
   The wrapper class is deliberately not `outline`: UnoCSS ships `.outline` as a
   utility (`outline-style: solid`), so that name draws a solid box around the
@@ -66,12 +66,12 @@ const nextIndex = computed(() => order.indexOf(props.next))
 // Chapter number: position in the running order, counted across the groups.
 const number = (to) => order.indexOf(to) + 1
 
+// Everything the deck has gone past is dimmed; the rest reads plain. The
+// chapter that follows gets no mark of its own — which one is actually next is
+// decided out loud while the slide is up.
 function state(to) {
-  const i = order.indexOf(to)
   if (nextIndex.value < 0) return 'ahead'
-  if (i < nextIndex.value) return 'passed'
-  if (i === nextIndex.value) return 'next'
-  return 'ahead'
+  return order.indexOf(to) < nextIndex.value ? 'passed' : 'ahead'
 }
 </script>
 
@@ -83,7 +83,6 @@ function state(to) {
       <template v-for="g in groups" :key="g.title">
         <ul>
           <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
-            <span class="caret" aria-hidden="true">&#9656;</span>
             <span class="num">{{ number(item.to) }}</span>
             <Link :to="item.to">{{ item.label }}</Link>
           </li>
@@ -127,23 +126,6 @@ li {
   font-size: 1.05rem;
 }
 
-/*
-  The caret is the only thing marking the next chapter: a full .marker
-  highlighter here would claim to know which one is actually coming, and on
-  this deck that is a decision made out loud while the slide is up.
-*/
-.caret {
-  flex: none;
-  width: 0.7em;
-  color: var(--sk-accent);
-  font-size: 0.8em;
-  visibility: hidden;
-}
-
-li.next .caret {
-  visibility: visible;
-}
-
 /* Right-aligned in a fixed width so the titles line up past ten. */
 .num {
   flex: none;
@@ -156,10 +138,6 @@ li.next .caret {
 
 li.passed .num {
   opacity: 0.5;
-}
-
-li.next .num {
-  color: var(--sk-accent);
 }
 
 li :deep(a) {
@@ -177,10 +155,6 @@ li :deep(a:hover) {
 li.passed :deep(a) {
   color: var(--sk-label);
   opacity: 0.55;
-}
-
-li.next :deep(a) {
-  font-weight: 500;
 }
 
 .rail {

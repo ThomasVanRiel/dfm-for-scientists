@@ -49,8 +49,8 @@ are separated by `---`; a trailing HTML comment on a slide is the speaker note.
 Every section is preceded by an `<Outline next="alias" />` slide: the full course
 outline, each line a `<Link>`, so the next section is picked from the list rather than
 walked into. `next` names the section that follows *that instance in the deck* —
-everything before it is drawn dimmed, and it gets a caret in the gutter. The state is
-positional: a section skipped over still dims, because the deck is past it.
+everything before it is drawn dimmed, the rest read plain. The state is positional: a
+section skipped over still dims, because the deck is past it.
 
 `components/Outline.vue` holds the running order, grouped into parts, and is the single
 source of truth for it. Moving a section means editing that list and moving both its
