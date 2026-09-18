@@ -55,7 +55,6 @@ const groups = [
     title: 'Working with the workshop',
     items: [
       { to: 'communication', label: 'Communicating with the workshop' },
-      { to: 'exercise', label: 'Exercise: redesign a scientist design' },
       { to: 'workshop-tricks', label: 'Workshop tricks' },
     ],
   },
@@ -118,9 +117,7 @@ function state(to) {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--sk-label);
-  margin: 0 0 0.3rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--sk-rule);
+  margin: 0;
 }
 
 ul {

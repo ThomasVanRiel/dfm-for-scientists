@@ -362,14 +362,6 @@ src: ./pages/11-communication.md
 
 ---
 
-<Outline next="exercise" />
-
----
-src: ./pages/12-exercise.md
----
-
----
-
 <Outline next="workshop-tricks" />
 
 ---
