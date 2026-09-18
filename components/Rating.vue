@@ -1,7 +1,8 @@
 <!--
   A relative rating on a 1-4 scale, drawn as filled circles.
   Used in the materials tables: blue for machinability (more is better),
-  amber for cost (more is more expensive). Values are indicative, not measured.
+  amber for cost (more is more expensive), green for strength (more is
+  tougher). Values are indicative, not measured.
 -->
 <script setup>
 const props = defineProps({
@@ -46,5 +47,11 @@ const props = defineProps({
 
 .rating-amber {
   color: #d97706;
+}
+
+/* The .tip green, so a strength column reads as "good" without competing
+   with the blue used for machinability and weathering. */
+.rating-green {
+  color: #059669;
 }
 </style>

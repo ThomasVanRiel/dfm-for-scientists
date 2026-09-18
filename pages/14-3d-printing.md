@@ -87,16 +87,17 @@ class: text-sm
 
 # Which plastic?
 
-| Material | Sun and weather | Softens at | Trouble to print | Reach for it when |
-|---|:---:|:---:|:---:|---|
-| **PLA** | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 60 °C]{.technical} | <Rating :value="1" tone="amber" label="None" /> | Jigs and mock-ups that stay on a bench |
-| **PETG** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 75 °C]{.technical} | <Rating :value="2" tone="amber" label="Little" /> | The default for a part that has to hold |
-| **ABS** | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Warm, and you want to smooth it with acetone |
-| **ASA** | <Rating :value="4" tone="blue" label="Excellent" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Outdoors, in the sun, for a season or more |
-| **PC** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 110 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Tough and hot, and you can dry the filament |
-| **Nylon (PA)** | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 100 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Wear, living hinges, impact. It drinks water |
+| Material | Strength | Sun and weather | Softens at | Trouble to print | Reach for it when |
+|---|:---:|:---:|:---:|:---:|---|
+| **PLA** | <Rating :value="1" tone="green" label="Brittle" /> | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 60 °C]{.technical} | <Rating :value="1" tone="amber" label="None" /> | Jigs and mock-ups that stay on a bench |
+| **PETG** | <Rating :value="3" tone="green" label="Good" /> | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 75 °C]{.technical} | <Rating :value="2" tone="amber" label="Little" /> | The default for a part that has to hold |
+| **ABS** | <Rating :value="2" tone="green" label="Fair" /> | <Rating :value="1" tone="blue" label="Poor" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Warm, and you want to smooth it with acetone |
+| **ASA** | <Rating :value="2" tone="green" label="Fair" /> | <Rating :value="4" tone="blue" label="Excellent" /> | [≈ 95 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Outdoors, in the sun, for a season or more |
+| **PC** | <Rating :value="4" tone="green" label="Excellent" /> | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 110 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Tough and hot, and you can dry the filament |
+| **Nylon (PA)** | <Rating :value="3" tone="green" label="Good" /> | <Rating :value="2" tone="blue" label="Fair" /> | [≈ 100 °C]{.technical} | <Rating :value="4" tone="amber" label="A lot" /> | Wear, living hinges, impact. It drinks water |
 
 <div class="text-xs opacity-70 mt-2">
+<Rating :value="3" tone="green" /> more circles = tougher in service &nbsp;·&nbsp;
 <Rating :value="3" tone="blue" /> more circles = survives sunlight longer &nbsp;·&nbsp;
 <Rating :value="3" tone="amber" /> more circles = more warping, enclosures, and dry filament
 </div>
@@ -115,6 +116,14 @@ Full property tables, per material:<br/>
 </div>
 
 <!--
+The strength column is toughness-weighted, and that is worth saying out loud,
+because someone in the room will have read a PLA datasheet: PLA has the highest
+tensile strength of the six on paper, around 50-60 MPa, and it is still the
+worst choice for a part that has to survive. It is brittle, it creeps under a
+standing load, and a printed part fails at a layer line long before the
+datasheet number. The circles rank what comes back in one piece, not what a
+tensile bar does.
+
 Two things matter more outdoors than the row you pick, and neither is in any
 table. Pigment: carbon black is a real UV absorber, so black PETG outlives
 natural PETG by a wide margin, and a "UV-stable" material in a pale colour is a
