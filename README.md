@@ -21,8 +21,8 @@ The built deck is published from `main`:
 
 Things worth knowing before you click through it:
 
-- **Arrow keys** move slide to slide. Press `o` for an overview of every slide,
-  `g` to jump to a number, and `d` to switch to dark mode for screen reading.
+- **Arrow keys** move slide to slide. Press `o` for an overview of every slide
+  and `g` to jump to a number.
 - **The course outline comes back before every section**, with the next chapter
   marked and everything already covered dimmed. Every line on it is a link, so
   it doubles as a table of contents you can jump from.
@@ -54,10 +54,9 @@ if the table above and that file disagree, the file is right.
 The licence covers this: take the deck, cut it down, put your own workshop's
 numbers in it, and present it. A few things that make that easier.
 
-- **The deck is longer than one seminar.** The core is chapters 1 (cost),
-  2 (buy, assemble, or machine?) and 3 (milling); everything else is optional
-  and can be picked live off the outline slide, which is why the outline is a
-  list of links rather than a progress bar.
+- **The deck is longer than one seminar.** Sections are picked live off the
+  outline slide, which is why the outline is a list of links rather than a
+  progress bar.
 - **Section 1 has two worked examples**, one milling and one turning
   (`pages/01-cost-milling.md`, `pages/01-cost-turning.md`). Include exactly one,
   whichever matches what your audience has made for them — `slides.md` pulls in
