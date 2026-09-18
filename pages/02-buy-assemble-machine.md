@@ -192,7 +192,21 @@ Refer to the part from before that was redesigned using 20 mm plates.
 
 # One turned part, or two pressed together?
 
-<Sketch name="solid-vs-pressed" class="h-96" hint="The same flanged shaft twice: turned from one piece of Ø100 bar, and a Ø25 shaft with a separate flange pressed onto it" />
+<Sketch name="solid-vs-pressed" class="h-96" hint="The same flanged shaft twice: turned from one piece of Ø150 bar, and a Ø40 shaft with a separate flange pressed onto it" />
+
+<div class="aside mt-4">
+The ratio is the point, not the minutes: your shop's numbers will differ. The four hours of turning air will not.
+</div>
+
+<!--
+The dashed arrow is the optional step: if the press fit alone will not carry the load, weld the joint. Say that out loud — a dashed line does not read from the back of the room.
+
+The part: Ø150 bar, 200 mm long, turned down to a Ø40 shaft behind a 20 mm flange. 3534 cm³ of stock, 580 cm³ of part — 3 dm³ of chips, 84 % of what you bought.
+
+Where the times come from: material removal rate on our own lathe, plus setup, not a quote. Three litres of steel at about 15 cm³/min is 3 h 17 of cutting; setup is the rest of the four hours. That is a rate for roughing steel with the interruptions a real job has, not the rate while the insert is in the cut, which is far higher. The 20 min after it is finishing, where removal rate is not what limits you. The assembly route barely removes anything: the shaft is bar already at diameter, the flange a 20 mm slice, so what is left is setup and handling.
+
+Precision is extra on either route — a tight fit, a runout spec, heat treat — but they are cheaper operations on a Ø40 bar than on a Ø150 billet.
+-->
 
 ---
 layout: two-cols-header
