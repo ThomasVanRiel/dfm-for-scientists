@@ -47,6 +47,34 @@
 }
 
 /*
+  Same one-off slide: a swallowtail ribbon behind the chapter title, standing
+  in for the deck's usual .marker highlight. Same mechanism as .marker below —
+  an absolutely positioned ::before, painted behind the text by z-index alone
+  so no stacking context is needed on the element itself — but a straight-edged
+  clip-path shape instead of a hand-drawn mask, and no stroke: a flat fill
+  reads as a banner, an outlined one reads as a button.
+
+  `display: inline-block` shrinks the box to "Guild secrets" itself rather
+  than the full slide width, so the ribbon hugs the word instead of spanning
+  edge to edge; the parent's `text-align: center` (from the section layout)
+  still centres it.
+*/
+.slidev-layout.font-fantasy h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 1.0em;
+}
+
+.slidev-layout.font-fantasy h1::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--sk-highlight);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.6em) 50%, 100% 100%, 0 100%, 0.6em 50%);
+}
+
+/*
   Table headers are the prose face at a heavier weight, not a second typeface.
   The theme's reset hands `th` a flat `font-weight: 400`, so the weight has to
   be stated to get any separation at all; 600 sets the row apart from the body
@@ -279,10 +307,11 @@
 }
 
 /*
-  The one animation in the deck. Slidev keeps every slide mounted and toggles
-  `display`, so a plain CSS animation replays each time a slide is shown, with
-  no clicks involved: the stroke draws itself on every time you come back to
-  the slide. Everything else arrives with the slide, unanimated.
+  Slidev keeps every slide mounted and toggles `display`, so a plain CSS
+  animation replays each time a slide is shown, with no clicks involved: the
+  stroke — and, below, the guild-secrets ribbon — draw themselves every time
+  you come back to the slide. Everything else arrives with the slide,
+  unanimated.
 */
 
 @keyframes marker-sweep {
@@ -304,9 +333,31 @@
   animation: marker-sweep 0.55s cubic-bezier(0.25, 0.6, 0.35, 1) 0.7s both;
 }
 
+/*
+  The guild-secrets ribbon unrolls open rather than being stroked on: a
+  highlighter wipes left to right because that's how a hand drags a pen, but
+  a banner unfurls from its own centre outward. Growing `scaleX` on the same
+  clip-path shape used for its rest state keeps the swallowtail notches
+  proportional throughout instead of animating the clip-path's own points.
+*/
+@keyframes banner-unfurl {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.slidev-layout.font-fantasy h1::before {
+  transform: scaleX(1);
+  animation: banner-unfurl 0.5s cubic-bezier(0.25, 0.6, 0.35, 1) 0.4s both;
+}
+
 @media print {
   .slidev-layout *,
-  .marker::before {
+  .marker::before,
+  .slidev-layout.font-fantasy h1::before {
     animation: none !important;
   }
 
@@ -327,7 +378,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .slidev-layout *,
-  .marker::before {
+  .marker::before,
+  .slidev-layout.font-fantasy h1::before {
     animation: none !important;
   }
 }
@@ -490,5 +542,14 @@ html.dark {
   */
   .marker::before {
     --marker-stroke: #1e3a8a;
+  }
+
+  /*
+    Same fix as the marker override above, and the same colour: --sk-highlight
+    itself isn't restroked for dark mode, so behind white heading text it would
+    have the same low-contrast problem the marker override exists to solve.
+  */
+  .slidev-layout.font-fantasy h1::before {
+    background-color: #1e3a8a;
   }
 }
