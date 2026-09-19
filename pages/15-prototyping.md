@@ -5,7 +5,7 @@ routeAlias: prototyping
 
 # [Prototyping]{.marker}
 
-When you needed your parts yesterday
+When you need your parts yesterday
 
 ---
 layout: two-cols-header
@@ -36,6 +36,10 @@ layout: two-cols-header
 
 <div class="takeaway">
 A prototype answers one question. Once it has, it's done its job — don't polish it into the final part.
+</div>
+
+<div class="aside">
+CAD — Cardboard Aided Design.
 </div>
 
 <!--
@@ -74,6 +78,7 @@ CAD and a quote for a part nobody has held yet.
 <div class="tip final"><Link to="printing">3D print it</Link></div>
 </div>
 </div>
+
 
 <style>
 .ladder {
@@ -201,12 +206,6 @@ layout: two-cols-header
 <div class="tip">
 A prototype built from tabs and slots goes together without you, and comes apart the same way when you need to change it.
 </div>
-
-<!--
-Tab-and-slot is the one habit worth them adopting: the difference between a
-prototype rebuilt from scratch every iteration and one where you swap a
-single panel.
--->
 
 ---
 
