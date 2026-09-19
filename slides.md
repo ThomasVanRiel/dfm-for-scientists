@@ -294,6 +294,14 @@ src: ./pages/03-milling.md
 
 ---
 
+<Outline next="turning" />
+
+---
+src: ./pages/03-turning.md
+---
+
+---
+
 <Outline next="holes-threads" />
 
 ---

@@ -36,6 +36,7 @@ const groups = [
     title: 'Manufacturing',
     items: [
       { to: 'milling', label: 'How a milling machine sees your part' },
+      { to: 'turning', label: 'How a lathe sees your part' },
       { to: 'holes-threads', label: 'Holes and threads' },
       { to: 'tolerances', label: 'Tolerances and fits' },
       { to: 'adjustability', label: 'Adjustability instead of precision' },

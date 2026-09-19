@@ -93,3 +93,50 @@ The design point survives either way, and it is the only reason this slide is
 in a DfM deck: a non-standard pitch can mean swapping change gears, and on the
 wrong combination it means a job the machinist cannot walk away from.
 -->
+
+---
+layout: two-cols-header
+---
+
+# The centre remembers where the axis was
+
+::left::
+
+Turning a part **between centers** means a centre-drilled hole at each end: a
+short [**60°**]{.technical} cone the tailstock's centre seats into, so the
+part can be driven and steadied without a chuck touching the finished
+diameter.
+
+Once the part is done, the drawing usually calls for those holes to be
+**faced off** for a clean finish. That erases the one precise reference to
+where the axis actually was.
+
+::right::
+
+### Why leave them
+
+- A centre hole is a **repeatable, precise axis reference** on a part that otherwise has none once it's off the machine
+- The part comes back for a rework: it goes straight back **between centers**, or gets **indicated** off the same two points in a four-jaw or on a rotary table
+- No re-establishing a datum from scratch, no touching off a round surface and hoping it's still true
+- Costs **seconds**, on a part that needed the holes to be turned in the first place
+
+::bottom::
+
+<div class="takeaway">
+Two holes you were cutting anyway. Left in on purpose, they're a free way back to the same axis months later.
+</div>
+
+<div class="warning mt-2">
+Only works if the centre of that face isn't a critical mating or sealing surface — it leaves a small cone-shaped dimple. And it's not the default: ask for it, or the shop faces them off for the finish.
+</div>
+
+<!--
+This is the same idea as the tip on the turning chapter's holding slide, told
+as the guild-secret version: a real habit worth knowing, not just a design
+rule. If both land in the deck and feel redundant once drawn, the turning
+chapter's version can shrink to a one-line pointer here instead.
+
+Worth asking our own workshop whether this is something they already do by
+habit, or something that has to be requested every time — that changes how
+confidently this can be presented as "ask for it."
+-->
