@@ -53,7 +53,7 @@ Dr. Ing. Thomas Van Riel, KU Leuven
 </div>
 
 <div class="absolute bottom-10 right-14 font-mono text-xs opacity-50">
-rev 760cc8f · 2026-09-19
+<Revision />
 </div>
 
 <!-- <Sketch name="title" class="absolute right-10 bottom-8 w-110" /> -->
