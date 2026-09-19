@@ -173,6 +173,7 @@ If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 m
 - The faces can stay as delivered
 - One fewer operation
 - Less material removed, so less distortion
+- More material is not necessarily a higher cost
 
 ::bottom::
 
@@ -218,7 +219,7 @@ layout: two-cols-header
 
 ### Why an assembly wins
 
-- Each piece is mostly **one setup**, from **stock already near size**
+- Each piece is mostly **one setup**,<br/> from **stock already near size**
 - Change one piece, not the whole part
 - Deep "pockets" become open space between plates
 - 2D profiles can be **laser or waterjet cut**
@@ -227,10 +228,10 @@ layout: two-cols-header
 
 ### What to watch
 
-- Joints need **alignment**: a fit, dowel pins, or screws
-- **Stiffness and tolerances** live in the joint (see <Link to="tolerances">Tolerances and fits</Link>)
+- Joints need **alignment**:<br/> a fit, dowel pins, or screws
+- **Stiffness and tolerances** live in the joint<br/> (see <Link to="tolerances">Tolerances and fits</Link>)
 - More parts to assemble and keep track of
-- A press fit holds by **friction** — torque and axial load limits
+- A press fit holds by **friction** and has<br/> torque and axial load limits
 
 ::bottom::
 

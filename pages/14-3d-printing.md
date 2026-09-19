@@ -8,7 +8,7 @@ routeAlias: printing
 # [3D printing]{.marker}
 
 
-The fastest way to be wrong cheaply
+The fastest and cheapest way to be wrong
 
 ---
 layout: two-cols-header
@@ -151,19 +151,17 @@ wet spool prints a part that looks fine and is not.
 
 ---
 layout: two-cols-header
+cols: 4/3
+align: center
 ---
 
 # A printed part has a grain
 
 ::left::
 
-A print is stacked layers, welded to each other as they cool. That weld is the
-weakest thing in the part.
-
-- **Across** the layers is much weaker than **along** them — call it half, and treat it as a guess, not a number
-- The part breaks **at a layer line**, cleanly, with no warning
-- **Orientation is a design decision**, not a print setting: decide it, then say it on the drawing or in the file name
-- **Overhangs** past about [45°]{.technical} need support, and support leaves a bad surface where it touched
+- **Across** the layers is much weaker than **along** them:<br/> it breaks **at a layer line**, cleanly, with no warning
+- **Orientation is a design decision**, not a print setting:<br/> decide it, then say so on the drawing or in the file name
+- **Overhangs** past [45°]{.technical} need support,<br/> and support leaves a bad surface where it touched
 - Big flat parts **warp** as they cool
 
 ::right::
@@ -193,6 +191,7 @@ does better, and a chamfer under an overhang beats support every time.
 ---
 class: text-sm
 layout: two-cols-header
+align: stretch
 ---
 
 # Design rules
@@ -223,6 +222,10 @@ layout: two-cols-header
 - Flat, true, parallel faces
 - Anything on a **tolerance**
 - Thick solid sections: slow, and they warp
+
+<div class="tip mt-4">
+Your slicer takes care of most mistakes in CAD before printing
+</div>
 
 ::bottom::
 
