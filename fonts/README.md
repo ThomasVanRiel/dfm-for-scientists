@@ -5,8 +5,10 @@ latin-ext subsets from the Google Fonts CSS2 API. Committed so the deck renders
 with no network access — see `provider: none` in the `fonts:` block of `slides.md`.
 
 Re-run `pnpm fonts` after changing that block, and keep the family list in
-`scripts/fetch-fonts.mjs` in sync with it. IBM Plex Sans Condensed is the one
-family with no headmatter key: it is used only by `.technical` in `style.css`.
+`scripts/fetch-fonts.mjs` in sync with it. Two families have no headmatter key,
+because they're used by a single class in `style.css` instead: IBM Plex Sans
+Condensed by `.technical`, Metamorphous by `.font-fantasy` (the guild-secrets
+chapter's title slide, via `class: font-fantasy` in its frontmatter).
 
 | Family | Files | License |
 | --- | --- | --- |
@@ -14,6 +16,7 @@ family with no headmatter key: it is used only by `.technical` in `style.css`.
 | IBM Plex Sans Condensed | static, weights 400–700, roman + italic | SIL Open Font License 1.1 |
 | IBM Plex Mono | static, weights 300–700, roman + italic | SIL Open Font License 1.1 |
 | Newsreader | variable, roman + italic | SIL Open Font License 1.1 |
+| Metamorphous | static, weight 400, roman only | SIL Open Font License 1.1 |
 
 The OFL permits redistribution of the font files alongside this notice. Full text:
 <https://openfontlicense.org/open-font-license-official-text/>

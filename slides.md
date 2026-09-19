@@ -362,6 +362,14 @@ src: ./pages/11-communication.md
 
 ---
 
+<Outline next="prototyping" />
+
+---
+src: ./pages/15-prototyping.md
+---
+
+---
+
 <Outline next="workshop-tricks" />
 
 ---

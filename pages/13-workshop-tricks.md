@@ -1,9 +1,10 @@
 ---
 layout: section
 routeAlias: workshop-tricks
+class: font-fantasy
 ---
 
-# Workshop [tricks]{.marker}
+# Guild secrets
 
 Lore from the other side of the door
 

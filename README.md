@@ -44,7 +44,7 @@ The running order, in four parts:
 | 1–2 | What it costs | What parts actually cost · Buy, assemble, or machine? |
 | 3–8 | Manufacturing | How a milling machine sees your part · Holes and threads · Tolerances and fits · Adjustability instead of precision · Materials · 3D printing |
 | 9–11 | Assembly and finish | Design for assembly and use · Finishing and secondary operations · Sheet metal covers |
-| 12–13 | Working with the workshop | Communicating with the workshop · Workshop tricks |
+| 12–14 | Putting it in practice | Communicating with the workshop · Prototyping · Guild secrets |
 
 `components/Outline.vue` holds this list and is the single source of truth for it;
 if the table above and that file disagree, the file is right.

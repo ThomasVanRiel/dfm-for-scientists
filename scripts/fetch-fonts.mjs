@@ -15,6 +15,8 @@ const FAMILIES = [
   'IBM Plex Sans Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700',
   'IBM Plex Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700',
   'Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700',
+  // Decorative face for the guild-secrets chapter's title slide only.
+  'Metamorphous',
 ]
 
 // The deck is English; the other subsets Google serves are dead weight.

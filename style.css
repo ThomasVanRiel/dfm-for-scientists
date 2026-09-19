@@ -26,6 +26,27 @@
 }
 
 /*
+  One-off: the guild-secrets chapter's title slide, via `class: font-fantasy`
+  in its frontmatter (same mechanism as the deck's `class: text-sm` slides —
+  it lands on the .slidev-layout element itself). Metamorphous has no italic
+  and one weight, so it isn't a general-purpose swap for Newsreader —
+  deliberately scoped by class, not applied to headings everywhere.
+
+  The heading needs its own rule, not just inheritance: `.slidev-layout h1,
+  h2, h3` above sets font-family explicitly, and an explicit rule on the
+  element always wins over an inherited value, no matter which class set it.
+*/
+.font-fantasy {
+  font-family: 'Metamorphous', 'Newsreader', ui-serif, Georgia, serif;
+}
+
+.slidev-layout.font-fantasy h1,
+.slidev-layout.font-fantasy h2,
+.slidev-layout.font-fantasy h3 {
+  font-family: 'Metamorphous', 'Newsreader', ui-serif, Georgia, serif;
+}
+
+/*
   Table headers are the prose face at a heavier weight, not a second typeface.
   The theme's reset hands `th` a flat `font-weight: 400`, so the weight has to
   be stated to get any separation at all; 600 sets the row apart from the body

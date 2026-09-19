@@ -52,10 +52,11 @@ const groups = [
     ],
   },
   {
-    title: 'Working with the workshop',
+    title: 'Putting it in practice',
     items: [
       { to: 'communication', label: 'Communicating with the workshop' },
-      { to: 'workshop-tricks', label: 'Workshop tricks' },
+      { to: 'prototyping', label: 'Prototyping' },
+      { to: 'workshop-tricks', label: 'Guild secrets' },
     ],
   },
 ]
