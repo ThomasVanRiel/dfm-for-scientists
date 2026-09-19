@@ -21,6 +21,8 @@ layout: two-cols-header
 
 ::right::
 
+<v-click>
+
 ### A STEP file does not tell the workshop
 
 - **Tolerances**: which dimensions matter, and how much
@@ -30,11 +32,17 @@ layout: two-cols-header
 - **Quantity**, and whether spares are needed
 - **What the part does**, and what's critical
 
+</v-click>
+
 ::bottom::
+
+<v-click at="1">
 
 <div class="takeaway">
 Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specification.
 </div>
+
+</v-click>
 
 ---
 layout: two-cols-header
@@ -99,6 +107,8 @@ Each hole dimensioned from **one datum**.
 - Easy to program
 
 <Sketch name="dimensioning-chain-baseline" layer="baseline" class="h-32" hint="The same four holes, each dimensioned from the left datum" />
+
+<div class="todo">Show in the baseline sketch that the tolerance <em>between</em> two holes is larger than with chaining. Neither method is better in every case.</div>
 
 ::bottom::
 

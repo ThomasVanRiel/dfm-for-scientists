@@ -121,6 +121,7 @@ layout: two-cols-header
 - **Spare holes** and mounting points
 - **Modular** plates instead of one integrated block
 - **Screws**, not glue or welds, where possible
+- Leave the **centre holes** in, so the part goes back on the lathe or mill quickly, on its original axis
 
 ::right::
 

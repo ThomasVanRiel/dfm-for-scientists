@@ -38,10 +38,6 @@ layout: two-cols-header
 A prototype answers one question. Once it has, it's done its job — don't polish it into the final part.
 </div>
 
-<div class="aside">
-CAD — Cardboard Aided Design.
-</div>
-
 <!--
 Same honest framing as the printing chapter, one step earlier: this is the
 fast, cheap way to find out you're wrong, before you've cut anything that
@@ -79,6 +75,9 @@ CAD and a quote for a part nobody has held yet.
 </div>
 </div>
 
+<div class="aside mt-4">
+CAD — Cardboard Aided Design.
+</div>
 
 <style>
 .ladder {
@@ -163,7 +162,7 @@ class: text-sm
 </div>
 
 <div class="warning mt-4">
-Kerf — how much material the laser removes — is your machine's number, not this deck's: it moves with material, thickness, and settings. Cut a test line, measure it, and compensate from that.
+Kerf — how much material the laser removes — is your machine's number: it moves with material, thickness, and settings.<br/> Cut a test line, measure it, and compensate from that.
 </div>
 
 <!--

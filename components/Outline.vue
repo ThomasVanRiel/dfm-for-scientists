@@ -134,7 +134,7 @@ ul {
 li {
   display: flex;
   align-items: baseline;
-  gap: 0.4rem;
+  gap: 0.65rem;
   line-height: 1.45;
   font-size: 1.05rem;
 }

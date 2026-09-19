@@ -42,7 +42,7 @@ Hold up an end mill. Let them feel that it is round.
 layout: two-cols-header
 ---
 
-# Tools come in sizes
+# Tools are sized
 
 ::left::
 
@@ -110,8 +110,8 @@ Cutting depth divided by tool diameter, **L/D**, decides which tool comes out of
 
 A [**1 mm**]{.technical} corner radius means a [2 mm]{.technical} tool, which means roughly [**6 mm**]{.technical} of depth before it gets slow.
 
-<div class="warning">
-The exercise part's groove is <strong class="technical">5 mm wide and 40 mm deep</strong>: 8 × D. That single feature can cost more than the rest of the part.
+<div class="takeaway">
+Divide depth by width before you draw a slot. A groove <strong class="technical">5 mm wide and 40 mm deep</strong> is <span class="technical">8 × D</span><br/> and can cost more than the rest of the part.
 </div>
 
 <!--

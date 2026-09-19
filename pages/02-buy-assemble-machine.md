@@ -161,14 +161,14 @@ layout: two-cols-header
 
 Material comes in standard sizes. Use them:
 
-- **Plate**: e.g. [5, 6, 8, 10, 12, 15, 20, 25, 30 mm]{.technical}
+- **Plate**: e.g. [5, 6, 8, 10, 12, 15, 16, 18, 20, 25, 30 mm]{.technical}
 - **Round and square bar**, **flat bar**
 - **Tube**: round, square, rectangular
 - **Angle** and **channel**
 
 ::right::
 
-If a part is [20 mm]{.technical} thick, draw it [20 mm]{.technical}, not [18.5 mm]{.technical}:
+[18.5 mm]{.technical} is not a thickness. [18]{.technical} and [20]{.technical} are. Pick from the list before you draw, not after:
 
 - The faces can stay as delivered
 - One fewer operation
@@ -187,6 +187,12 @@ Rolled plate is not precision flat or precise in thickness.<br/> If a face matte
 
 <!--
 Refer to the part from before that was redesigned using 20 mm plates.
+
+The plate thicknesses are the real 6082 T6/T651 list from Salomon's Metalen
+(producten.salomons-metalen.nl, read 2026-09-19), trimmed to the range people
+actually draw in. Their full list runs 0.5 to 200 mm, and the steps widen as
+you go up: fractions of a millimetre low down, 5 mm from 20 to 60, then 10 mm
+and coarser.
 -->
 
 ---
