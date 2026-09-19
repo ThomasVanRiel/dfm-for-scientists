@@ -52,6 +52,10 @@ Dr. Ing. Thomas Van Riel, KU Leuven
 <div class="text-xs opacity-80 mt-1">CC BY 4.0 — share and adapt, with credit</div>
 </div>
 
+<div class="absolute bottom-10 right-14 font-mono text-xs opacity-50">
+rev 760cc8f · 2026-09-19
+</div>
+
 <!-- <Sketch name="title" class="absolute right-10 bottom-8 w-110" /> -->
 
 ---
