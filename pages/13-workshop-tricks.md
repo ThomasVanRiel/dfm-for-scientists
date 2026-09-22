@@ -45,37 +45,27 @@ magnet differently.
 layout: two-cols-header
 ---
 
-# The half-nut has to find the same groove
+# Some threads are easier than others
 
 ::left::
 
-Cutting a thread on a manual lathe takes several passes. Between them the tool
-comes out, the carriage runs back, and the **half-nut** re-engages the
-leadscrew.
-
-Re-engage a fraction of a turn out, and the tool starts a **second thread**
-beside the first. The part is scrap.
-
-So the machinist is not free to re-engage wherever they like. The thread dial
-tells them where they may.
+<Sketch name="half-nut" class="h-80" hint="The two halves of a split nut closed around the lathe's leadscrew, with the thread dial beside it: the carriage can only be picked up again where the dial says the nut will drop into the same groove." />
 
 ::right::
 
-### The arithmetic
+Cutting a thread takes several passes, and between them the **half-nut** lets
+go of the leadscrew. Re-engage a fraction of a turn out and the tool starts a
+**second thread** beside the first.
 
-Leadscrew pitch divided by the pitch you asked for:
-
-- A **whole number**: re-engage at any mark on the dial. Easy, quick, no thought
-- A **simple fraction**: only some marks work, and the machinist counts
-- **No common measure** — a metric thread on an imperial leadscrew — the half-nut **never comes out**. Every pass is backed out by reversing the spindle
+The thread dial says where it may go back in: **leadscrew pitch divided by the
+pitch you asked for**. A whole number means any mark on the dial; anything else
+means counting, or never letting go at all.
 
 ::bottom::
 
 <div class="takeaway">
-Ask for a <strong>standard coarse pitch</strong>. <span class="technical">M6×1</span>, <span class="technical">M8×1.25</span>, <span class="technical">M10×1.5</span> are threads the shop cuts daily. An exotic pitch can turn a ten-minute job into a careful one.
+A <span class="technical">6 mm</span> leadscrew divides out whole on <span class="technical">0.5</span> (M3), <span class="technical">1</span> (M6), <span class="technical">1.5</span> (M10), <span class="technical">2</span> (M14, M16) and <span class="technical">3</span> (M24).
 </div>
-
-<div class="todo mt-4">Check our lathe's leadscrew pitch and thread dial, and put its real numbers on this slide.</div>
 
 <!--
 The divisor rule is the shop heuristic, not the full geometry: what actually
@@ -102,32 +92,24 @@ layout: two-cols-header
 
 ::left::
 
-Turning a part **between centers** means a centre-drilled hole at each end: a
-short [**60°**]{.technical} cone the tailstock's centre seats into, so the
-part can be driven and steadied without a chuck touching the finished
-diameter.
+<Sketch name="centre-hole" class="h-40" hint="A turned shaft seen from the side, a short 60° cone drilled in the centre of each end face, the tailstock centre seated in one of them." />
 
-Once the part is done, the drawing usually calls for those holes to be
-**faced off** for a clean finish. That erases the one precise reference to
-where the axis actually was.
+<Sketch name="spotted-centre" class="h-40" hint="A milled block seen from above, a small spotted centre mark at the origin the part was programmed from, an indicator swung around it on the next setup." />
 
 ::right::
 
-### Why leave them
+Milling leaves nothing of the kind. A **spotted mark** at the origin the part
+was programmed from does the same job — but nobody puts one there unless it was
+**asked for**.
 
-- A centre hole is a **repeatable, precise axis reference** on a part that otherwise has none once it's off the machine
-- The part comes back for a rework: it goes straight back **between centers**, or gets **indicated** off the same two points in a four-jaw or on a rotary table
-- No re-establishing a datum from scratch, no touching off a round surface and hoping it's still true
-- Costs **seconds**, on a part that needed the holes to be turned in the first place
+Either way the part comes back months later and goes **straight back** between
+centers, or gets **indicated** off its own mark. No datum to re-establish, no
+touching off a round surface and hoping it's still true.
 
 ::bottom::
 
 <div class="takeaway">
-Two holes you were cutting anyway. Left in on purpose, they're a free way back to the same axis months later.
-</div>
-
-<div class="warning mt-2">
-Only works if the centre of that face isn't a critical mating or sealing surface — it leaves a small cone-shaped dimple. And it's not the default: ask for it, or the shop faces them off for the finish.
+A <strong>centre hole</strong> in each end, or a <strong>spotted mark</strong> at the origin — asked for on purpose. Seconds of machining that give a part its own way back to the axis it was cut on, months later, on a machine that never saw it.
 </div>
 
 <!--
