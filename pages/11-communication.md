@@ -54,10 +54,10 @@ The model is the specification for **every** surface, including the ones you nev
 
 | You meant | The model says | So the workshop | Instead |
 |:---|:---|:---|:---|
-| a hole about [12]{.technical} deep | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
-| no sharp edge here | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
-| a corner | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
-| a pocket floor | **sharp** where the floor meets the wall | changes tools, or adds a finishing pass | Radius the **floor** corner too, not just the vertical ones |
+| [a hole about [12]{.technical} deep]{.thought} | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
+| [no sharp edge here]{.thought} | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
+| [a corner]{.thought} | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
+| [a pocket floor]{.thought} | **sharp** where the floor meets the wall | changes tools, or adds a finishing pass | Radius the **floor** corner too, not just the vertical ones |
 
 </div>
 

@@ -464,6 +464,24 @@
 }
 
 /*
+  Words attributed to the designer rather than written in their own right: the
+  vague phrase that was in your head, quoted back at you. Italic, with the
+  quotes and the trailing-off ellipses in pseudo-elements so the cell text
+  stays the phrase itself and a table column sorts and wraps on the words.
+*/
+.thought {
+  font-style: italic;
+}
+
+.thought::before {
+  content: '\201C\2026\2009';
+}
+
+.thought::after {
+  content: '\2009\2026\201D';
+}
+
+/*
   Dark mode. The deck is authored light and presented light; this exists so the
   slides are comfortable to browse on a laptop in a dark room.
 
