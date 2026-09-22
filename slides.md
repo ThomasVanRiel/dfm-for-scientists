@@ -391,3 +391,7 @@ src: ./pages/13-workshop-tricks.md
 ---
 src: ./pages/12-closing.md
 ---
+
+---
+src: ./pages/99-references.md
+---
