@@ -7,7 +7,7 @@
     "build": "slidev build",
     "dev": "slidev --open",
     "dev:lan": "slidev --remote",
-    "export": "slidev export --executable-path /usr/bin/chromium",
+    "export": "slidev export --executable-path ${CHROMIUM:-/usr/bin/chromium}",
     "fonts": "node scripts/fetch-fonts.mjs"
   },
   "dependencies": {

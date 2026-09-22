@@ -84,6 +84,10 @@ pnpm dev        # opens localhost:3030
 | `pnpm export` | PDF export |
 | `pnpm fonts` | Re-download the self-hosted webfonts into `fonts/` |
 
+`pnpm export` renders through the system Chromium (`/usr/bin/chromium`), because
+Playwright's own build wants Ubuntu packages that Arch cannot supply. Point `CHROMIUM`
+at another binary elsewhere, or set it to Playwright's own if that one works for you.
+
 Presenter mode is at `/presenter`, with the speaker notes and a timer. Drawings made
 during a talk are not persisted (`drawings.persist: false`).
 
