@@ -154,6 +154,15 @@ li {
   color: var(--sk-label);
 }
 
+/*
+  The highlight's own horizontal padding would otherwise shift the marked
+  digits left of the right-aligned column. Pull it back out so the number sits
+  in the same place marked or not; the ::before still overhangs on its own.
+*/
+.num .marker {
+  margin: 0 -0.12em;
+}
+
 li.passed .num {
   opacity: 0.5;
 }
