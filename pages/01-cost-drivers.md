@@ -14,10 +14,7 @@ layout: two-cols-header
 
 A part with features on 5 faces usually means 5 setups — unless it goes on a 5-axis machine, which reaches them in one or two.
 
-
-<div class="todo mt-8">
-  Add sketch of a part with features on 5 axes.
-</div>
+<Sketch name="5-ax-part" class="h-32" />
 
 ::right::
 

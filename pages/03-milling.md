@@ -5,7 +5,7 @@ routeAlias: milling
 
 # How a milling machine [sees]{.marker} your part
 
-The heart of the course
+Round tools, flat-bottomed pockets, and reachable faces
 
 ---
 layout: two-cols-header

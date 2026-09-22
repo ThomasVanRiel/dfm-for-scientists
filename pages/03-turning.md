@@ -5,7 +5,7 @@ routeAlias: turning
 
 # How a lathe [sees]{.marker} your part
 
-The part spins, the tool doesn't
+Round by default; everything else costs a setup
 
 <!--
 This chapter assumes milling's framing already landed: tools cost setups and
