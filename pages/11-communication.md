@@ -11,7 +11,7 @@ Talk to the machinist [before]{.marker} the design is finished
 layout: two-cols-header
 ---
 
-# Why a STEP file is not enough
+# A STEP file says [too little]{.marker}
 
 ::left::
 
@@ -43,6 +43,37 @@ Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specif
 </div>
 
 </v-click>
+
+---
+
+# A STEP file says [too much]{.marker}
+
+The model is the specification for **every** surface, including the ones you never made a decision about.
+
+<div class="nowrap-first-col">
+
+| You meant | The model says | So the workshop | Instead |
+|:---|:---|:---|:---|
+| a hole about [12]{.technical} deep | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
+| no sharp edge here | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
+| a corner | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
+| a pocket floor | **sharp** where the floor meets the wall | changes tools, or adds a finishing pass | Radius the **floor** corner too, not just the vertical ones |
+
+</div>
+
+
+<div class="takeaway mt-4">
+Nobody can ask "did you mean this?" about every surface. If you drew it, they make it, and you pay for it.
+</div>
+
+<div class="tip mt-4">
+Where the form is <strong>free</strong>, write on the drawing that it is free.
+</div>
+
+
+<!--
+The two failure modes are different, and worth saying out loud. The flat bottom is possible, so they build it and bill you for it. The sharp internal corner is impossible, so they have to deviate — and that deviation is a guess about whether anything seats into that corner. Either way the decision left your desk without you making it.
+-->
 
 ---
 layout: two-cols-header
