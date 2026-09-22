@@ -25,7 +25,8 @@ layout: two-cols-header
 
 ### Simpler parts
 
-- Each part is **fast** to make, and easy to change
+- Each part is **fast** to make
+- Parts are easy to change
 - But: more screws, dowels, and **alignment**
 
 ::bottom::
@@ -34,7 +35,7 @@ layout: two-cols-header
 Combine parts where the function allows it. Split them where machining demands it.
 </div>
 
-<div class="mt-4">
+<div class="plain mt-4">
 Ask for each part: <em>does this need to be separate?</em> It should move relative to the rest, be a different material, or be replaceable.
 </div>
 

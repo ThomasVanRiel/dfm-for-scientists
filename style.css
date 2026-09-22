@@ -173,6 +173,16 @@
 }
 
 /*
+  A callout with nothing to declare: the same box and the same indent as the
+  three above, so a sentence set beside them lines up, but no rule and no
+  ground of its own.
+*/
+.plain {
+  border-left: 4px solid transparent;
+  padding: 0.6rem 1rem;
+}
+
+/*
   A callout with a drawing in it: the drawing sits after the text, centred
   against it, and keeps its size when the sentence is long.
 
@@ -183,13 +193,13 @@
   apart. That is also why the text beside a drawing goes in a <span>: it needs
   to be one item, not one per fragment.
 */
-:is(.takeaway, .warning, .tip):has(> .inline-sketch) {
+:is(.takeaway, .warning, .tip, .plain):has(> .inline-sketch) {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-:is(.takeaway, .warning, .tip) > .inline-sketch {
+:is(.takeaway, .warning, .tip, .plain) > .inline-sketch {
   flex-shrink: 0;
 }
 
