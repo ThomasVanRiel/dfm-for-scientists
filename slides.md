@@ -393,5 +393,9 @@ src: ./pages/12-closing.md
 ---
 
 ---
+
+<Outline next="references" />
+
+---
 src: ./pages/99-references.md
 ---

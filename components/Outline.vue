@@ -11,10 +11,11 @@
   utility (`outline-style: solid`), so that name draws a solid box around the
   whole slide. Same for any other bare utility word.
 
-  Four groups, two to a column, each under its own heading. The list below is
-  the single source of truth for the running order. Adding or
-  moving a section means editing it here and moving the matching `src:` block
-  (and its <Outline> interlude) in slides.md.
+  Four groups, two to a column, each under its own heading, and the appendix
+  ruled off underneath without one. The lists below are the single source of
+  truth for the running order. Adding or moving a section means editing them
+  here and moving the matching `src:` block (and its <Outline> interlude) in
+  slides.md.
 -->
 <script setup>
 import { computed } from 'vue'
@@ -62,7 +63,15 @@ const groups = [
   },
 ]
 
-const order = groups.flatMap((g) => g.items.map((i) => i.to))
+// The appendix sits outside the four groups: it is not a chapter of the course,
+// it is where the deck points once the course is over. Same numbering and same
+// passed/next states, so it behaves like everything else in the list, but it is
+// ruled off below the grid and carries no group heading of its own.
+const appendix = {
+  items: [{ to: 'references', label: 'Further reading and watching' }],
+}
+
+const order = [...groups, appendix].flatMap((g) => g.items.map((i) => i.to))
 const nextIndex = computed(() => order.indexOf(props.next))
 
 // Chapter number: position in the running order, counted across the groups.
@@ -82,18 +91,29 @@ function state(to) {
   <div class="chapter-list">
     <h1>{{ title }}</h1>
 
-    <div class="groups">
-      <section v-for="g in groups" :key="g.title" class="group">
-        <h2>{{ g.title }}</h2>
-        <ul>
-          <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
-            <span class="num">
-              <span :class="{ marker: state(item.to) === 'next' }">{{ number(item.to) }}</span>
-            </span>
-            <Link :to="item.to">{{ item.label }}</Link>
-          </li>
-        </ul>
-      </section>
+    <div class="stack">
+      <div class="groups">
+        <section v-for="g in groups" :key="g.title" class="group">
+          <h2>{{ g.title }}</h2>
+          <ul>
+            <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
+              <span class="num">
+                <span :class="{ marker: state(item.to) === 'next' }">{{ number(item.to) }}</span>
+              </span>
+              <Link :to="item.to">{{ item.label }}</Link>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <ul class="appendix">
+        <li v-for="item in appendix.items" :key="item.to" :class="state(item.to)">
+          <span class="num">
+            <span :class="{ marker: state(item.to) === 'next' }">{{ number(item.to) }}</span>
+          </span>
+          <Link :to="item.to">{{ item.label }}</Link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -111,8 +131,29 @@ function state(to) {
   align-items: start;
   column-gap: 3.5rem;
   row-gap: 1.5rem;
+}
+
+/*
+  The grid and the appendix share one centred column, so the rule spans the
+  whole outline and the appendix entry starts under the first chapter rather
+  than floating in the middle on its own shorter line.
+*/
+.stack {
   width: max-content;
   margin: 1.5rem auto 0;
+}
+
+/*
+  Ruled off from the four groups rather than made a fifth one: the grid fills
+  down its columns, so a fifth group would land at the top of a third column
+  instead of below. The rule is the separation the group headings give the
+  others; the width matches the grid's `max-content` so the two line up.
+*/
+.appendix {
+  margin-top: 1.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--sk-rule);
+  opacity: 0.85;
 }
 
 .group h2 {
