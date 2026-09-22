@@ -75,10 +75,6 @@ CAD and a quote for a part nobody has held yet.
 </div>
 </div>
 
-<div class="aside mt-4">
-CAD — Cardboard Aided Design.
-</div>
-
 <style>
 .ladder {
   margin-top: 1.5rem;
