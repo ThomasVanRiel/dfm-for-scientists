@@ -34,7 +34,7 @@
 </div>
 
 <div class="mt-4">
-Material is <strong>9 %</strong> of the part turned from solid. Time is the other 91 %.
+Material is <strong>9 %</strong> of the part turned from solid. Time is nearly all of the other 91 %.
 </div>
 
 <!--

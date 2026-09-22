@@ -21,7 +21,7 @@ Material, tools, and time are not free
 | **Finishing** | Deburring, anodizing, coating, cleaning | Surface area, masking, special requirements |
 
 <div class="takeaway mt-6">
-For one-off lab parts, programming and setup are usually <strong>most</strong> of the cost.<br/> Machine hours come second, material a distant third.
+For one-off lab parts, <strong>time</strong> is most of the cost: programming and setup are paid by a single part, and heavy material removal adds machine hours on top.<br/> Material is a distant third.
 </div>
 
 <!--

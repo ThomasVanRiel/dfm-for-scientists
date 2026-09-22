@@ -12,7 +12,7 @@ layout: two-cols-header
 - A new alignment error between faces
 - Checking the first cut before continuing
 
-A part with features on 5 faces needs *at least* 5 setups — unless it goes on a 5-axis machine, which reaches them in one or two.
+A part with features on 5 faces usually means 5 setups — unless it goes on a 5-axis machine, which reaches them in one or two.
 
 
 <div class="todo mt-8">
@@ -41,7 +41,7 @@ If someone asks about 5-axis: it trades setups for machine rate and programming 
 - A quote is mostly **time**: programming, setups, cutting, measuring
 - **Setups** and **tolerances** often cost more than the material
 - Removing 90 % of your stock is slow, expensive, and wasteful
-- Batch size 1 means setup is the whole cost
+- At **batch size 1**, one part carries all programming and setup costs
 
 <div class="takeaway mt-8">
 Every feature costs machine time, tool changes, setups, and someone's attention.

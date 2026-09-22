@@ -38,7 +38,7 @@ align: center
 
 ::bottom::
 
-Material is **17 %** of the monolithic part. Time is the other 83 %.
+Material is **17 %** of the monolithic part. Time is nearly all of the other 83 %.
 
 <div class="aside mt-2">
 €1130 saved on this one part — more than the €800 this meeting cost. You're welcome.
