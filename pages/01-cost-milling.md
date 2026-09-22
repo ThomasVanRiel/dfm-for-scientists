@@ -45,8 +45,6 @@ Material is **17 %** of the monolithic part. Time is nearly all of the other 83 
 </div>
 
 <!--
-The strongest version of this slide is a real part from our own workshop with the real hours. Bring the physical parts if you can.
-
 The plates column is five setups: the two small plates have holes on two sides, so two setups each, and the large plate is one. The plate material is ordered to size, so nobody pays to mill it to size. Finishing here is deburring every edge, breaking the sharp corners, cleaning, and the anodizing bill — no coating masking on this part. The three plates have more edges to deburr but far less surface to machine, so the finishing half still lands slightly cheaper; the half hour of assembly on top of it, plus the screws and dowels line, is what the split costs you back.
 -->
 
