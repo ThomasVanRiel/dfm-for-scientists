@@ -278,13 +278,31 @@
 }
 
 /*
+  The phrase sets the width of the column, not the drawing: a table column is
+  sized by its widest cell, and a sketch wide enough to read would push the
+  other three columns off the slide. So the drawing layer is capped, and scales
+  down inside that cap rather than spilling out of it — which means overriding
+  `InlineSketch`'s own `max-width: none`, hence the extra class in the selector.
+*/
+.sketch-swap > .inline-sketch {
+  max-width: 6.5em;
+}
+
+.sketch-swap .inline-sketch .sketch svg,
+.sketch-swap .inline-sketch .sketch img {
+  max-width: 100%;
+}
+
+/*
   Until the drawings exist, `Sketch` shows its dashed placeholder, which is
-  sized for a slide and would push the rows to 10rem each. Shrink it to
-  something a table row can carry.
+  sized for a slide and would push the rows to 10rem each — and whose hint is a
+  whole sentence, which is what really widens the column. Shrink it to
+  something a table row can carry, and let it wrap against the same cap.
 */
 .sketch-swap .sketch-placeholder {
   min-height: 0;
-  font-size: 0.55em;
+  max-width: 6.5em;
+  font-size: 0.5em;
   white-space: normal;
 }
 
