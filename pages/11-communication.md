@@ -54,9 +54,9 @@ The model is the specification for **every** surface, including the ones you nev
 
 |  | The model says …, | so the workshop … | <div class="click-swap"><span v-click.hide="1">While you meant …</span><span v-click="1">Do instead</span></div> |
 |:---|:---|:---|:---|
-| <Sketch class="cell-sketch" data-id="sk-flat" name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a hole about <span class="technical">12</span> deep</span><span v-click="1">Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link></span></div> |
-| <Sketch class="cell-sketch" data-id="sk-fillet" name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong> is usually what you meant</span></div> |
-| <Sketch class="cell-sketch" data-id="sk-corner" name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool they <strong>already have</strong> (or slightly larger)</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-flat" name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a hole about <span class="technical">12</span> deep</span><span v-click="1">Dimension the depth, drill point<br/> and all <Link to="holes-threads">Holes and threads</Link></span></div> |
+| <Sketch class="cell-sketch" data-id="sk-fillet" name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong><br/> is usually what you meant</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-corner" name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool<br/> they <strong>already have</strong> (or slightly larger)</span></div> |
 
 </div>
 
@@ -146,8 +146,6 @@ Each hole dimensioned from **one datum**.
 - Easy to program
 
 <Sketch name="dimensioning-chain-baseline" layer="baseline" class="h-32" hint="The same four holes, each dimensioned from the left datum" />
-
-<div class="todo">Show in the baseline sketch that the tolerance <em>between</em> two holes is larger than with chaining. Neither method is better in every case.</div>
 
 ::bottom::
 
