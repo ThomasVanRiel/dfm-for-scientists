@@ -169,7 +169,8 @@ layout: two-cols-header
 2. Remove everything you don't need
 3. Add ±0.01 mm to be safe
 4. Send a STEP file to the workshop
-5. Wait. Wonder why it takes so long
+5. … wait …
+6. Wonder why it takes so long
 
 ::right::
 

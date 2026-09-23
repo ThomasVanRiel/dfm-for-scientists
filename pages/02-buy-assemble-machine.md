@@ -37,7 +37,7 @@ The cheapest part is the one you don't have to make
 </div>
 </div>
 
-<div class="takeaway mt-8" v-click="5">
+<div class="takeaway mt-8" v-click="4">
 Your own design time counts too.<br/>
 A €150 catalog stage is cheap compared to a week of designing and a week of machining.
 </div>
@@ -112,6 +112,9 @@ A €150 catalog stage is cheap compared to a week of designing and a week of ma
 </style>
 
 <!--
+Catalog part, e.g. hinges and spigots for linear actuators.
+Configurable part, e.g. linear motion stages.
+Plates, e.g. from meusburger.
 -->
 
 ---
@@ -146,6 +149,11 @@ layout: two-cols-header
 - Dowel pins, bearings, bushings, springs
 - Shaft collars, couplings, leveling feet
 
+::bottom::
+
+<div class="aside">
+The fastest part to make is the one that arrives in a box.
+</div>
 
 ---
 layout: two-cols-header
@@ -164,7 +172,7 @@ Material comes in standard sizes. Use them:
 
 ::right::
 
-[18.5 mm]{.technical} is not a thickness. [18]{.technical} and [20]{.technical} are. Pick from the list before you draw, not after:
+[18.5 mm]{.technical} is [not a thickness]{.marker}. [18]{.technical} and [20]{.technical} are. Pick from the list before you draw, not after:
 
 - The faces can stay as delivered
 - One fewer operation
@@ -243,6 +251,7 @@ An L-bracket from two plates and four screws beats one milled L. Same rule, roun
 
 ---
 layout: two-cols-header
+cols: 2/3
 ---
 
 # Specify what has to be true, not what it looks like
@@ -255,7 +264,7 @@ layout: two-cols-header
 
 ### You fix
 
-- **Mating features**: a bore, a hole pattern, the face something bolts to
+- **Mating features**: a bore, a hole pattern, a geometry
 - **Fit and position** where two parts meet
 - **What it has to carry**: load, stiffness, temperature
 
@@ -263,12 +272,12 @@ layout: two-cols-header
 
 - Outline, corner radii, wall thickness
 - One piece or three
-- Stock form, and the grade within an alloy family
+- Stock form
 
 ::bottom::
 
 <div class="takeaway">
-Hand the workshop the constraints, not the geometry. Every dimension you did not need is one they cannot work around.
+Hand the workshop the constraints translated into a drawing, not the geometry.<br/> Every dimension is a <strong>promise</strong> they have to keep. Don't write the ones you don't need.
 </div>
 
 <!--

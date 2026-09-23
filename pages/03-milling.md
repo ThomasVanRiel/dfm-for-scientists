@@ -13,7 +13,7 @@ cols: 2/3
 align: center
 ---
 
-# Tools are round
+# Tools are [round]{.marker}
 
 A spinning end mill can't cut a sharp internal corner.
 
@@ -42,7 +42,7 @@ Hold up an end mill. Let them feel that it is round.
 layout: two-cols-header
 ---
 
-# Tools are sized
+# Tools are [sized]{.marker}
 
 ::left::
 
@@ -55,7 +55,7 @@ layout: two-cols-header
 
 ::right::
 
-### What that means for your [corners]{.marker}
+### What that means for your corners
 
 - Internal radius = **tool radius**, plus a little
 - **[R1]{.technical} is the floor**, and only where the function needs it
@@ -73,7 +73,7 @@ layout: two-cols-header
 cols: 1/2
 ---
 
-# Tools are short
+# Tools are [short]{.marker}
 
 ::left::
 
@@ -121,7 +121,6 @@ This is the slide that pays for the whole section. Two numbers off a drawing, di
 
 ---
 layout: two-cols-header
-cols: 4/3
 ---
 
 # Thin walls vibrate
@@ -142,6 +141,11 @@ cols: 4/3
 - Keep wall height moderate relative to thickness
 - Add **ribs** or a lip at the top for stiffness
 
+::bottom::
+
+<div class="aside">
+Thin walls sing. The whole workshop hears it, and they all know whose part it is.
+</div>
 
 ---
 layout: two-cols-header
@@ -168,12 +172,6 @@ Design for fewer setups
 - Ask: "From which direction is this cut?"
 
 ---
-
-# Holding the part
-
-<Sketch name="vise-clamping" class="h-96" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
-
----
 layout: two-cols-header
 ---
 
@@ -185,6 +183,8 @@ layout: two-cols-header
 - The jaws cover a few mm, and **nothing can be cut there**
 - Clamping force **distorts** thin or delicate parts
 - Round, organic, or fully machined parts have **nothing to grip**
+
+<Sketch name="vise-clamping" class="h-20" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
 
 ::right::
 
@@ -219,6 +219,10 @@ This is the ideal moment for a workshop tour: show a vise, soft jaws, a fixture 
 | **3D freeform surfaces** | Ball-nose tools, very slow | Flat faces and chamfers |
 | **Engraved text** | Tiny tools, long toolpaths | Label or laser marking |
 | **Features on every face** | Many setups | Put features on fewer faces |
+
+<div class="aside mt-4">
+Your CAD software has never had to cut anything.
+</div>
 
 ---
 

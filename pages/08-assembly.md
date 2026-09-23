@@ -47,19 +47,25 @@ layout: two-cols-header
 
 ::left::
 
-- Can a **hex key** reach every screw? Straight, or only with a ball end?
+- Can a **hex key** reach every screw?<br/> Straight, or only with a ball end?
 - Can you **see** what you're doing?
-- Is there room for **fingers**, a torque wrench, a pair of tweezers?
-- Does the **assembly order** work? Can the last screw still be reached?
-- Can you **remove one part** without disassembling everything?
+- Is there room for **fingers**, a torque wrench,<br/> a pair of tweezers?
+- Does the **assembly order** work?<br/> Can the last screw still be reached?
+- Can you **remove one part** without<br/> disassembling everything?
 
 ::right::
 
 ### Try it in CAD
 
 - Put a model of the **hex key** in the assembly
-- Check the **assembly sequence**, not just the final state
+- Check the **assembly sequence**,<br/> not just the final state
 - Leave room around screw heads
+
+::bottom::
+
+<div class="aside">
+A ship in a bottle is a lovely hobby but a terrible test setup.
+</div>
 
 ---
 layout: two-cols-header
@@ -71,10 +77,10 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 
 ::left::
 
-- **Asymmetric** hole patterns: the part fits one way only
+- **Asymmetric** hole patterns:<br/> the part fits one way only
 - **One offset dowel pin** instead of a symmetric pair
 - **Different connectors** for different signals
-- **Shoulders and steps** that prevent upside-down mounting
+- **Shoulders and steps** that prevent<br/> upside-down mounting
 
 ::right::
 
@@ -85,6 +91,12 @@ Poka-yoke: make mistakes **impossible**, not just unlikely.
 - **Shoulders** to push a part against
 - **Chamfers** as a lead-in for pins and shafts
 - **Labels** and engraved arrows where orientation matters
+
+::bottom::
+
+<div class="aside">
+If it fits upside down, it will be mounted upside down, the night before the measurement. (Murphy's law)
+</div>
 
 ---
 layout: two-cols-header
@@ -112,7 +124,7 @@ layout: two-cols-header
 layout: two-cols-header
 ---
 
-# Test setups always change
+# Test setups [always]{.marker} change
 
 ::left::
 

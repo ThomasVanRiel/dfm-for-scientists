@@ -25,8 +25,6 @@ A part with features on 5 faces usually means 5 setups — unless it goes on a 5
 - Measuring, sometimes on a CMM
 - A higher chance of scrapping the part
 
-[±0.01 mm]{.technical} on a non-functional face buys you nothing.
-
 <!--
 If someone asks about 5-axis: it trades setups for machine rate and programming time. One clamping, no alignment error between faces, but a higher hourly rate and more programming, and not every shop has one. Ask what the shop actually has before you design for it.
 -->
@@ -37,7 +35,7 @@ If someone asks about 5-axis: it trades setups for machine rate and programming 
 
 - A quote is mostly **time**: programming, setups, cutting, measuring
 - **Setups** and **tolerances** often cost more than the material
-- Removing 90 % of your stock is slow, expensive, and wasteful
+- Removing most of your stock is slow, expensive, and wasteful
 - At **batch size 1**, one part carries all programming and setup costs
 
 <div class="takeaway mt-8">
