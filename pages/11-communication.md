@@ -154,6 +154,65 @@ Dimension the way the part <strong>functions</strong>: from the faces and holes 
 </div>
 
 ---
+layout: two-cols
+---
+
+# Hole-y shit!
+
+::left::
+
+<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.33; --canvas-h: 131.18">
+  <Sketch name="hole-thicket-table" layer="thicket" hint="The plate with every hole dimensioned the normal way" />
+</div>
+
+<!--
+Sit on the thicket for a moment before moving on: let them try to read a
+dimension off it.
+-->
+
+---
+layout: two-cols
+---
+
+# The hole-y grail
+
+::left::
+
+<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.33; --canvas-h: 131.18">
+  <Sketch name="hole-thicket-table" layer="table" hint="The same plate, the dimensions gone, the holes numbered" />
+</div>
+
+::right::
+
+<div class="technical-table">
+
+| Hole | X | Y | Ø / thread |
+|---|---:|---:|---|
+| 1 | -12.25 | 10.99 | ⌀4.5 |
+| 2 | -1.00 | 22.50 | ⌀2.8 |
+| 3 | 3.00 | 25.50 | ⌀2.0 |
+| 4 | 5.01 | 6.00 | ⌀1.5 ↧ 3.16 |
+| 5 | 5.10 | 0.00 | ⌀2.8 csink verso |
+| 6 | 10.89 | 14.41 | ⌀4.5 |
+| 7 | 10.89 | 14.41 | ⌀12.5 ↧ 3.46 |
+| 8 | 11.00 | 25.50 | ⌀2.0 |
+| 9 | 13.20 | 21.50 | ⌀1.5 ↧ 3.00 |
+| 10 | 15.00 | 24.00 | M3 ⌀2.5 |
+| 11 | 15.40 | 0.00 | ⌀12.0 |
+| 12 | 15.40 | 0.00 | ⌀13.0 ↧ 3.00 |
+| 13 | 16.30 | 21.00 | M2 ⌀1.6 |
+| 14 | 20.55 | 8.92 | ⌀2.8 csink verso |
+| 15 | 25.79 | 6.00 | ⌀1.5 ↧ 3.16 |
+
+</div>
+
+<!--
+The arrows go, the plate stays put, and the table arrives beside it. Draw the
+two sketches on one page and erase the dimensions for the second export, so the
+geometry registers exactly.
+-->
+
+---
 layout: two-cols-header
 align: center
 ---
@@ -181,54 +240,6 @@ Put the origin where the part is <strong>located and clamped</strong>. Ask the w
 
 <!--
 Set this up before the bullets: a plate with forty holes, dimensioned the normal way, is eighty dimensions stacked on top of the geometry. Nobody can read it, and one misplaced arrow is a scrapped part. The warning is the same reason chain dimensioning fails, on the previous slide.
--->
-
----
-layout: two-cols
----
-
-# One origin, one table
-
-::left::
-
-<div class="sketch-stack" style="--mm: 0.179rem; --canvas-w: 196.33; --canvas-h: 131.18">
-  <Sketch name="hole-thicket-table" layer="thicket" v-click.hide="1" hint="The plate with every hole dimensioned the normal way" />
-  <Sketch name="hole-thicket-table" layer="table" v-click="1" hint="The same plate, the dimensions gone, the holes numbered" />
-</div>
-
-::right::
-
-<v-click at="1">
-
-<div class="technical-table">
-
-| Hole | X | Y | Ø / thread |
-|---|---:|---:|---|
-| 1 | -12.25 | 10.99 | ⌀4.5 |
-| 2 | -1.00 | 22.50 | ⌀2.8 |
-| 3 | 3.00 | 25.50 | ⌀2.0 |
-| 4 | 5.01 | 6.00 | ⌀1.5 ↧ 3.16 |
-| 5 | 5.10 | 0.00 | ⌀2.8 csink verso |
-| 6 | 10.89 | 14.41 | ⌀4.5 |
-| 7 | 10.89 | 14.41 | ⌀12.5 ↧ 3.46 |
-| 8 | 11.00 | 25.50 | ⌀2.0 |
-| 9 | 13.20 | 21.50 | ⌀1.5 ↧ 3.00 |
-| 10 | 15.00 | 24.00 | M3 ⌀2.5 |
-| 11 | 15.40 | 0.00 | ⌀12.0 |
-| 12 | 15.40 | 0.00 | ⌀13.0 ↧ 3.00 |
-| 13 | 16.30 | 21.00 | M2 ⌀1.6 |
-| 14 | 20.55 | 8.92 | ⌀2.8 csink verso |
-| 15 | 25.79 | 6.00 | ⌀1.5 ↧ 3.16 |
-
-</div>
-
-</v-click>
-
-<!--
-Sit on the thicket for a moment before clicking: let them try to read a
-dimension off it. One click and the arrows go, the plate stays put, and the
-table arrives beside it. Draw the two sketches on one page and erase the
-dimensions for the second export, so the geometry registers exactly.
 -->
 
 ---
