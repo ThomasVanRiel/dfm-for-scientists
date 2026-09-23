@@ -389,7 +389,10 @@ src: ./pages/13-workshop-tricks.md
 ---
 
 ---
+# Not a chapter of the course: the closing belongs to every talk, whichever
+# sections SECTIONS leaves out. See setup/preparser.ts.
 src: ./pages/12-closing.md
+always: true
 ---
 
 ---
