@@ -242,6 +242,46 @@ An L-bracket from two plates and four screws beats one milled L. Same rule, roun
 </div>
 
 ---
+layout: two-cols-header
+---
+
+# Specify what has to be true, not what it looks like
+
+::left::
+
+<Sketch name="what-you-own" class="h-80" hint="The same bracket three times: milled from solid, laser-cut and bent, two plates screwed together. On all three, the two mounting holes at the same spacing and the load arrow at the tip are drawn in strong ink; outline, corner radii, wall thickness and rib are thin and muted." />
+
+::right::
+
+### You fix
+
+- **Mating features**: a bore, a hole pattern, the face something bolts to
+- **Fit and position** where two parts meet
+- **What it has to carry**: load, stiffness, temperature
+
+### The process picks
+
+- Outline, corner radii, wall thickness
+- One piece or three
+- Stock form, and the grade within an alloy family
+
+::bottom::
+
+<div class="takeaway">
+Hand the workshop the constraints, not the geometry. Every dimension you did not need is one they cannot work around.
+</div>
+
+<!--
+The three brackets are the same bracket: same hole spacing, same load at the tip. Everything that differs between them is something you never had to decide.
+
+The bracket is the one from What parts actually cost — point back at it, they have seen it milled and bolted already.
+
+"The grade within an alloy family" means the shop swapping 6082 for 6061 because that is what is in the rack — not aluminium for steel. If the stiffness or the corrosion behaviour is what you need, that is a duty you own, so write it down. Say this out loud; the bullet is shorter than the truth.
+
+The test for a dimension on your drawing: what breaks if it is 2 mm off? If the answer is "nothing", it should not have a tolerance, and probably should not be a dimension.
+-->
+
+---
 class: text-sm
 ---
 
