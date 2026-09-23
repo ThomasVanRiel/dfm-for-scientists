@@ -52,12 +52,11 @@ The model is the specification for **every** surface, including the ones you nev
 
 <div class="sketch-first-col">
 
-|  | The model says | So the workshop | <div class="click-swap"><span v-click.hide="1">while you meant …</span><span v-click="1">do instead</span></div> |
+|  | The model says …, | so the workshop … | <div class="click-swap"><span v-click.hide="1">While you meant …</span><span v-click="1">Do instead</span></div> |
 |:---|:---|:---|:---|
 | <Sketch class="cell-sketch" data-id="sk-flat" name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a hole about <span class="technical">12</span> deep</span><span v-click="1">Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link></span></div> |
 | <Sketch class="cell-sketch" data-id="sk-fillet" name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong> is usually what you meant</span></div> |
 | <Sketch class="cell-sketch" data-id="sk-corner" name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool they <strong>already have</strong> (or slightly larger)</span></div> |
-| <Sketch class="cell-sketch" data-id="sk-sharp" name="step" layer="sharp" hint="The pocket as drawn: a sharp corner where the floor meets the wall" /> | <strong>sharp</strong> where the floor meets the wall | changes tools, or adds a finishing pass | <div class="click-swap"><span class="thought" v-click.hide="1">a pocket floor</span><span v-click="1">Radius the <strong>floor</strong> corner too, not just the vertical ones</span></div> |
 
 </div>
 

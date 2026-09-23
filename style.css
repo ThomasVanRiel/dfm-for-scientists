@@ -293,6 +293,15 @@
 }
 
 /*
+  Only the last column wraps. The middle two are short verdicts, one thought
+  each, and a verdict broken over two lines reads as two of them; the last
+  column is the one carrying prose, so it takes all the slack.
+*/
+.sketch-first-col :is(td, th):not(:last-child) {
+  white-space: nowrap;
+}
+
+/*
   The drawing fills that box and is fitted inside it by the SVG's own
   `preserveAspectRatio`, so it stays centred and undistorted whatever the box's
   proportions are.
