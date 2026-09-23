@@ -176,7 +176,7 @@ align: center
 
 
 <div class="takeaway mt-4">
-Put the origin where the part is <strong>located and clamped</strong> — a dowel hole, or a pair of machined datum edges.
+Put the origin where the part is <strong>located and clamped</strong>. Ask the workshop if you are unsure.
 </div>
 
 <!--
