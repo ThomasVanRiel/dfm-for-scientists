@@ -53,7 +53,7 @@ The model is the specification for **every** surface, including the ones you nev
 <div class="nowrap-first-col">
 
 | [You meant]{v-click="1"} | The model says | So the workshop | Instead |
-|:---|:---|:---|:---|
+|:---:|:---|:---|:---|
 | <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="flat" hint="The hole as drawn: a flat, square floor at 12 deep" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">a hole about <span class="technical">12</span> deep</span></div> | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
 | <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">no sharp edge here</span></div> | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
 | <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">a corner</span></div> | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
