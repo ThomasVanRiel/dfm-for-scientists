@@ -57,6 +57,29 @@ numbers in it, and present it. A few things that make that easier.
 - **The deck is longer than one seminar.** Sections are picked live off the
   outline slide, which is why the outline is a list of links rather than a
   progress bar.
+- **`SECTIONS=` builds the talk you are giving**, and nothing else:
+
+  ```sh
+  SECTIONS=core pnpm dev                         # a premade plan
+  SECTIONS=cost,milling,communication pnpm dev   # sections by routeAlias
+  SECTIONS=1-4,13 pnpm dev                       # chapter numbers, and ranges
+  SECTIONS=core pnpm export                      # a PDF of that talk
+  ```
+
+  The sections you leave out are dropped from the deck as it is parsed. Their
+  slides are gone rather than hidden, so space and the arrows carry on in the
+  order you asked for, and the outline slides shorten to match — sixteen
+  chapters listed before every section is more than most audiences want to read.
+  Leave `SECTIONS` unset and you get the whole course, which is what the
+  published deck is.
+
+  **Premade plans live in `setup/plans.ts`**, one line per audience: a name, and
+  the sections it stands for. A talk you give more than once belongs there
+  rather than in a command you retype. Plans can be built out of other plans
+  (`core, 5-6, prototyping`), and anything unintelligible is ignored — with
+  nothing left, you get the whole course, which is the safe way to be wrong in
+  front of a room. `core` ships as the floor of a talk: cost, the ladder, and
+  milling.
 - **Section 1 has two worked examples**, one milling and one turning
   (`pages/01-cost-milling.md`, `pages/01-cost-turning.md`). Include exactly one,
   whichever matches what your audience has made for them — `slides.md` pulls in
@@ -84,6 +107,9 @@ pnpm dev        # opens localhost:3030
 | `pnpm export` | PDF export |
 | `pnpm fonts` | Re-download the self-hosted webfonts into `fonts/` |
 
+Prefix any of them with `SECTIONS=` to build part of the course rather than all of it —
+see [Giving the talk yourself](#giving-the-talk-yourself).
+
 `pnpm export` renders through the system Chromium (`/usr/bin/chromium`), because
 Playwright's own build wants Ubuntu packages that Arch cannot supply. Point `CHROMIUM`
 at another binary elsewhere, or set it to Playwright's own if that one works for you.
@@ -107,6 +133,7 @@ components/*.vue   Diagram components used by the slides (<BlindHole />, <Sketch
 layouts/*.vue      Slide layouts that override Slidev's built-ins of the same name
 sketches/          Hand-drawn SVGs shown by <Sketch name="..." /> — see sketches/README.md
 fonts/             Committed webfonts — see fonts/README.md
+setup/             Slidev's setup hooks — Mermaid's theme, the `SECTIONS` preparser
 style.css          Typography and the shared callout classes
 slide-top.vue      Slide number in the corner of every slide except the cover
 ```
@@ -127,6 +154,24 @@ section skipped over still dims, because the deck is past it.
 `components/Outline.vue` holds the running order, grouped into parts, and is the single
 source of truth for it. Moving a section means editing that list and moving both its
 `src:` block and its `<Outline>` interlude in `slides.md`.
+
+It lists the sections that are *in the deck*, and renumbers from 1 — so the outline of a
+`SECTIONS=` talk is an outline of that talk rather than of the course it was cut from.
+The test is the deck itself and not the flag: a section dropped with a `disabled: true`
+written by hand disappears from the outline just the same.
+
+#### Building part of the course
+
+`setup/preparser.ts` reads `SECTIONS` before the markdown is parsed and writes
+`disabled: true` into the frontmatter of the slides belonging to the sections you left
+out. Slidev honours that key before it even follows a `src:`, so one line drops a whole
+chapter file.
+
+It reads the running order off `slides.md` itself: `<Outline next="X" />` opens chapter
+X, and every `src:` block after it belongs to X until the next interlude. So there is
+nothing to keep in step with the order — with one exception, the closing, which is not a
+chapter of the course and says so with `always: true` on its `src:` block. Anything else
+that ever sits between two chapters without belonging to either needs the same mark.
 
 #### Slide shapes
 

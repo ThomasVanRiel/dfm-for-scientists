@@ -16,9 +16,17 @@
   lists below are the single source of truth for the running order. Adding or
   moving a section means editing them here and moving the matching `src:` block
   (and its <Outline> interlude) in slides.md.
+
+  A section that is not in the deck is not in the list either, and what is left
+  renumbers from 1 — so a talk built with SECTIONS (see setup/preparser.ts) gets
+  an outline of the talk being given rather than of the course it was cut from.
+  The test is the deck itself and not any setting: whatever dropped a section, a
+  flag or a `disabled: true` written by hand, the outline follows.
 -->
 <script setup>
 import { computed } from 'vue'
+// @ts-expect-error - virtual module, resolved by Slidev's Vite plugin
+import { slides } from '#slidev/slides'
 
 const props = defineProps({
   next: { type: String, required: true },
@@ -71,7 +79,24 @@ const appendix = {
   items: [{ to: 'references', label: 'Further reading and watching' }],
 }
 
-const order = [...groups, appendix].flatMap((g) => g.items.map((i) => i.to))
+/*
+  A section is in the course if its title slide is in the deck. The ones
+  SECTIONS left out are not, so they fall off the list here, and a group that
+  loses all of its sections falls out of the grid rather than standing as an
+  empty heading.
+*/
+const present = new Set(
+  slides.value
+    .map((s) => s.meta?.slide?.frontmatter?.routeAlias)
+    .filter(Boolean),
+)
+
+const shownGroups = groups
+  .map((g) => ({ ...g, items: g.items.filter((i) => present.has(i.to)) }))
+  .filter((g) => g.items.length)
+const shownAppendix = appendix.items.filter((i) => present.has(i.to))
+
+const order = [...shownGroups, { items: shownAppendix }].flatMap((g) => g.items.map((i) => i.to))
 const nextIndex = computed(() => order.indexOf(props.next))
 
 // Chapter number: position in the running order, counted across the groups.
@@ -93,7 +118,7 @@ function state(to) {
 
     <div class="stack">
       <div class="groups">
-        <section v-for="g in groups" :key="g.title" class="group">
+        <section v-for="g in shownGroups" :key="g.title" class="group">
           <h2>{{ g.title }}</h2>
           <ul>
             <li v-for="item in g.items" :key="item.to" :class="state(item.to)">
@@ -105,9 +130,9 @@ function state(to) {
           </ul>
         </section>
 
-        <section class="group untitled">
+        <section v-if="shownAppendix.length" class="group untitled">
           <ul>
-            <li v-for="item in appendix.items" :key="item.to" :class="state(item.to)">
+            <li v-for="item in shownAppendix" :key="item.to" :class="state(item.to)">
               <span class="num">
                 <span :class="{ marker: state(item.to) === 'next' }">{{ number(item.to) }}</span>
               </span>

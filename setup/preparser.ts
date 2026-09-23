@@ -25,7 +25,7 @@
   not a direct dependency under pnpm, so export the plain function it would have
   wrapped — as setup/mermaid.ts does.
 */
-import { plans } from './plans'
+import { plans } from './plans.ts'
 
 /*
   slides.md is the only file with these in it, which is how the extension knows
