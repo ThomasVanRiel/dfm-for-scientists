@@ -41,7 +41,7 @@ The running order, in four parts:
 
 | | Part | Chapters |
 | --- | --- | --- |
-| 1–2 | What it costs | What parts actually cost · Buy, assemble, or machine? |
+| 1–2 | Cost and sourcing | What parts actually cost · Buy, assemble, or machine? |
 | 3–8 | Manufacturing | How a milling machine sees your part · Holes and threads · Tolerances and fits · Adjustability instead of precision · Materials · 3D printing |
 | 9–11 | Assembly and finish | Design for assembly and use · Finishing and secondary operations · Sheet metal covers |
 | 12–14 | Putting it in practice | Communicating with the workshop · Prototyping · Guild secrets |

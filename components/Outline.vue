@@ -34,7 +34,7 @@ const props = defineProps({
 
 const groups = [
   {
-    title: 'What it costs',
+    title: 'Cost and sourcing',
     items: [
       { to: 'cost', label: 'What parts actually cost' },
       { to: 'buy-assemble-machine', label: 'Buy, assemble, or machine?' },
