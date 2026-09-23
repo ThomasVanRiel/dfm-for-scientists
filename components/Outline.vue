@@ -11,11 +11,10 @@
   utility (`outline-style: solid`), so that name draws a solid box around the
   whole slide. Same for any other bare utility word.
 
-  Four groups, two to a column, each under its own heading, and the appendix
-  as a fifth cell of the same grid, under the right column, without one. The
-  lists below are the single source of truth for the running order. Adding or
-  moving a section means editing them here and moving the matching `src:` block
-  (and its <Outline> interlude) in slides.md.
+  Four groups, each under its own heading, and the appendix as a fifth without
+  one, poured down two columns. The lists below are the single source of truth
+  for the running order. Adding or moving a section means editing them here and
+  moving the matching `src:` block (and its <Outline> interlude) in slides.md.
 
   A section that is not in the deck is not in the list either, and what is left
   renumbers from 1 — so a talk built with SECTIONS (see setup/preparser.ts) gets
@@ -73,8 +72,8 @@ const groups = [
 
 // The appendix is not a chapter of the course, it is where the deck points once
 // the course is over. Same numbering and same passed/next states, so it behaves
-// like everything else in the list, and it sits in the same grid as the four
-// groups — it just carries no group heading of its own.
+// like everything else in the list, and it flows with the four groups — it just
+// carries no group heading of its own.
 const appendix = {
   items: [{ to: 'references', label: 'Further reading and watching' }],
 }
@@ -82,7 +81,7 @@ const appendix = {
 /*
   A section is in the course if its title slide is in the deck. The ones
   SECTIONS left out are not, so they fall off the list here, and a group that
-  loses all of its sections falls out of the grid rather than standing as an
+  loses all of its sections falls out of the columns rather than standing as an
   empty heading.
 */
 const present = new Set(
@@ -147,25 +146,22 @@ function state(to) {
 
 <style scoped>
 /*
-  Two groups to a column, placed by hand rather than flowed: the appendix is a
-  third cell of the right column, and `grid-auto-flow: column` would have sent
-  it to the top of a third one instead. The shared rows keep the second group of
-  each column starting on the same line.
+  Poured down two columns rather than placed in a grid. A grid shares its rows
+  between the columns, so the short right-hand groups were padded out to the
+  height of the long left-hand one and anything below them was pushed past that
+  slack; here each group is an unbreakable box and the next one starts directly
+  underneath. The browser picks where to break, which is also what keeps the
+  layout sane when SECTIONS drops a group or two.
 */
 .groups {
-  display: grid;
-  grid-template-rows: max-content max-content max-content;
-  grid-template-columns: max-content max-content;
-  align-items: start;
+  columns: 2;
   column-gap: 3.5rem;
-  row-gap: 1.5rem;
 }
 
-.group:nth-child(1) { grid-area: 1 / 1; }
-.group:nth-child(2) { grid-area: 2 / 1; }
-.group:nth-child(3) { grid-area: 1 / 2; }
-.group:nth-child(4) { grid-area: 2 / 2; }
-.group.untitled { grid-area: 3 / 2; }
+.group {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
 
 .stack {
   width: max-content;
@@ -173,8 +169,8 @@ function state(to) {
 }
 
 /*
-  The headed groups are separated by their own headings; the untitled one has
-  none, so it gets the gap instead — enough to read as a group of its own and
+  The headed groups are set off by their own headings; the untitled one has
+  none, so it gets the space instead — enough to read as a group of its own and
   not as a stray last line of the one above it.
 */
 .group.untitled {
