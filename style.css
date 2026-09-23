@@ -280,38 +280,33 @@
 }
 
 /*
-  A drawing printed in a table cell, centred in its column.
+  A table whose first column is a drawing rather than text.
 
-  The text sets the width of the table, not the drawing: a column is sized by
-  its widest cell, and a sketch wide enough to read would push the other columns
-  off the slide. So the drawing is capped, and scales down inside that cap
-  rather than spilling out of it — which means overriding `InlineSketch`'s own
-  `max-width: none`, hence the extra class in the selector.
+  The column is given a fixed width, which is what makes the size of the drawing
+  a knob you can turn on its own: `--cell-sketch-height` grows the sketch inside
+  a box that never moves, so none of the other columns resize with it. Set
+  either variable on the wrapper to retune the slide.
+*/
+.sketch-first-col td:first-child,
+.sketch-first-col th:first-child {
+  width: var(--sketch-col-width, 9em);
+}
+
+/*
+  The drawing fills that box and is fitted inside it by the SVG's own
+  `preserveAspectRatio`, so it stays centred and undistorted whatever the box's
+  proportions are.
 */
 .cell-sketch {
-  text-align: center;
-}
-
-.cell-sketch .inline-sketch {
-  max-width: 6.5em;
+  height: var(--cell-sketch-height, 3.6em);
 }
 
 /*
-  The extra class is there to out-specify `InlineSketch`'s own scoped
-  `max-width: none`, which is what lets a drawing set into a line of text.
+  A missing drawing renders `Sketch`'s placeholder as the element this class
+  lands on, and its slide-sized minimum would push the row far past the height
+  above.
 */
-.cell-sketch .inline-sketch .sketch svg,
-.cell-sketch .inline-sketch .sketch img {
-  max-width: 100%;
-}
-
-/*
-  Until the drawings exist, `Sketch` shows its dashed placeholder, which is
-  sized for a slide and would push the rows to 10rem each — and whose hint is a
-  whole sentence, which is what really widens the column. Shrink it to
-  something a table row can carry.
-*/
-.cell-sketch .sketch-placeholder {
+.sketch-placeholder.cell-sketch {
   min-height: 0;
   font-size: 0.5em;
   white-space: normal;

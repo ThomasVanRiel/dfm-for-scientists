@@ -50,24 +50,24 @@ Send the STEP file <strong>and</strong> a PDF drawing. The drawing is the specif
 
 The model is the specification for **every** surface, including the ones you never made a decision about.
 
-<div class="nowrap-first-col">
+<div class="sketch-first-col">
 
-|  | The model says | So the workshop | while you meant … |
+|  | The model says | So the workshop | <div class="click-swap"><span v-click.hide="1">while you meant …</span><span v-click="1">do instead</span></div> |
 |:---|:---|:---|:---|
-| <div class="cell-sketch"><InlineSketch data-id="sk-flat" style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /></InlineSketch></div> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a hole about <span class="technical">12</span> deep</span><span v-click="1">Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link></span></div> |
-| <div class="cell-sketch"><InlineSketch data-id="sk-fillet" style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /></InlineSketch></div> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong> is usually what you meant</span></div> |
-| <div class="cell-sketch"><InlineSketch data-id="sk-corner" style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /></InlineSketch></div> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool they <strong>already have</strong> (or slightly larger)</span></div> |
-| <div class="cell-sketch"><InlineSketch data-id="sk-sharp" style="--inline-sketch-height: 2.4em"><Sketch name="step" layer="sharp" hint="The pocket as drawn: a sharp corner where the floor meets the wall" /></InlineSketch></div> | <strong>sharp</strong> where the floor meets the wall | changes tools, or adds a finishing pass | <div class="click-swap"><span class="thought" v-click.hide="1">a pocket floor</span><span v-click="1">Radius the <strong>floor</strong> corner too, not just the vertical ones</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-flat" name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a hole about <span class="technical">12</span> deep</span><span v-click="1">Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link></span></div> |
+| <Sketch class="cell-sketch" data-id="sk-fillet" name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong> is usually what you meant</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-corner" name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool they <strong>already have</strong> (or slightly larger)</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-sharp" name="step" layer="sharp" hint="The pocket as drawn: a sharp corner where the floor meets the wall" /> | <strong>sharp</strong> where the floor meets the wall | changes tools, or adds a finishing pass | <div class="click-swap"><span class="thought" v-click.hide="1">a pocket floor</span><span v-click="1">Radius the <strong>floor</strong> corner too, not just the vertical ones</span></div> |
 
 </div>
 
-<FancyArrow v-click="1" from="[data-id=sk-flat]@topleft" to="[data-id=sk-flat]@bottomright"
+<FancyArrow v-click="1" from="[data-id=sk-flat]@bottomleft" to="[data-id=sk-flat]@topright"
   color="var(--sk-alert)" width="2" head-size="0" />
-<FancyArrow v-click="1" from="[data-id=sk-fillet]@topleft" to="[data-id=sk-fillet]@bottomright"
+<FancyArrow v-click="1" from="[data-id=sk-fillet]@bottomleft" to="[data-id=sk-fillet]@topright"
   color="var(--sk-alert)" width="2" head-size="0" />
-<FancyArrow v-click="1" from="[data-id=sk-corner]@topleft" to="[data-id=sk-corner]@bottomright"
+<FancyArrow v-click="1" from="[data-id=sk-corner]@bottomleft" to="[data-id=sk-corner]@topright"
   color="var(--sk-alert)" width="2" head-size="0" />
-<FancyArrow v-click="1" from="[data-id=sk-sharp]@topleft" to="[data-id=sk-sharp]@bottomright"
+<FancyArrow v-click="1" from="[data-id=sk-sharp]@bottomleft" to="[data-id=sk-sharp]@topright"
   color="var(--sk-alert)" width="2" head-size="0" />
 
 
