@@ -403,3 +403,89 @@ always: true
 ---
 src: ./pages/99-references.md
 ---
+
+---
+routeAlias: bingo
+class: text-sm
+slideNumber: false
+---
+
+## Design for manufacturing — Confession bingo!
+
+<div class="aside">
+Tick every pitfall you have made yourself. A full card gets a free design review!
+</div>
+
+| | | |
+|---|---|---|
+| ±0.01 mm<br/>(to be safe) | A sharp internal corner | Machined what you could buy |
+| An 18.5 mm plate | Only a STEP file | A screw no tool can reach |
+| A rounded bottom corner | Carved from one block | Called the machinist after the drawing |
+
+<div class="bingo-notes">
+<div class="label">Notes</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<style>
+/*
+  Bingo boxes: fixed cells so every square is the same size whatever its text,
+  a little wider than tall because the longest text needs the width. The empty
+  header row markdown insists on is hidden.
+*/
+table {
+  width: auto;
+  margin: 0.5rem auto 0;
+  border-collapse: collapse;
+}
+
+thead {
+  display: none;
+}
+
+td {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--sk-rule);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.1;
+}
+
+/*
+  Writing lines under the table. Borders, not a repeating background: printers
+  drop backgrounds (see the print block in style.css), and this slide exists to
+  be printed.
+*/
+.bingo-notes {
+  margin-top: 1.25rem;
+}
+
+.bingo-notes .label {
+  color: var(--sk-label);
+  font-size: 0.85em;
+}
+
+.bingo-notes > div:not(.label) {
+  height: 2rem;
+  border-bottom: 1px solid var(--sk-rule);
+}
+</style>
+
+<!--
+Printed, one per person. Where each square comes up in tomorrow's talk:
+
+±0.01 mm, to be safe — the intro slide "How we usually design".
+A sharp internal corner — Tools are round; A STEP file says too much.
+Machined what you could buy — Decide in this order; Catalog components.
+An 18.5 mm plate — Design with standard stock.
+Send only a STEP file — A STEP file says too little.
+A slot 5 wide, 40 deep — How deep, for a given diameter (8 × D).
+A rounded bottom corner — A STEP file says too much (the pocket row).
+Carved from one block — Same function, two designs; Assemble instead of carving one monolith.
+Called the machinist after the drawing — Talk to the machinist early.
+-->
