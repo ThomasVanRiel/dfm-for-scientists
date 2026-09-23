@@ -348,9 +348,17 @@
   one, the `z-index: -1` below resolves against the slide and the stroke sits
   behind every character near it.
 */
+/*
+  `nowrap` because the stroke is one box: an inline span split across two
+  lines gives its absolutely positioned ::before a containing block that runs
+  from the start of the first fragment to the end of the last, so the stroke
+  lands between the lines instead of on the words. Keeping the phrase on one
+  line keeps the stroke on it; every marker in the deck is a word or three.
+*/
 .marker {
   position: relative;
   padding: 0 0.12em;
+  white-space: nowrap;
 }
 
 .marker::before {
