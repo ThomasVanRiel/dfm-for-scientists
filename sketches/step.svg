@@ -23,7 +23,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.1252694"
-     inkscape:cx="191.50514"
+     inkscape:cx="191.7404"
      inkscape:cy="109.3979"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -35,7 +35,7 @@
      id="defs1" />
   <g
      id="fillet"
-     transform="translate(-3415.6772,-234.83909)"
+     transform="translate(-3415.6772,-244.83909)"
      style="display:inline">
     <path
        id="path2266"
@@ -255,29 +255,5 @@
        d="m 128.395,310.816 h 55.793 v 42.016 h -55.793 z"
        style="fill:none;stroke:#000000;stroke-width:1.1469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,1.3333333,3307.6149,0)" />
-    <path
-       id="path2290"
-       d="m 142.406,311.258 v 40.14"
-       style="fill:none;stroke:#000000;stroke-width:1.1469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(1.3333333,0,0,1.3333333,3307.6149,0)" />
-    <path
-       id="path2291"
-       d="m 141.273,348.988 1.028,1.985 0.078,0.39 -0.055,-0.148 0.5,-0.145 0.488,-0.558 0.594,-1.407 0.059,-0.554"
-       style="fill:none;stroke:#000000;stroke-width:1.1469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(1.3333333,0,0,1.3333333,3307.6149,0)" />
-    <path
-       id="path2292"
-       d="m 141.801,312.48 -0.449,1.875 -0.481,1.211 0.18,-0.543 1.183,-2.382 -0.035,0.14 0.977,1.664 0.215,1.446 0.386,0.644"
-       style="fill:none;stroke:#000000;stroke-width:1.1469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(1.3333333,0,0,1.3333333,3307.6149,0)" />
-    <text
-       xml:space="preserve"
-       style="font-weight:500;font-stretch:condensed;font-size:18.8976px;line-height:32.3961px;font-family:'IBM Plex Sans Condensed';-inkscape-font-specification:'IBM Plex Sans Condensed,  Medium Condensed';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       x="3501.1826"
-       y="449.14993"
-       id="text2299"><tspan
-         id="tspan2299"
-         x="3501.1826"
-         y="449.14993">10</tspan></text>
   </g>
 </svg>

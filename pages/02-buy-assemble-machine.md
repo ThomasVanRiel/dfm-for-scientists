@@ -112,10 +112,6 @@ A €150 catalog stage is cheap compared to a week of designing and a week of ma
 </style>
 
 <!--
-Prototype B: the same decision as a ladder, in the deck's own type and
-colours, using .tip and .warning for the outcomes so dark mode comes free.
-Reads top to bottom, and each rung can take a v-click if it should arrive one
-question at a time.
 -->
 
 ---

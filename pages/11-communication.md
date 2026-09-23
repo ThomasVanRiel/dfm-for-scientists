@@ -166,6 +166,12 @@ transition: fade
   <Sketch name="hole-thicket-table" layer="thicket" hint="The plate with every hole dimensioned the normal way" />
 </div>
 
+
+<div class="aside mt-4">
+Everything is dimensioned, job well done!
+</div>
+
+
 <!--
 Sit on the thicket for a moment before moving on: let them try to read a
 dimension off it.
@@ -175,7 +181,7 @@ dimension off it.
 layout: two-cols
 ---
 
-# Hole-y grail
+# Hole-y grail!
 
 ::left::
 

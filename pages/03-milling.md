@@ -70,6 +70,7 @@ Rounding up every internal corner you don't actually need is the cheapest change
 
 ---
 layout: two-cols-header
+cols: 1/2
 ---
 
 # Tools are short
