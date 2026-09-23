@@ -155,6 +155,7 @@ Dimension the way the part <strong>functions</strong>: from the faces and holes 
 
 ---
 layout: two-cols
+transition: fade
 ---
 
 # Hole-y shit!
@@ -174,7 +175,7 @@ dimension off it.
 layout: two-cols
 ---
 
-# The hole-y grail
+# Hole-y grail
 
 ::left::
 
