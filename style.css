@@ -247,6 +247,47 @@
   }
 }
 
+/*
+  A table cell holding two readings of one thing: the drawing the workshop
+  receives, and the phrase that was in your head. Both sit in the same grid
+  cell, so the row keeps its height across the click that swaps them and the
+  column is as wide as the wider of the two.
+
+  The same slow fade as `.sketch-stack`, and for the same reason — the point is
+  the drawing giving way to the words, not a cut between two cells. Written as
+  a descendant selector because the sketch is wrapped in an `InlineSketch`,
+  which is the box that gives it its height.
+*/
+.sketch-swap {
+  display: grid;
+  place-items: center start;
+}
+
+.sketch-swap > * {
+  grid-area: 1 / 1;
+}
+
+.sketch-swap .slidev-vclick-target {
+  transition: opacity 0.7s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sketch-swap .slidev-vclick-target {
+    transition: none;
+  }
+}
+
+/*
+  Until the drawings exist, `Sketch` shows its dashed placeholder, which is
+  sized for a slide and would push the rows to 10rem each. Shrink it to
+  something a table row can carry.
+*/
+.sketch-swap .sketch-placeholder {
+  min-height: 0;
+  font-size: 0.55em;
+  white-space: normal;
+}
+
 /* Placeholder content that must be replaced with real workshop data. */
 .todo {
   border: 2px dashed #d97706;

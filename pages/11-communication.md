@@ -52,12 +52,12 @@ The model is the specification for **every** surface, including the ones you nev
 
 <div class="nowrap-first-col">
 
-| You meant | The model says | So the workshop | Instead |
+| [You meant]{v-click="1"} | The model says | So the workshop | Instead |
 |:---|:---|:---|:---|
-| [a hole about [12]{.technical} deep]{.thought v-click="1"} | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
-| [no sharp edge here]{.thought v-click="1"} | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
-| [a corner]{.thought v-click="1"} | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
-| [a pocket floor]{.thought v-click="1"} | **sharp** where the floor meets the wall | changes tools, or adds a finishing pass | Radius the **floor** corner too, not just the vertical ones |
+| <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 3.2em"><Sketch name="meant-hole-depth" hint="The hole as drawn: a flat, square floor at 12 deep" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">a hole about <span class="technical">12</span> deep</span></div> | this floor is **flat and square** | adds an end-mill operation | Dimension the depth, drill point and all <Link to="holes-threads">Holes and threads</Link> |
+| <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 3.2em"><Sketch name="meant-edge-break" hint="The edge as drawn: an R3 round, on this one edge" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">no sharp edge here</span></div> | **[R3]{.technical}**, on this exact edge | produces that exact form | A **chamfer** or an **edge break** is usually what you meant |
+| <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 3.2em"><Sketch name="meant-corner" hint="The corner as drawn: a sharp internal corner, zero radius" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">a corner</span></div> | **zero radius**, internal | phones you, or guesses | Give it a radius that matches a tool they **already have** (or slightly larger) |
+| <div class="sketch-swap"><InlineSketch style="--inline-sketch-height: 3.2em"><Sketch name="meant-pocket-floor" hint="The pocket as drawn: a sharp corner where the floor meets the wall" v-click.hide="1" /></InlineSketch><span class="thought" v-click="1">a pocket floor</span></div> | **sharp** where the floor meets the wall | changes tools, or adds a finishing pass | Radius the **floor** corner too, not just the vertical ones |
 
 </div>
 
