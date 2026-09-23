@@ -286,6 +286,12 @@
 */
 .sketch-swap > .inline-sketch {
   max-width: 6.5em;
+  /*
+    Centred across the column, while the phrase it swaps with stays ranged left
+    like every other cell: the drawing is a picture in a column of text, not a
+    line of it.
+  */
+  justify-self: center;
 }
 
 .sketch-swap .inline-sketch .sketch svg,
