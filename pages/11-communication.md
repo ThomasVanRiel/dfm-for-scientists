@@ -57,7 +57,7 @@ The model is the specification for **every** surface, including the ones you nev
 | <Sketch class="cell-sketch" data-id="sk-flat" name="step" layer="flat" hint="The hole as drawn: a flat, square floor" /> | this floor is <strong>flat and square</strong> | adds an end-mill operation | <div class="click-swap"><span class="thought" v-click.hide="1">a <span class="technical">15 mm</span> wide round hole</span><span v-click="1">Dimension the depth, drill point<br/> and all <Link to="holes-threads">Holes and threads</Link></span></div> |
 | <Sketch class="cell-sketch" data-id="sk-fillet" name="step" layer="fillet" hint="The edge as drawn: an R3 round, on this one edge" /> | <span class="technical">R3</span>, on this exact edge | produces that exact form | <div class="click-swap"><span class="thought" v-click.hide="1">no sharp edge here</span><span v-click="1">A <strong>chamfer</strong> or an <strong>edge break</strong><br/> is usually what you meant</span></div> |
 | <Sketch class="cell-sketch" data-id="sk-corner" name="step" layer="corner" hint="The corner as drawn: a sharp internal corner, zero radius" /> | <strong>zero radius</strong>, internal | phones you, or guesses | <div class="click-swap"><span class="thought" v-click.hide="1">a corner</span><span v-click="1">Give it a radius that matches a tool<br/> they <strong>already have</strong> (or slightly larger)</span></div> |
-| <Sketch class="cell-sketch" data-id="sk-pocket" name="step" layer="pocket" hint="The pocket as drawn: a radius where the floor meets the walls" /> | a <strong>radius</strong> where floor meets wall | needs a bull-nose cutter,<br/> or a slow ball-end pass | <div class="click-swap"><span class="thought" v-click.hide="1">a pocket</span><span v-click="1">Leave the floor edge <strong>sharp</strong>,<br/> unless something needs the radius</span></div> |
+| <Sketch class="cell-sketch" data-id="sk-pocket" name="step" layer="sharp" hint="The pocket as drawn: a radius where the floor meets the walls" /> | a <strong>radius</strong> where floor meets wall | needs a bull-nose cutter,<br/> or a slow ball-end pass | <div class="click-swap"><span class="thought" v-click.hide="1">a pocket</span><span v-click="1">Leave the floor edge <strong>sharp</strong>,<br/> unless something needs the radius</span></div> |
 
 </div>
 
@@ -290,6 +290,35 @@ Coffee with a machinist is the cheapest design review you'll ever buy.
 </div>
 
 ---
+layout: two-cols-header
+---
+
+# The drawing is the [contract]{.marker}
+
+::left::
+
+### The workshop makes
+
+- What the drawing **says**, and nothing else
+- It does **not infer** your intent
+- It does **not fix** what looks like a mistake
+
+::right::
+
+### What that means for you
+
+- Part **matches the drawing**: it is accepted, and you pay
+- No tolerance given: the **general tolerance** applies
+- A thread not called out: you get a **plain hole**
+- Plates drawn as **one part**: you get **one part**
+
+::bottom::
+
+<div class="warning">
+If it is not on the drawing, it is not a requirement. If the part matches the drawing, the part is correct.
+</div>
+
+---
 
 # Take-aways
 
@@ -297,4 +326,5 @@ Coffee with a machinist is the cheapest design review you'll ever buy.
 - A drawing needs **material, tolerances, finish, quantity**, and marked critical features
 - Dimension from **datums**
 - **Talk to the machinist before the design is finished**
+- The drawing is the contract: **a mistake on the drawing is a mistake you pay for**
 
