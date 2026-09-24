@@ -184,7 +184,7 @@ layout: two-cols-header
 - Clamping force **distorts** thin or delicate parts
 - Round, organic, or fully machined parts have **nothing to grip**
 
-<Sketch name="vise-clamping" class="h-20" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
+<Sketch name="clamping" class="h-20 mt-4" hint="A part clamped in a vise: jaws, parallels underneath, and the zone the tool can't reach" />
 
 ::right::
 

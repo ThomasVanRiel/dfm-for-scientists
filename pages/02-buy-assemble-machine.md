@@ -258,7 +258,7 @@ cols: 2/3
 
 ::left::
 
-<Sketch name="what-you-own" class="h-80" hint="The same bracket three times: milled from solid, laser-cut and bent, two plates screwed together. On all three, the two mounting holes at the same spacing and the load arrow at the tip are drawn in strong ink; outline, corner radii, wall thickness and rib are thin and muted." />
+<Sketch name="what-you-own" class="h-72" hint="The same bracket three times: milled from solid, laser-cut and bent, two plates screwed together. On all three, the two mounting holes at the same spacing and the load arrow at the tip are drawn in strong ink; outline, corner radii, wall thickness and rib are thin and muted." />
 
 ::right::
 
