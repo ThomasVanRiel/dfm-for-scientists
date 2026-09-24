@@ -85,6 +85,11 @@ quote your drawing.
 - Your design makes me **buy extra material**, and then you pay me to mill it away
 - How to avoid these **unsightly marks**
 
+### Or one video instead
+
+**Adam Bender**, *How to Design Parts for CNC Machining*: [11]{.technical}
+minutes, milling only, ending on a bad part redesigned and re-quoted.
+
 ::right::
 
 ### Why it is worth the half hour
@@ -97,7 +102,8 @@ quote your drawing.
 
 <div class="takeaway">
 Nothing in it should surprise you after today — that is the point.<br/>Hearing it from the shop floor is what makes it stick.<br/>
-<a href="https://www.youtube.com/watch?v=p4blQSdmb_k&list=PLG9jcxQdby262Gzxss01kVv0K2PHVF-AD">The "Design for machinability" playlist</a>
+<a href="https://www.youtube.com/watch?v=p4blQSdmb_k&list=PLG9jcxQdby262Gzxss01kVv0K2PHVF-AD">The "Design for machinability" playlist</a> ·
+<a href="https://www.youtube.com/watch?v=qx_qqVmjCc0">Adam Bender's video</a>
 </div>
 
 <!--
@@ -112,4 +118,8 @@ drop it otherwise.
 I have not watched these; the descriptions come from the titles and from what
 the topics have to be. Check one before presenting the slide as a
 recommendation.
+
+Adam Bender is a different person from adam the machinist. His video runs
+10:58. The chapter list is from its description; the bad-versus-good price
+comparison at 10:09 is his quote, not ours.
 -->
