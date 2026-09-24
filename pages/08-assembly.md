@@ -102,28 +102,6 @@ If it fits upside down, it will be mounted upside down, the night before the mea
 layout: two-cols-header
 ---
 
-# Cables and connectors
-
-::left::
-
-- Cables are **part of the design**, not an afterthought
-- Plan **routing channels**, clips, and tie-down points
-- Respect the **minimum bend radius**, especially for fibers and coax
-- Add **strain relief** so connectors don't carry the load
-
-::right::
-
-### Also
-
-- Can you **plug and unplug** connectors with the setup assembled?
-- Keep cables away from **moving parts** and sharp edges
-- Plan **grounding** paths (watch out for anodizing)
-- **Label** cables and connectors
-
----
-layout: two-cols-header
----
-
 # Test setups [always]{.marker} change
 
 ::left::
@@ -152,6 +130,5 @@ layout: two-cols-header
 - Balance **part count** against **part complexity**
 - Check **tool and hand access** and the **assembly order**
 - Make wrong assembly **impossible**
-- Plan **cables** from the start
 - Test setups change: design for **modification**
 

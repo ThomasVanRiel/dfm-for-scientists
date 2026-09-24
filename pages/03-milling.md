@@ -151,30 +151,6 @@ Thin walls sing. The whole workshop hears it, and they all know whose part it is
 layout: two-cols-header
 ---
 
-# Every feature needs a direction
-
-::left::
-
-On a 3-axis mill, the tool only comes **from above**.
-
-- Features on 5 faces → at least **5 setups**
-- Every reorientation: re-clamp, re-zero, new alignment error
-- Features on different faces are only as well aligned as the setups
-- Holes at odd angles need special fixtures or a 5-axis machine
-
-::right::
-
-Design for fewer setups
-
-- Put features on **as few faces as possible**
-- Put all features that must align with each other **on the same face**
-- Prefer holes parallel to the main axes
-- Ask: "From which direction is this cut?"
-
----
-layout: two-cols-header
----
-
 # The machinist has to hold it
 
 ::left::

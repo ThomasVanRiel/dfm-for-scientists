@@ -20,8 +20,8 @@ Material, tools, and time are not free
 | **Inspection** | Measuring what you asked for | Number of tight tolerances |
 | **Finishing** | Deburring, anodizing, coating, cleaning | Surface area, masking, special requirements |
 
-<div class="takeaway mt-6">
-For one-off lab parts, <strong>time</strong> is most of the cost: programming and setup are paid by a single part, and heavy material removal adds machine hours on top.<br/> Material is a distant third.
+<div class="takeaway mt-6" v-click>
+For one-off lab parts, <strong>time</strong> is most of the cost: programming and setup are paid by a single part, and heavy material removal adds machine hours on top.<br/> Material is the smaller share.
 </div>
 
 <!--

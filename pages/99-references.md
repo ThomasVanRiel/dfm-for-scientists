@@ -85,18 +85,12 @@ quote your drawing.
 - Your design makes me **buy extra material**, and then you pay me to mill it away
 - How to avoid these **unsightly marks**
 
+::right::
+
 ### Or one video instead
 
 **Adam Bender**, *How to Design Parts for CNC Machining*: [11]{.technical}
 minutes, milling only, ending on a bad part redesigned and re-quoted.
-
-::right::
-
-### Why it is worth the half hour
-
-- It is the **quoting** view: every point lands as a line on an invoice
-- Short, one idea each, no series to commit to
-- It is blunt in a way a seminar cannot be
 
 ::bottom::
 

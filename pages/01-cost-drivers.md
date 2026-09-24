@@ -37,7 +37,3 @@ If someone asks about 5-axis: it trades setups for machine rate and programming 
 - **Setups** and **tolerances** often cost more than the material
 - Removing most of your stock is slow, expensive, and wasteful
 - At **batch size 1**, one part carries all programming and setup costs
-
-<div class="takeaway mt-8">
-Every feature costs machine time, tool changes, setups, and someone's attention.
-</div>
